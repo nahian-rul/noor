@@ -1,13 +1,13 @@
 // Hijri (Islamic) calendar conversion
 // Based on the Umm al-Qura approximation algorithm
 
-const HIJRI_MONTHS = [
+export const HIJRI_MONTHS = [
   "Muharram", "Safar", "Rabi' al-Awwal", "Rabi' al-Thani",
   "Jumada al-Ula", "Jumada al-Thani", "Rajab", "Sha'ban",
   "Ramadan", "Shawwal", "Dhul Qi'dah", "Dhul Hijjah"
 ];
 
-const HIJRI_MONTHS_AR = [
+export const HIJRI_MONTHS_AR = [
   "محرم", "صفر", "ربيع الأول", "ربيع الثاني",
   "جمادى الأولى", "جمادى الثانية", "رجب", "شعبان",
   "رمضان", "شوال", "ذو القعدة", "ذو الحجة"
@@ -73,4 +73,23 @@ export function toHijri(date: Date = new Date()): HijriDate {
  */
 export function isRamadan(date?: Date): boolean {
   return toHijri(date).month === 9;
+}
+/**
+ * Get Gregorian date from Hijri components.
+ * (Simple iterative approach for precision matching the toHijri algorithm)
+ */
+export function fromHijri(hy: number, hm: number, hd: number): Date {
+  const date = new Date(hy + 580, hm - 1, hd); // Rough start
+  // Adjust forward/backward until toHijri(date) matches
+  let current = new Date(date);
+  for (let i = 0; i < 400; i++) { // Max 400 days correction
+    const h = toHijri(current);
+    if (h.year === hy && h.month === hm && h.day === hd) return current;
+    if (h.year < hy || (h.year === hy && h.month < hm) || (h.year === hy && h.month === hm && h.day < hd)) {
+      current.setDate(current.getDate() + 1);
+    } else {
+      current.setDate(current.getDate() - 1);
+    }
+  }
+  return current;
 }

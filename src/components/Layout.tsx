@@ -7,7 +7,8 @@ import { useWaqt } from "../WaqtContext";
 import { formatDistanceToNowStrict } from "date-fns";
 import { Clock, X, Palette, Check, MapPin, Moon, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTheme, THEMES, type ThemeId } from "../contexts/ThemeContext";
-import { toHijri } from "../lib/hijri";
+import { toHijri, HIJRI_MONTHS, HIJRI_MONTHS_AR, fromHijri } from "../lib/hijri";
+import { format } from "date-fns";
 
 // ── Page title map ───────────────────────────────────────────────────
 const PAGE_TITLES: Record<string, string> = {
@@ -20,11 +21,7 @@ const PAGE_TITLES: Record<string, string> = {
   "/prayer-times": "Prayer Times",
 };
 
-const HIJRI_MONTHS = [
-  "Muharram", "Safar", "Rabi' al-Awwal", "Rabi' al-Thani",
-  "Jumada al-Ula", "Jumada al-Thani", "Rajab", "Sha'ban",
-  "Ramadan", "Shawwal", "Dhul Qi'dah", "Dhul Hijjah"
-];
+
 
 // ── Hijri Calendar Modal ─────────────────────────────────────────────
 const HijriCalendarModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
@@ -61,24 +58,30 @@ const HijriCalendarModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         transition={{ type: "spring", damping: 24, stiffness: 300 }}
         className="relative w-full max-w-md bg-[#0c0c16] border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl"
       >
-        {/* Header */}
-        <div className="px-8 pt-8 pb-4 flex items-center justify-between">
-          <button onClick={goPrev} className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
-            <ChevronLeft className="w-4 h-4 text-white/50" />
-          </button>
-          <div className="text-center">
-            <h3 className="text-lg font-serif italic text-white/90">{HIJRI_MONTHS[viewMonth - 1]}</h3>
-            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-400/60">{viewYear} AH</p>
+        {/* Header - Green Bar style */}
+        <div className="bg-emerald-500/10 border-b border-emerald-500/20 px-8 pt-8 pb-6 text-center">
+          <div className="flex items-center justify-between gap-4 mb-4">
+            <button onClick={goPrev} className="p-2.5 rounded-full bg-black/20 hover:bg-black/40 border border-white/5 transition-all">
+              <ChevronLeft className="w-4 h-4 text-white/60" />
+            </button>
+            <div className="text-center">
+              <h3 className="text-2xl font-serif text-emerald-400 font-bold tracking-wide">
+                {HIJRI_MONTHS_AR[viewMonth - 1]}
+              </h3>
+              <p className="text-[10px] font-black uppercase tracking-[0.4em] text-emerald-500/70 mt-1">
+                {HIJRI_MONTHS[viewMonth - 1]} {viewYear} AH
+              </p>
+            </div>
+            <button onClick={goNext} className="p-2.5 rounded-full bg-black/20 hover:bg-black/40 border border-white/5 transition-all">
+              <ChevronRight className="w-4 h-4 text-white/60" />
+            </button>
           </div>
-          <button onClick={goNext} className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
-            <ChevronRight className="w-4 h-4 text-white/50" />
-          </button>
         </div>
 
         {/* Day headers */}
-        <div className="px-8 grid grid-cols-7 gap-1 mb-2">
+        <div className="px-8 grid grid-cols-7 gap-1 mt-6 mb-2">
           {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(d => (
-            <div key={d} className={`text-center text-[8px] font-black uppercase tracking-widest py-1 ${d === "Fri" ? "text-emerald-400/60" : "text-white/20"}`}>
+            <div key={d} className={`text-center text-[8px] font-black uppercase tracking-widest py-1 ${d === "Fri" ? "text-emerald-400" : "text-white/20"}`}>
               {d}
             </div>
           ))}
@@ -96,20 +99,27 @@ const HijriCalendarModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             const isToday = isCurrentMonth && day === todayHijri.day;
             const dayOfWeek = (startDay + i) % 7;
             const isFriday = dayOfWeek === 5;
+            // Get corresponding gregorian date
+            const gDate = fromHijri(viewYear, viewMonth, day);
+            const gDayStr = format(gDate, "d");
+
             return (
               <div
                 key={day}
-                className={`relative aspect-square flex items-center justify-center rounded-xl text-sm font-bold transition-all ${
+                className={`relative aspect-square flex flex-col items-center justify-center rounded-2xl transition-all border ${
                   isToday
-                    ? "bg-emerald-400 text-black font-black shadow-lg shadow-emerald-400/30"
+                    ? "bg-emerald-400 border-emerald-400 text-black shadow-lg shadow-emerald-400/20"
                     : isFriday
-                      ? "text-emerald-400/70 bg-emerald-400/5"
-                      : "text-white/50 hover:bg-white/5"
+                      ? "text-emerald-400 bg-emerald-400/5 border-emerald-400/20"
+                      : "text-white/60 bg-white/5 border-white/5 hover:border-white/10 hover:bg-white/10"
                 }`}
               >
-                {day}
+                <span className="text-sm font-bold">{day}</span>
+                <span className={`text-[7px] font-black opacity-30 absolute bottom-1.5 ${isToday ? "text-black opacity-40" : ""}`}>
+                  {gDayStr}
+                </span>
                 {isToday && (
-                  <div className="absolute -bottom-0.5 w-1 h-1 rounded-full bg-emerald-400" />
+                  <div className="absolute top-1 right-1 w-1 h-1 rounded-full bg-black/40" />
                 )}
               </div>
             );
@@ -139,11 +149,7 @@ const ThemePicker: React.FC = () => {
     <div className="relative">
       <button
         onClick={() => setOpen(o => !o)}
-        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[9px] font-black uppercase tracking-widest transition-all ${
-          themeId !== "auto"
-            ? "bg-white/15 border-white/20 text-white"
-            : "bg-white/5 border-white/10 text-white/50 hover:text-white hover:bg-white/10"
-        }`}
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border bg-white/5 border-white/10 text-white/80 hover:bg-white/10 text-[9px] font-black uppercase tracking-widest transition-all"
       >
         <Palette className="w-3 h-3" />
         <span className="hidden sm:inline">{THEMES[themeId].emoji} {THEMES[themeId].name}</span>
@@ -258,9 +264,9 @@ const HijriPill: React.FC = () => {
         onClick={() => setShowCalendar(true)}
         className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all"
       >
-        <Moon className="w-3 h-3" style={{ color: theme.star }} />
-        <span className="text-[8px] font-bold tracking-widest" style={{ color: theme.star, opacity: 0.7 }}>
-          {hijri.day} {hijri.monthName} {hijri.year} AH
+        <Moon className="w-3 h-3 text-white/70" />
+        <span className="text-[8px] font-bold tracking-widest text-white/70 uppercase">
+          {hijri.day} {hijri.monthName} {hijri.year}
         </span>
       </button>
       <AnimatePresence>
@@ -284,15 +290,14 @@ const TopBar: React.FC<{ title: string }> = ({ title }) => {
             key={title}
             initial={{ opacity: 0, x: -8 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-[10px] font-black uppercase tracking-[0.4em]"
-            style={{ color: theme.star, opacity: 0.35 }}
+            className="text-[10px] font-black uppercase tracking-[0.4em] text-white/60"
           >
             {title}
           </motion.p>
         )}
         <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
-          <MapPin className="w-3 h-3" style={{ color: theme.star, opacity: 0.5 }} />
-          <span className="text-[8px] font-bold uppercase tracking-widest text-white/30">
+          <MapPin className="w-3 h-3 text-white/70" />
+          <span className="text-[8px] font-bold uppercase tracking-widest text-white/70">
             {location ? `${location.latitude.toFixed(2)}°, ${location.longitude.toFixed(2)}°` : "—"}
           </span>
         </div>
