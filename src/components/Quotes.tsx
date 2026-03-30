@@ -4,11 +4,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { Heart, Copy, Share2, Search, Quote as QuoteIcon } from "lucide-react";
 
 const CATEGORY_MAP: Record<number, string> = {
-  1: "Success",
   2: "Faith",
   3: "Patience",
-  4: "Love",
-  5: "Wisdom",
   6: "Knowledge",
 };
 
@@ -16,12 +13,23 @@ export const Quotes: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<number | "all">("all");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredQuotes = (quotesData as any).filter((q: any) => {
+  const allQuotes = quotesData as any[];
+  
+  const filteredQuotes = allQuotes.filter((q: any) => {
     const matchesCategory = activeCategory === "all" || q.category_id === activeCategory;
     const matchesSearch = q.quote.toLowerCase().includes(searchQuery.toLowerCase()) || 
                          q.reference.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    // Only show quotes from our active categories or all if it's the active categories
+    const isActiveCategory = CATEGORY_MAP[q.category_id as number];
+    return matchesCategory && matchesSearch && (activeCategory !== "all" || isActiveCategory);
   });
+
+  const getCount = (id: number | "all") => {
+    if (id === "all") {
+       return allQuotes.filter(q => CATEGORY_MAP[q.category_id]).length;
+    }
+    return allQuotes.filter(q => q.category_id === id).length;
+  };
 
   return (
     <div className="space-y-8 pb-20">
@@ -44,30 +52,34 @@ export const Quotes: React.FC = () => {
       </header>
 
       {/* Categories */}
-      <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+      <div className="flex gap-3 overflow-x-auto pb-4 scrollbar-hide">
         <button
           onClick={() => setActiveCategory("all")}
-          className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap border transition-all ${
+          className={`px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all flex items-center gap-2 ${
             activeCategory === "all"
-              ? "bg-white text-black border-white"
+              ? "bg-white text-black border-white shadow-lg shadow-white/10"
               : "bg-white/5 text-white/40 border-white/10 hover:border-white/20"
           }`}
         >
-          All Quotes
+          All Quotes <span className={`opacity-40 text-[9px] ${activeCategory === "all" ? "text-black/60" : ""}`}>{getCount("all")}</span>
         </button>
-        {Object.entries(CATEGORY_MAP).map(([id, label]) => (
-          <button
-            key={id}
-            onClick={() => setActiveCategory(parseInt(id))}
-            className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest whitespace-nowrap border transition-all ${
-              activeCategory === parseInt(id)
-                ? "bg-white text-black border-white"
-                : "bg-white/5 text-white/40 border-white/10 hover:border-white/20"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
+        {Object.entries(CATEGORY_MAP).map(([idStr, label]) => {
+          const id = parseInt(idStr);
+          const count = getCount(id);
+          return (
+            <button
+              key={id}
+              onClick={() => setActiveCategory(id)}
+              className={`px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all flex items-center gap-2 ${
+                activeCategory === id
+                  ? "bg-white text-black border-white shadow-lg shadow-white/10"
+                  : "bg-white/5 text-white/40 border-white/10 hover:border-white/20"
+              }`}
+            >
+              {label} <span className={`opacity-40 text-[9px] ${activeCategory === id ? "text-black/60" : ""}`}>{count}</span>
+            </button>
+          )
+        })}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
