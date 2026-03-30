@@ -3,11 +3,12 @@ import { useWaqt } from "../WaqtContext";
 import quotesData from "../data/quotes";
 import { motion, AnimatePresence } from "motion/react";
 import {
-  Clock, MapPin, ChevronRight, Heart, Book, Calculator,
-  Star, X, ChevronLeft, Palette
+  ChevronRight, Heart, Book, Calculator,
+  Star, X, ChevronLeft, Sunrise, Sunset
 } from "lucide-react";
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
+import { toHijri, isRamadan } from "../lib/hijri";
 
 const allQuotes = quotesData as any[];
 
@@ -203,22 +204,6 @@ export const Home: React.FC = () => {
   return (
     <div className="space-y-8 pb-10">
 
-      {/* ── Location + Waqt strip ── */}
-      <div className="flex items-center justify-between gap-4 flex-wrap">
-        <div className="flex items-center gap-2 text-white/50 bg-white/5 px-4 py-2 rounded-full border border-white/10">
-          <MapPin className="w-3.5 h-3.5 text-amber-400/60" />
-          <span className="text-[9px] font-bold uppercase tracking-widest">
-            {userLocation
-              ? `${userLocation.latitude.toFixed(2)}°, ${userLocation.longitude.toFixed(2)}°`
-              : "Detecting location..."}
-          </span>
-        </div>
-        <div className="flex items-center gap-2 bg-amber-400/10 px-4 py-2 rounded-full border border-amber-400/20">
-          <Clock className="w-3.5 h-3.5 text-amber-400" />
-          <span className="text-[9px] font-black tracking-[0.2em] uppercase text-amber-400">{waqt}</span>
-        </div>
-      </div>
-
       {/* ── Daily Quote ── */}
       <section className="relative text-center py-14 px-8 bg-white/[0.03] backdrop-blur-3xl rounded-[3rem] border border-white/5 overflow-hidden">
         <div className="absolute -top-10 -left-10 text-[10rem] opacity-[0.06] pointer-events-none select-none">{cfg.emoji}</div>
@@ -249,7 +234,7 @@ export const Home: React.FC = () => {
           </div>
           <div className="absolute inset-0 bg-black/30 rounded-[2.5rem] pointer-events-none" />
 
-          <div className="relative flex flex-col gap-6 h-full">
+          <div className="relative flex flex-col gap-5 h-full">
             <div>
               <p className="text-[9px] font-black uppercase tracking-[0.3em] text-white/40">Upcoming Prayer</p>
               <h2 className="text-4xl font-black font-serif italic text-white mt-1">
@@ -260,6 +245,26 @@ export const Home: React.FC = () => {
               </p>
               <p className="text-xs text-white/40 mt-1 font-medium">{cfg.sub}</p>
             </div>
+
+            {/* Sehri & Iftar */}
+            {prayerTimes && (
+              <div className="flex gap-3">
+                <div className="flex items-center gap-2 px-3 py-2 bg-white/10 border border-white/10 rounded-2xl">
+                  <Sunrise className="w-3.5 h-3.5 text-blue-300" />
+                  <div>
+                    <p className="text-[7px] font-black uppercase tracking-widest text-white/30">Sehri ends</p>
+                    <p className="text-[11px] font-mono font-bold text-blue-300">{formatTime(prayerTimes.fajr)}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-2 bg-white/10 border border-white/10 rounded-2xl">
+                  <Sunset className="w-3.5 h-3.5 text-orange-300" />
+                  <div>
+                    <p className="text-[7px] font-black uppercase tracking-widest text-white/30">Iftar at</p>
+                    <p className="text-[11px] font-mono font-bold text-orange-300">{formatTime(prayerTimes.maghrib)}</p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <button
               onClick={() => setShowSchedule(true)}
