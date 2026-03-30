@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { Navigation } from "./Navigation";
 import { DynamicBackground } from "./DynamicBackground";
 import { motion, AnimatePresence } from "motion/react";
 import { useWaqt } from "../WaqtContext";
 import { formatDistanceToNowStrict } from "date-fns";
-import { Clock, X, Palette, Check, MapPin, Moon } from "lucide-react";
+import { Clock, X, Palette, Check, MapPin, Moon, ChevronLeft, ChevronRight } from "lucide-react";
 import { useTheme, THEMES, type ThemeId } from "../contexts/ThemeContext";
 import { toHijri } from "../lib/hijri";
 
 // ── Page title map ───────────────────────────────────────────────────
 const PAGE_TITLES: Record<string, string> = {
-  "/":             "Home",
+  "/":             "",
   "/quotes":       "Quotes",
   "/quran":        "Quran",
   "/duas":         "Duas & Adhkar",
@@ -20,9 +20,119 @@ const PAGE_TITLES: Record<string, string> = {
   "/prayer-times": "Prayer Times",
 };
 
+const HIJRI_MONTHS = [
+  "Muharram", "Safar", "Rabi' al-Awwal", "Rabi' al-Thani",
+  "Jumada al-Ula", "Jumada al-Thani", "Rajab", "Sha'ban",
+  "Ramadan", "Shawwal", "Dhul Qi'dah", "Dhul Hijjah"
+];
+
+// ── Hijri Calendar Modal ─────────────────────────────────────────────
+const HijriCalendarModal: React.FC<{ onClose: () => void }> = ({ onClose }) => {
+  const todayHijri = useMemo(() => toHijri(), []);
+  const [viewMonth, setViewMonth] = useState(todayHijri.month); // 1-indexed
+  const [viewYear, setViewYear] = useState(todayHijri.year);
+
+  // Approximate days in Hijri month (alternating 30/29, month 12 can be 30 in leap years)
+  const daysInMonth = (m: number, _y: number) => (m % 2 === 1) ? 30 : 29;
+  const totalDays = daysInMonth(viewMonth, viewYear);
+
+  // Approximate start day of week (use a simple hash for visual variety)
+  const startDay = ((viewYear * 12 + viewMonth) * 3 + 2) % 7;
+
+  const goNext = () => {
+    if (viewMonth === 12) { setViewMonth(1); setViewYear(y => y + 1); }
+    else setViewMonth(m => m + 1);
+  };
+  const goPrev = () => {
+    if (viewMonth === 1) { setViewMonth(12); setViewYear(y => y - 1); }
+    else setViewMonth(m => m - 1);
+  };
+
+  const isCurrentMonth = viewMonth === todayHijri.month && viewYear === todayHijri.year;
+
+  return (
+    <div className="fixed inset-0 z-[300] flex items-center justify-center p-4">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+        onClick={onClose} className="absolute inset-0 bg-black/70 backdrop-blur-md" />
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0, y: 20 }}
+        animate={{ scale: 1, opacity: 1, y: 0 }}
+        exit={{ scale: 0.95, opacity: 0, y: 10 }}
+        transition={{ type: "spring", damping: 24, stiffness: 300 }}
+        className="relative w-full max-w-md bg-[#0c0c16] border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl"
+      >
+        {/* Header */}
+        <div className="px-8 pt-8 pb-4 flex items-center justify-between">
+          <button onClick={goPrev} className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+            <ChevronLeft className="w-4 h-4 text-white/50" />
+          </button>
+          <div className="text-center">
+            <h3 className="text-lg font-serif italic text-white/90">{HIJRI_MONTHS[viewMonth - 1]}</h3>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-400/60">{viewYear} AH</p>
+          </div>
+          <button onClick={goNext} className="p-2.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+            <ChevronRight className="w-4 h-4 text-white/50" />
+          </button>
+        </div>
+
+        {/* Day headers */}
+        <div className="px-8 grid grid-cols-7 gap-1 mb-2">
+          {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(d => (
+            <div key={d} className={`text-center text-[8px] font-black uppercase tracking-widest py-1 ${d === "Fri" ? "text-emerald-400/60" : "text-white/20"}`}>
+              {d}
+            </div>
+          ))}
+        </div>
+
+        {/* Days grid */}
+        <div className="px-8 pb-8 grid grid-cols-7 gap-1">
+          {/* Empty cells for start offset */}
+          {Array.from({ length: startDay }).map((_, i) => (
+            <div key={`e-${i}`} />
+          ))}
+          {/* Day cells */}
+          {Array.from({ length: totalDays }).map((_, i) => {
+            const day = i + 1;
+            const isToday = isCurrentMonth && day === todayHijri.day;
+            const dayOfWeek = (startDay + i) % 7;
+            const isFriday = dayOfWeek === 5;
+            return (
+              <div
+                key={day}
+                className={`relative aspect-square flex items-center justify-center rounded-xl text-sm font-bold transition-all ${
+                  isToday
+                    ? "bg-emerald-400 text-black font-black shadow-lg shadow-emerald-400/30"
+                    : isFriday
+                      ? "text-emerald-400/70 bg-emerald-400/5"
+                      : "text-white/50 hover:bg-white/5"
+                }`}
+              >
+                {day}
+                {isToday && (
+                  <div className="absolute -bottom-0.5 w-1 h-1 rounded-full bg-emerald-400" />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Today marker */}
+        <div className="px-8 pb-6 flex items-center justify-between">
+          <p className="text-[9px] font-bold text-white/30 uppercase tracking-widest">
+            Today: {todayHijri.day} {todayHijri.monthName} {todayHijri.year} AH
+          </p>
+          <button onClick={onClose} className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-[9px] font-black uppercase tracking-widest text-white/50 transition-all">
+            Close
+          </button>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
 // ── Theme Picker ─────────────────────────────────────────────────────
 const ThemePicker: React.FC = () => {
-  const { themeId, setThemeId } = useTheme();
+  const { themeId, setThemeId, theme } = useTheme();
   const [open, setOpen] = useState(false);
 
   return (
@@ -82,7 +192,7 @@ const ThemePicker: React.FC = () => {
   );
 };
 
-// ── Prayer Clock Widget (expand/collapse, not draggable) ─────────────
+// ── Prayer Clock Widget ──────────────────────────────────────────────
 const PrayerClock: React.FC = () => {
   const { nextPrayer, waqt } = useWaqt();
   const [expanded, setExpanded] = useState(false);
@@ -136,34 +246,58 @@ const PrayerClock: React.FC = () => {
   );
 };
 
+// ── Hijri Date Pill (clickable → opens calendar) ─────────────────────
+const HijriPill: React.FC = () => {
+  const [showCalendar, setShowCalendar] = useState(false);
+  const hijri = useMemo(() => toHijri(), []);
+  const { theme } = useTheme();
+
+  return (
+    <>
+      <button
+        onClick={() => setShowCalendar(true)}
+        className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-all"
+      >
+        <Moon className="w-3 h-3" style={{ color: theme.star }} />
+        <span className="text-[8px] font-bold tracking-widest" style={{ color: theme.star, opacity: 0.7 }}>
+          {hijri.day} {hijri.monthName} {hijri.year} AH
+        </span>
+      </button>
+      <AnimatePresence>
+        {showCalendar && <HijriCalendarModal onClose={() => setShowCalendar(false)} />}
+      </AnimatePresence>
+    </>
+  );
+};
+
 // ── Unified Top Bar ──────────────────────────────────────────────────
 const TopBar: React.FC<{ title: string }> = ({ title }) => {
   const { location } = useWaqt();
-  const hijri = toHijri();
+  const { theme } = useTheme();
 
   return (
     <div className="flex items-center justify-between gap-3 mb-8 pt-2 flex-wrap">
-      {/* Left side: Page title + Location + Hijri */}
+      {/* Left side: Page title (hidden on Home) + Location + Hijri */}
       <div className="flex items-center gap-3">
-        <motion.p
-          key={title}
-          initial={{ opacity: 0, x: -8 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="text-[10px] font-black uppercase tracking-[0.4em] text-white/25"
-        >
-          {title}
-        </motion.p>
+        {title && (
+          <motion.p
+            key={title}
+            initial={{ opacity: 0, x: -8 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="text-[10px] font-black uppercase tracking-[0.4em]"
+            style={{ color: theme.star, opacity: 0.35 }}
+          >
+            {title}
+          </motion.p>
+        )}
         <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
-          <MapPin className="w-3 h-3 text-amber-400/50" />
+          <MapPin className="w-3 h-3" style={{ color: theme.star, opacity: 0.5 }} />
           <span className="text-[8px] font-bold uppercase tracking-widest text-white/30">
             {location ? `${location.latitude.toFixed(2)}°, ${location.longitude.toFixed(2)}°` : "—"}
           </span>
         </div>
-        <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
-          <Moon className="w-3 h-3 text-emerald-400/50" />
-          <span className="text-[8px] font-bold tracking-widest text-white/30">
-            {hijri.day} {hijri.monthName} {hijri.year}
-          </span>
+        <div className="hidden md:block">
+          <HijriPill />
         </div>
       </div>
 

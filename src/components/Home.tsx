@@ -4,7 +4,7 @@ import quotesData from "../data/quotes";
 import { motion, AnimatePresence } from "motion/react";
 import {
   ChevronRight, Heart, Book, Calculator,
-  Star, X, ChevronLeft, Sunrise, Sunset
+  Star, X, ChevronLeft
 } from "lucide-react";
 import { format } from "date-fns";
 import { Link } from "react-router-dom";
@@ -234,44 +234,32 @@ export const Home: React.FC = () => {
           </div>
           <div className="absolute inset-0 bg-black/30 rounded-[2.5rem] pointer-events-none" />
 
-          <div className="relative flex flex-col gap-5 h-full">
-            <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-white/40">Upcoming Prayer</p>
-              <h2 className="text-4xl font-black font-serif italic text-white mt-1">
-                {nextPrayer?.name ?? waqt}
-              </h2>
-              <p className="text-lg font-mono font-bold mt-1" style={{ color: cfg.accent }}>
-                {formatTime(nextPrayer?.time)}
-              </p>
-              <p className="text-xs text-white/40 mt-1 font-medium">{cfg.sub}</p>
+          <div className="relative flex items-stretch justify-between gap-4 h-full">
+            {/* Left column: Name + Schedule button */}
+            <div className="flex flex-col justify-between">
+              <div>
+                <p className="text-[9px] font-black uppercase tracking-[0.3em] text-white/40">Upcoming Prayer</p>
+                <h2 className="text-4xl font-black font-serif italic text-white mt-1">
+                  {nextPrayer?.name ?? waqt}
+                </h2>
+              </div>
+              <button
+                onClick={() => setShowSchedule(true)}
+                className="self-start flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl text-[10px] font-black uppercase tracking-widest text-white transition-all mt-4"
+              >
+                Full Schedule <ChevronRight className="w-3.5 h-3.5" />
+              </button>
             </div>
 
-            {/* Sehri & Iftar */}
-            {prayerTimes && (
-              <div className="flex gap-3">
-                <div className="flex items-center gap-2 px-3 py-2 bg-white/10 border border-white/10 rounded-2xl">
-                  <Sunrise className="w-3.5 h-3.5 text-blue-300" />
-                  <div>
-                    <p className="text-[7px] font-black uppercase tracking-widest text-white/30">Sehri ends</p>
-                    <p className="text-[11px] font-mono font-bold text-blue-300">{formatTime(prayerTimes.fajr)}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 px-3 py-2 bg-white/10 border border-white/10 rounded-2xl">
-                  <Sunset className="w-3.5 h-3.5 text-orange-300" />
-                  <div>
-                    <p className="text-[7px] font-black uppercase tracking-widest text-white/30">Iftar at</p>
-                    <p className="text-[11px] font-mono font-bold text-orange-300">{formatTime(prayerTimes.maghrib)}</p>
-                  </div>
-                </div>
+            {/* Right column: Time + Sub */}
+            <div className="flex flex-col items-end justify-start">
+              <div className="text-right">
+                <p className="text-2xl font-mono font-black" style={{ color: cfg.accent }}>
+                  {formatTime(nextPrayer?.time)}
+                </p>
+                <p className="text-xs text-white/40 mt-1 font-medium">{cfg.sub}</p>
               </div>
-            )}
-
-            <button
-              onClick={() => setShowSchedule(true)}
-              className="self-start flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl text-[10px] font-black uppercase tracking-widest text-white transition-all"
-            >
-              Full Schedule <ChevronRight className="w-3.5 h-3.5" />
-            </button>
+            </div>
           </div>
         </div>
 
