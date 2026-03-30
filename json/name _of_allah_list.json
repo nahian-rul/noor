@@ -1,0 +1,699 @@
+{
+   "status": true,
+   "message": "Success",
+   "data": [
+      {
+         "id": 1,
+         "arabic_name": "الرَّحْمَنُ",
+         "name": "Ar-Rahman",
+         "meaning": "The Beneficent",
+         "active": "true"
+      },
+      {
+         "id": 2,
+         "arabic_name": "الرَّحِيمُ",
+         "name": "Ar-Raheem",
+          "meaning": "The Merciful",
+         "active": "true"
+      },
+      {
+         "id": 3,
+         "arabic_name": "الْمَلِكُ",
+         "name": "Al-Malik",
+          "meaning": "The Eternal Lord",
+         "active": "true"
+      },
+      {
+         "id": 4,
+         "arabic_name": "الْقُدُّوسُ",
+         "name": "Al-Quddus",
+          "meaning":"The Most Sacred",
+         "active": "true"
+      },
+      {
+         "id": 5,
+         "arabic_name": "السَّلَامُ",
+         "name": "As-Salam",
+          "meaning":"The embodiment of Peace",
+         "active": "true"
+      },
+      {
+         "id": 6,
+         "arabic_name": "الْمُؤْمِنُ",
+         "name": "Al-Mu’min",
+         "meaning":"The Infuser of Faith",
+         "active": "true"
+      },
+      {
+         "id": 7,
+         "arabic_name": "الْمُهَيْمِنُ",
+         "name": "Al-Muhaymin",
+          "meaning":"The Preserver of Safety",
+         "active": "true"
+      },
+      {
+         "id": 8,
+         "arabic_name": "الْعَزِيزُ",
+         "name": "Al-Aziz",
+          "meaning":"All Mighty",
+         "active": "true"
+      },
+      {
+         "id": 9,
+         "arabic_name": "الْجَبَّارُ",
+         "name": "Al-Jabbar",
+          "meaning":"The Compeller, The Restorer",
+         "active": "true"
+      },
+      {
+         "id": 10,
+         "arabic_name": "الْمُتَكَبِّرُ",
+         "name": "Al-Mutakabbir",
+          "meaning":"The Supreme, The Majestic",
+         "active": "true"
+      },
+      {
+         "id": 11,
+         "arabic_name": "الْخَالِقُ",
+         "name": "Al-Khaaliq",
+          "meaning":"The Creator, The Maker",
+         "active": "true"
+      },
+      {
+         "id": 12,
+         "arabic_name": "الْبَارِئُ",
+         "name": "Al-Baari",
+          "meaning":"The Evolver",
+         "active": "true"
+      },
+      {
+         "id": 13,
+         "arabic_name": "الْمُصَوِّرُ",
+         "name": "Al-Musawwir",
+          "meaning":"The Fashioner",
+         "active": "true"
+      },
+      {
+         "id": 14,
+         "arabic_name": "الْغَفَّارُ",
+         "name": "Al-Ghaffaar",
+          "meaning":"The Great Forgiver",
+         "active": "true"
+      },
+      {
+         "id": 15,
+         "arabic_name": "الْقَهَّارُ",
+         "name": "Al-Qahhaar",
+          "meaning":"The All-Prevailing One",
+         "active": "true"
+      },
+      {
+         "id": 16,
+         "arabic_name": "الْوَهَّابُ",
+         "name": "Al-Wahhab",
+          "meaning":"The Supreme Bestower",
+         "active": "true"
+      },
+      {
+         "id": 17,
+         "arabic_name": "الرَّزَّاقُ",
+         "name": "Ar-Razzaq",
+          "meaning":"The Provider",
+         "active": "true"
+      },
+      {
+         "id": 18,
+         "arabic_name": "الْفَتَّاحُ",
+         "name": "Al-Fattah",
+         "meaning":"The Supreme Solver",
+         "active": "true"
+      },
+      {
+         "id": 19,
+         "arabic_name": "اَلْعَلِيْمُ",
+         "name": "Al-Alim",
+          "meaning":"The All-Knowing",
+         "active": "true"
+      },
+      {
+         "id": 20,
+         "arabic_name": "الْقَابِضُ",
+         "name": "Al-Qaabid",
+          "meaning":"The Withholder",
+         "active": "true"
+      },
+      {
+         "id": 21,
+         "arabic_name": "الْبَاسِطُ",
+         "name": "Al-Baasit",
+         "meaning":"The Extender",
+         "active": "true"
+      },
+      {
+         "id": 22,
+         "arabic_name": "الْخَافِضُ",
+         "name": "Al-Khaafid",
+          "meaning":"The Reducer",
+         "active": "true"
+      },
+      {
+         "id": 23,
+         "arabic_name": "الرَّافِعُ",
+         "name": "Ar-Rafi",
+          "meaning":"The Exalter, The Elevator",
+         "active": "true"
+      },
+      {
+         "id": 24,
+         "arabic_name": "الْمُعِزُّ",
+         "name": "Al-Mu’izz",
+          "meaning":"The Honourer, The Bestower",
+         "active": "true"
+      },
+      {
+         "id": 25,
+         "arabic_name": "المُذِلُّ",
+         "name": "Al-Muzil",
+          "meaning":"The Dishonourer, The Humiliator",
+         "active": "true"
+      },
+      {
+         "id": 26,
+         "arabic_name": "السَّمِيعُ",
+         "name": "As-Sami’",
+          "meaning":"The All-Hearing",
+         "active": "true"
+      },
+      {
+         "id": 27,
+         "arabic_name": "الْبَصِيرُ",
+         "name": "Al-Baseer",
+          "meaning":"The All-Seeing",
+         "active": "true"
+      },
+      {
+         "id": 28,
+         "arabic_name": "الْحَكَمُ",
+         "name": "Al-Hakam",
+          "meaning":"The Impartial Judge",
+         "active": "true"
+      },
+      {
+         "id": 29,
+         "arabic_name": "الْعَدْلُ",
+         "name": "Al-Adl",
+         "meaning":"The Utterly Just",
+         "active": "true"
+      },
+      {
+         "id": 30,
+         "arabic_name": "اللَّطِيفُ",
+         "name": "Al-Lateef",
+         "meaning":"The Subtle One, The Most Gentle",
+         "active": "true"
+      },
+      {
+         "id": 31,
+         "arabic_name": "الْخَبِيرُ",
+         "name": "Al-Khabeer",
+          "meaning":"The All-Aware",
+         "active": "true"
+      },
+      {
+         "id": 32,
+         "arabic_name": "الْحَلِيمُ",
+         "name": "Al-Haleem",
+         "meaning":"The Most Forbearing",
+         "active": "true"
+      },
+      {
+         "id": 33,
+         "arabic_name": "الْعَظِيمُ",
+         "name": "Al-Azeem",
+          "meaning":"The Magnificent, The Supreme",
+         "active": "true"
+      },
+      {
+         "id": 34,
+         "arabic_name": "الْغَفُورُ",
+         "name": "Al-Ghafoor",
+          "meaning":"The Great Forgiver",
+         "active": "true"
+      },
+      {
+         "id": 35,
+         "arabic_name": "الشَّكُورُ",
+         "name": "Ash-Shakoor",
+          "meaning":"The Most Appreciative",
+         "active": "true"
+      },
+      {
+         "id": 36,
+         "arabic_name": "الْعَلِيُّ",
+         "name": "Al-Aliyy",
+          "meaning":"The Most High, The Exalted",
+         "active": "true"
+      },
+      {
+         "id": 37,
+         "arabic_name": "الْكَبِيرُ",
+         "name": "Al-Kabeer",
+          "meaning":"The Preserver, The All-Heedful and All-Protecting",
+         "active": "true"
+      },
+       {
+         "id": 38,
+         "arabic_name": "الْحَفِيظُ",
+         "name": "Al-Hafiz",
+          "meaning":"The Preserver",
+         "active": "true"
+      },
+      {
+         "id": 39,
+         "arabic_name": "المُقيِت",
+         "name": "Al-Muqeet",
+          "meaning":"The Sustainer",
+         "active": "true"
+      },
+      {
+         "id": 40,
+         "arabic_name": "الْحسِيبُ",
+         "name": "Al-Haseeb",
+          "meaning":"The Reckoner",
+         "active": "true"
+      },
+      {
+         "id": 41,
+         "arabic_name": "الْجَلِيلُ",
+         "name": "Al-Jaleel",
+          "meaning":"The Majestic",
+         "active": "true"
+      },
+      {
+         "id": 42,
+         "arabic_name": "الْكَرِيمُ",
+         "name": "Al-Kareem",
+          "meaning":"The Most Generous, The Most Esteemed",
+         "active": "true"
+      },
+      {
+         "id": 43,
+         "arabic_name": "الرَّقِيبُ",
+         "name": "Ar-Raqeeb",
+          "meaning":"The Watchful",
+         "active": "true"
+      },
+      {
+        "id": 44,
+         "arabic_name": "الْمُجِيبُ",
+         "name": "Al-Mujeeb",
+          "meaning":"The Responsive One",
+        "active": "true"
+     },
+      {
+         "id": 45,
+         "arabic_name": "الْوَاسِعُ",
+         "name": "Al-Waasi’",
+          "meaning":"The All-Encompassing, the Boundless",
+         "active": "true"
+      },
+      {
+         "id": 46,
+         "arabic_name": "الْحَكِيمُ",
+         "name": "Al-Hakeem",
+          "meaning":"The All-Wise",
+         "active": "true"
+      },
+      {
+         "id": 47,
+         "arabic_name": "الْوَدُودُ",
+         "name": "Al-Wadud",
+          "meaning":"The Most Loving",
+         "active": "true"
+      },
+      {
+         "id": 48,
+         "arabic_name": "الْمَجِيدُ",
+         "name": "Al-Majeed",
+          "meaning":"The Glorious, The Most Honorable",
+         "active": "true"
+      },
+      {
+         "id": 49,
+         "arabic_name": "الْبَاعِثُ",
+         "name": "Al-Ba’ith",
+          "meaning":"The Infuser of New Life",
+         "active": "true"
+      },
+      {
+         "id": 50,
+         "arabic_name": "الشَّهِيدُ",
+         "name": "Ash-Shaheed",
+          "meaning":"The All Observing Witnessing",
+         "active": "true"
+      },
+      {
+         "id": 51,
+         "arabic_name": "الْحَقُّ",
+         "name": "Al-Haqq",
+          "meaning":"The Absolute Truth",
+         "active": "true"
+      },
+      {
+         "id": 52,
+         "arabic_name": "الْوَكِيلُ",
+         "name": "Al-Wakeel",
+          "meaning":"The Trustee, The Disposer of Affairs",
+         "active": "true"
+      },
+      {
+         "id": 53,
+         "arabic_name": "الْقَوِيُّ",
+         "name": "Al-Qawwiyy",
+         "meaning":"The All-Strong",
+         "active": "true"
+      },
+      {
+         "id": 54,
+         "arabic_name": "الْمَتِينُ",
+         "name": "Al-Maten",
+          "meaning":"The Firm, The Steadfast",
+         "active": "true"
+      },
+      {
+         "id": 55,
+         "arabic_name": "الْوَلِيُّ",
+         "name": "Al-Waliyy",
+          "meaning":"The Protecting Associatey",
+         "active": "true"
+      },
+      {
+         "id": 56,
+         "arabic_name": "الْحَمِيدُ",
+         "name": "Al-Hameed",
+         "meaning":"The Praiseworthy",
+         "active": "true"
+      },
+     {
+         "id": 57,
+         "arabic_name": "الْمُحْصِي",
+         "name": "Al-Muhsee",
+          "meaning":"The All-Enumerating, The Counter",
+         "active": "true"
+      },
+      {
+       "id": 58,
+         "arabic_name": "الْمُبْدِئُ",
+         "name": "Al-Mubdi",
+          "meaning":"The Originator, The Initiator",
+        "active": "true"
+     },
+      {
+         "id": 59,
+         "arabic_name": "الْمُعِيدُ",
+         "name": "Al-Mueed",
+          "meaning":"The Restorer, The Reinstater",
+         "active": "true"
+      },
+    {
+        "id": 60,
+        "arabic_name": "الْمُحْيِي",
+        "name": "Al-Muhyi",
+         "meaning":"The Giver of Life",
+        "active": "true"
+    },
+    {
+        "id": 61,
+        "arabic_name": "اَلْمُمِيتُ",
+        "name": "Al-Mumeet",
+          "meaning":"The Inflicter of Death",
+        "active": "true"
+    },
+    {
+        "id": 62,
+        "arabic_name": "الْحَيُّ",
+        "name": "Al-Hayy",
+          "meaning":"The Ever-Living",
+        "active": "true"
+    },
+    {
+        "id": 63,
+        "arabic_name": "الْقَيُّومُ",
+        "name": "Al-Qayyoom",
+          "meaning":"The Sustainer, The Self-Subsisting",
+        "active": "true"
+    },
+    {
+        "id": 64,
+        "arabic_name": "الْوَاجِدُ",
+        "name": "Al-Waajid",
+          "meaning":"The Perceiver",
+        "active": "true"
+    },
+    {
+        "id": 65,
+        "arabic_name": "الْمَاجِدُ",
+        "name": "Al-Maajid",
+          "meaning":"The Illustrious, the Magnificent",
+        "active": "true"
+    },
+   {
+        "id": 66,
+        "arabic_name": "الْواحِدُ",
+        "name": "Al-Waahid",
+         "meaning":"The One",
+        "active": "true"
+    },
+    {
+        "id": 67,
+        "arabic_name": "اَلاَحَدُ",
+        "name": "Al-Ahad",
+          "meaning":"The Unique, The Only One",
+        "active": "true"
+    },
+    {
+        "id": 68,
+        "arabic_name": "الصَّمَدُ",
+        "name": "As-Samad",
+        "meaning":"The Eternal, Satisfier of Needs",
+        "active": "true"
+    },
+    {
+        "id": 69,
+        "arabic_name": "الْقَادِرُ",
+        "name": "Al-Qaadir",
+          "meaning":"The Omnipotent One",
+        "active": "true"
+    },
+    {
+        "id": 70,
+        "arabic_name": "الْمُقْتَدِرُ",
+        "name": "Al-Muqtadir",
+         "meaning":"The Powerful",
+        "active": "true"
+    },
+    {
+        "id": 71,
+        "arabic_name": "الْمُقَدِّمُ",
+         "name": "Al-Muqaddim",
+          "meaning":"The Expediter, The Promoter",
+        "active": "true"
+    },
+    {
+        "id": 72,
+        "arabic_name": "الْمُؤَخِّرُ",
+        "name": "Al-Mu’akhkhir",
+         "meaning":"The Delayer",
+        "active": "true"
+    },
+    {
+      "id": 73,
+        "arabic_name": "الأوَّلُ",
+        "name": "Al-Awwal",
+        "meaning":"The First",
+        "active": "true"
+   },
+    {
+        "id": 74,
+        "arabic_name": "الآخِرُ",
+        "name": "Al-Akhir",
+         "meaning":"The Last",
+        "active": "true"
+    },
+    {
+        "id": 75,
+        "arabic_name": "الظَّاهِرُ",
+         "name": "Az-Zaahir",
+         "meaning":"The Manifest",
+        "active": "true"
+    },
+   {
+        "id": 76,
+        "arabic_name": "الْبَاطِنُ",
+        "name": "Al-Baatin",
+         "meaning":"The Hidden One, Knower of the Hidden",
+        "active": "true"
+   },
+    {
+        "id": 77,
+        "arabic_name": "الْوَالِي",
+         "name": "Al-Waali",
+         "meaning":"The Governor, The Patron",
+        "active": "true"
+    },
+    {
+        "id": 78,
+        "arabic_name": "الْمُتَعَالِي",
+        "name": "Al-Muta’ali",
+         "meaning":"The Self Exalted",
+        "active": "true"
+    },
+    {
+        "id": 79,
+        "arabic_name": "الْبَرُّ",
+        "name": "Al-Barr",
+         "meaning":"The Source of All Goodness",
+        "active": "true"
+    },
+    {
+        "id": 80,
+        "arabic_name": "التَّوَابُ",
+        "name": "At-Tawwaab",
+         "meaning":"The Ever-Pardoning, The Relenting",
+        "active":"true"
+    },
+    {
+        "id": 81,
+        "arabic_name": "الْمُنْتَقِمُ",
+         "name":"Al-Muntaqim",
+        "meaning":"The Avenger",
+        "active":"true"
+    },
+    {
+        "id": 82,
+        "arabic_name":"العَفُوُ",
+        "name":"Al-Afuww",
+        "meaning":"The Pardoner",
+        "active":"true"
+    },
+    {
+        "id": 83,
+        "arabic_name":"الرَّؤُوفُ",
+         "name":"Ar-Ra’oof",
+        "meaning":"The Most Kind",
+        "active":"true"
+    },
+    {
+        "id": 84,
+        "arabic_name":"َمَالِكُ ٱلْمُلْكُ",
+        "name":"Maalik-ul-Mulk",
+        "meaning":"Master of the Kingdom, Owner of the Dominion",
+        "active":"true"
+    },
+    {
+        "id": 85,
+        "arabic_name":"ذُوالْجَلاَلِ وَالإكْرَامِ",
+        "name":"Zul-Jalaali-wal-Ikram",
+        "meaning":"Possessor of Glory and Honour, Lord of Majesty and Generosity",
+         "active":"true"
+    },
+   {
+        "id": 86,
+        "arabic_name":"الْمُقْسِطُ",
+        "name":"Al-Muqsit",
+        "meaning":"The Just One",
+        "active":"true"
+    },
+    {
+        "id": 87,
+        "arabic_name":"الْجَامِعُ",
+        "name":"Al-Jaami’",
+        "meaning":"The Gatherer, the Uniter",
+        "active":"true"
+    },
+    {
+        "id": 88,
+         "arabic_name":"الْغَنِيُّ",
+         "name":"Al-Ghaniyy",
+        "meaning":"The Self-Sufficient, The Wealthy",
+        "active":"true"
+    },
+    {
+        "id": 89,
+         "arabic_name":"الْمُغْنِيُّ",
+         "name":"Al-Mughni",
+        "meaning":"The Enricher",
+        "active":"true"
+    },
+    {
+        "id": 90,
+        "arabic_name":"اَلْمَانِعُ",
+         "name":"Al-Maani’",
+        "meaning":"The Withholder",
+        "active":"true"
+    },
+    {
+        "id": 91,
+        "arabic_name":"الضَّارَ",
+        "name":"Ad-Daarr",
+        "meaning":"The Distresser",
+         "active":"true"
+    },
+     {
+        "id": 92,
+        "arabic_name":"النَّافِعُ",
+         "name":"An-Naafi’",
+        "meaning":"The Propitious, the Benefactor",
+        "active":"true"
+    },
+    {
+        "id": 93,
+        "arabic_name":"النُّورُ",
+         "name":"An-Noor",
+        "meaning":"The Light, The Illuminator",
+        "active":"true"
+    },
+    {
+        "id": 94,
+        "arabic_name":"الْهَادِي",
+         "name":"Al-Haadi",
+        "meaning":"The Guide",
+        "active":"true"
+    },
+    {
+        "id": 95,
+        "arabic_name":"الْبَدِيعُ",
+         "name":"Al-Badi’",
+        "meaning":"The Incomparable Originator",
+        "active":"true"
+    },
+    {
+        "id": 96,
+        "arabic_name":"اَلْبَاقِي",
+        "name":"Al-Baaqi",
+        "meaning":"The Everlasting",
+        "active":"true"
+    },
+   {
+        "id": 97,
+        "arabic_name":"الْوَارِثُ",
+        "name":"Al-Waaris",
+        "meaning":"The Inheritor, The Heir",
+         "active":"true"
+    },
+    {
+        "id": 98,
+        "arabic_name":"الرَّشِيدُ",
+        "name":"Ar-Rasheed",
+        "meaning":"The Guide, Infallible Teacher",
+         "active":"true"
+    },
+    {
+        "id": 99,
+        "arabic_name":"الصَّبُورُ",
+        "name":"As-Saboor",
+        "meaning":"The Forbearing, The Patient",
+        "active":"true"
+    }
+   ]
+}

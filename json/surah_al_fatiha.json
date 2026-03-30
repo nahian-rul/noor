@@ -1,0 +1,55 @@
+{
+  "status": true,
+  "message": "Success",
+  "data": [
+    {
+      "ayat_id": 1,
+      "ayat_arb": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "ayat_transliteration": "Bismillah hir rahman nir raheem",
+      "ayat_meaning": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+    },
+    {
+      "ayat_id": 2,
+      "ayat_arb": "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
+      "ayat_transliteration": "Alhamdu lillaahi Rabbil ‘aalameen",
+      "ayat_meaning": "[All] praise is [due] to Allah, Lord of the world."
+    },
+    {
+      "ayat_id": 3,
+      "ayat_arb": "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "ayat_transliteration": "Ar-Rahmaanir-Raheem",
+      "ayat_meaning": "The Entirely Merciful, the Especially Merciful,"
+    },
+    {
+      "ayat_id": 4,
+      "ayat_arb": "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
+      "ayat_transliteration": "Maaliki Yawmid-Deen",
+      "ayat_meaning": "Sovereign of the Day of Recompense."
+    },
+    {
+      "ayat_id": 5,
+      "ayat_arb": "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
+      "ayat_transliteration": "Iyyaaka na’budu wa iyyaaka nasta’een",
+      "ayat_meaning": "It is You we worship and You we ask for help."
+    },
+    {
+      "ayat_id": 6,
+      "ayat_arb": "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+      "ayat_transliteration": "Ihdinas-Siraatal-Mustaqeem",
+      "ayat_meaning": "Guide us to the straight path"
+    },
+    {
+      "ayat_id": 7,
+      "ayat_arb": "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ",
+      "ayat_transliteration": "Siraatal-lazeena an’amta ‘alaihim ghayril-maghdoobi ‘alaihim wa laaddaaaalleen",
+      "ayat_meaning": "The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray."
+    }
+  ],
+  "navigation": {
+    "next_surah": {
+      "number": 19,
+      "name": "Maryam",
+      "file": "surah_19.json"
+    }
+  }
+}

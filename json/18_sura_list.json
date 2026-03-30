@@ -1,0 +1,150 @@
+{
+  "status": true,
+  "message": "Success",
+  "data": [
+    {
+      "id": 1,
+      "title": "Surah Al-Fatiha",
+      "sub_title": "The Opening",
+      "verse": "Verses: 7",
+      "slug": "surah_al_fatiha",
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Al-Kawthar",
+      "sub_title": "Abundant Good",
+      "verse": "Verses: 3",
+      "slug": "al_kawthar",
+      "status": true
+    },
+    {
+      "id": 3,
+      "title": "An-Nasr",
+      "sub_title": "Help or Devine Support",
+      "verse": "Verses: 3",
+      "slug": "an_nasr",
+      "status": true
+    },
+    {
+      "id": 4,
+      "title": "Al-Asr",
+      "sub_title": "The Declining Day",
+      "verse": "Verses: 3",
+      "slug": "al_asr",
+      "status": true
+    },
+    {
+      "id": 5,
+      "title": "Al-Ikhlas",
+      "sub_title": "Sincerity",
+      "verse": "Verses: 4",
+      "slug": "al_ikhlas",
+      "status": true
+    },
+    {
+      "id": 6,
+      "title": "Quraysh",
+      "sub_title": "The Quraysh",
+      "verse": "Verses: 4",
+      "slug": "quraysh",
+      "status": true
+    },
+    {
+      "id": 7,
+      "title": "Al-Falaq",
+      "sub_title": "The Daybreak",
+      "verse": "Verses: 5",
+      "slug": "al_falaq",
+      "status": true
+    },
+    {
+      "id": 8,
+      "title": "Al-Masad",
+      "sub_title": "The Palm Fiber",
+      "verse": "Verses: 5",
+      "slug": "al_masad",
+      "status": true
+    },
+    {
+      "id": 9,
+      "title": "Al-Fil",
+      "sub_title": "The Elephant",
+      "verse": "Verses: 5",
+      "slug": "al_fil",
+      "status": true
+    },
+    {
+      "id": 10,
+      "title": "Al-Qadr",
+      "sub_title": "The Power",
+      "verse": "Verses: 5",
+      "slug": "al_qadr",
+      "status": true
+    },
+    {
+      "id": 11,
+      "title": "Al-Kafirun",
+      "sub_title": "The Disbelievers",
+      "verse": "Verses: 6",
+      "slug": "al_kafirun",
+      "status": true
+    },
+    {
+      "id": 12,
+      "title": "Al-Nas",
+      "sub_title": "The Mankind",
+      "verse": "Verses: 6",
+      "slug": "al_nas",
+      "status": true
+    },
+    {
+      "id": 13,
+      "title": "Al- Ma’un: ",
+      "sub_title": "The Small Kindnesses",
+      "verse": "Verses: 7",
+      "slug": "al_ma’un",
+      "status": true
+    },
+    {
+      "id": 14,
+      "title": "Al-Bayyinah",
+      "sub_title": "The Evidence",
+      "verse": "Verses: 8",
+      "slug": "al_bayyinah",
+      "status": true
+    },
+    {
+      "id": 15,
+      "title": "Az-Zalzala",
+      "sub_title": "The Earthquake",
+      "verse": "Verses: 8",
+      "slug": "az_zalzala",
+      "status": true
+    },
+    {
+      "id": 16,
+      "title": "At-Takathur",
+      "sub_title": "The Rivalry",
+      "verse": "Verses: 8",
+      "slug": "at_takathur",
+      "status": true
+    },
+    {
+      "id": 17,
+      "title": "Ash-Sharh",
+      "sub_title": "The Relief",
+      "verse": "Verses: 8",
+      "slug": "ash_sharh",
+      "status": true
+    },
+    {
+      "id": 18,
+      "title": "Al-Tin",
+      "sub_title": "The Fig",
+      "verse": "Verses: 8",
+      "slug": "al_tin",
+      "status": true
+    }
+  ]
+}

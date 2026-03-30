@@ -1,0 +1,1335 @@
+export default 
+{
+    "status": true,
+    "message": "Success",
+    "data": [
+        {
+            "category_id": 1,
+            "category_name": "Main",
+            "category_details": [
+                {
+                    "item_id": 1,
+                    "item_title": "Morning",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "Ayat al-Kursi: The Greatest Protection",
+                            "dua_details": {
+                                "dua_arb": 
+                                "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّوْمُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ.",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm",
+                                "dua_meaning": "I seek the protection of Allah from the accursed Shayṭān. Allah, there is no god worthy of worship but He, the Ever Living, The Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him Alone belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except with His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent. (2:255)",
+                                    "dua_virtue": "Ubayy b. Kaʿb (raḍiy Allāhu ʿanhu) reported that he had a vessel in which he kept dates. He found that its quantity was decreasing. So he kept guard on it one night and saw a creature that resembled an adolescent boy. Ubayy greeted him and he returned his greeting. Ubayy then asked him, “What are you, a jinnī or a human?” He replied, “A jinnī.” So he said to him, “Show me your hand.” So he showed him his hand, and it looked like a dog’s paw with dog’s fur. He said, “This is how the jinn are created. The jinn know that there is no one amongst them who is stronger than me.”\n\nUbayy asked him, “What caused you to do what you did?” He replied, “We heard that you are a man who loves charity, and we came to take our share from your food.” Ubayy asked him, “What will protect us from you?” He replied, “Reading Āyah al-Kursī from Sūrah al-Baqarah [i.e. the verse above]. If you read it in the morning, you will be protected from us till the evening. And if you read it in the evening, you will be protected from us till the morning.”\n\nUbayy said: “The following morning, I went to the Messenger of Allah ﷺ and told him about what had happened. The Messenger of Allah ﷺ said, “The evil one spoke the truth.” (Ḥākim 2064)"
+                                  
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "3 Quls: Be Sufficed in All Your Matters",
+                            "dua_details": {
+                                "dua_arb": " بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللّٰهُ أَحَدٌ ، اَللّٰهُ الصَّمَدُ ، لَمْ يَلِدْ وَلَمْ يُوْلَدْ ، وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ ، مِنْ شَرِّ مَا خَلَقَ ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ النَّاسِ ، مَلِكِ النَّاسِ ، إِلٰهِ النَّاسِ ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ، اَلَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ ، مِنَ الْجِنَّةِ وَالنَّاسِ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللّٰهُ أَحَدٌ ، اَللّٰهُ الصَّمَدُ ، لَمْ يَلِدْ وَلَمْ يُوْلَدْ ، وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ ، مِنْ شَرِّ مَا خَلَقَ ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ النَّاسِ ، مَلِكِ النَّاسِ ، إِلٰهِ النَّاسِ ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ، اَلَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ ، مِنَ الْجِنَّةِ وَالنَّاسِ.",
+                                "dua_transliteration": "Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul Huwa-llāhu Aḥad. Allāhu-ṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi-Rabbi-l-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri-n-naffāthāti fi-l-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi-Rabbi-n-nās. Maliki-n-nās. Ilāh-hin-nās. Min sharri-l-waswāsi-l-khannās. Al-ladhī yuwaswisu fī ṣudūri-n-nās. Mina-l-jinnati wa-n-nās.",
+                                "dua_meaning": "In the name of Allah, the All-Merciful, the Very Merciful. Say, He is Allah, the One, the Self-Sufficient Master, Who has not given birth and was not born, and to Whom no one is equal. (112) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of the daybreak, from the evil of what He has created, and from the evil of the darkening night when it settles, and from the evil of the blowers in knots, and from the evil of the envier when he envies. (113) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of mankind, the King of mankind, the God of mankind, from the evil of the whisperer who withdraws, who whispers in the hearts of mankind, whether they be Jinn or people. (114)",
+                                "dua_virtue": "Muʿādh b. ʿAbdullāh b. Khubaib, narrated from his father (raḍiy Allāhu ‘anhu), who said: “We went out on a rainy and extremely dark night, looking for the Messenger of Allah ﷺ, so that he could lead us in Salāh.” He said: “So I met him and he ﷺ said: ‘Say’ but I did not say anything. Then he ﷺ said: ‘Say.’ But I did not say anything. He ﷺ said: ‘Say.’ So I said: ‘What should I say?’ He ﷺ said: “Recite Sūrah al-Ikhlās and al-Mu’awwidhatayn (Sūrah al-Falaq and Sūrah al-Nās) three times in the morning and the evening. It will suffice you in all respects.” (Tirmidhī 3575)‘It will suffice you in all respects’ means it will protect you from all evil."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "Sayyid al-Istighfar: The Best Way of Seeking Forgiveness",
+                            "dua_details": {
+                                "dua_arb": "(سيد الاستغفار) اَللّٰهُمَّ أَنْتَ رَبِّيْ لَا إِلٰهَ إِلَّا أَنْتَ ، خَلَقْتَنِيْ وَأَنَا عَبْدُكَ ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ ، أَبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوْءُ لَكَ بِذَنْبِيْ ، فَاغْفِرْ لِيْ فَإِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ.",
+                                "dua_transliteration": "Allāhumma Anta Rabbī, lā ilāha illā Ant, khalaqtanī wa ana ʿabduk, wa ana ʿalā ʿahdika wa waʿdika mā’staṭaʿt, aʿūdhu bika min sharri mā ṣanaʿt, abū’u laka bi niʿmatika ʿalayya wa abū’u laka bi-dhambī fa-ghfir lī fa-innahū lā yaghfiru-dh-dhunūba illā Ant.",
+                                "dua_meaning": "O Allah, You are my Lord. There is no god worthy of worship except You. You have created me, and I am Your slave, and I am under Your covenant and pledge (to fulfil it) to the best of my ability. I seek Your protection from the evil that I have done. I acknowledge the favours that You have bestowed upon me, and I admit my sins. Forgive me, for none forgives sins but You.",
+                                "dua_virtue": "Shaddād b. Aws (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “The most superior manner of seeking forgiveness is that you say [the above]. Whoever says it during the day with firm belief in it and dies on the same day before the evening, he will be from the people of Paradise. And whoever says it during the night with firm belief in it and dies before the morning, he will be from the people of Paradise.” (Bukhārī 6306)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "Protect Yourself From Anxiety, Laziness, Debt etc",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ ، وَأَعُوْذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوْذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ ، وَأَعُوْذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bika min-l-hammi wa-l-ḥazan, wa aʿūdhu bika min-l-ʿajzi wa-l-kasal, wa aʿūdhu bika min-l-jubni wa-l-bukhl, wa aʿūdhu bika min ghalabati-d-dayni wa qahri-r-rijāl.",
+                                "dua_meaning": "O Allah, I seek Your protection from anxiety and grief. I seek Your protection from inability and laziness. I seek Your protection from cowardice and miserliness, and I seek Your protection from being overcome by debt and being overpowered by men.",
+                                "dua_virtue": "Abū Saʿīd al-Khudrī (raḍiy Allāhu ʿanhu) narrated that one day, the Messenger of Allah ﷺ entered the masjid. He saw a man from the Anṣār called Abū Umāmah (raḍiy Allāhu ʿanhu). He ﷺ asked, “What is the matter? Why are you sitting in the mosque when it is not the time for prayer?” He replied, “Never-ending worries and debts, O Messenger of Allah.” The Messenger of Allah ﷺ then asked, “Shall I not teach you words by which, when you say them, Allah will remove your worries, and settle your debts?” He replied, “Yes of course, O Messenger of Allah.” He ﷺ said, “Say in the morning and evening [the above].” Abū Umāmah (raḍiy Allāhu ʿanhu) said, “Then I did that, and Allah removed my worries and settled my debts.” (Abū Dāwūd 1555)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 5,
+                            "dua_title": "Well-being in this World and the Hereafter",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ ، اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِيْ دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ ، اَللّٰهُمَّ اسْتُرْ عَوْرَاتِيْ وَآمِنْ رَوْعَاتِيْ ، اَللّٰهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ ، وَمِنْ خَلْفِيْ ، وَعَنْ يَّمِيْنِيْ ، وَعَنْ شِمَالِيْ ، وَمِنْ فَوْقِيْ ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ.",
+                                "dua_transliteration": "Allāhumma innī as’aluka-l-ʿāfiyata fi-d-dunyā wa-l-ākhirah. Allāhumma innī as’aluka-l-ʿafwa wa-l-ʿāfiyata fī dīnī wa dunyāya wa ahlī wa mālī, Allāhumma-stur ʿawrātī wa āmin rawʿātī. Allāhumma-ḥfaẓnī mim bayni yadayya wa min khalfī, wa ʿay-n yamīnī wa ʿan shimālī wa min fawqī, wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
+                                "dua_meaning": "O Allah, I ask You for well-being in this world and the next. O Allah, I ask You for forgiveness and well-being in my religion, in my worldly affairs, in my family and in my wealth. O Allah, conceal my faults and calm my fears. O Allah, guard me from in front of me and behind me, from my right, and from my left, and from above me. I seek protection in Your Greatness from being unexpectedly destroyed from beneath me.",
+                                "dua_virtue":""
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "Protect Yourself From the 4 Evils",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ ، فَاطِرَ السَّمٰوَاتِ وَالْأَرْضِ ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ ، أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا أَنْتَ ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِيْ سُوْءًا ، أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ.",
+                                "dua_transliteration": "Allāhumma ʿālima-l-ghaybi wa-sh-shahādah, fāṭir-as-samāwāti wa-l-arḍi, rabba kulli shay’iw-wa malīkah, ash-hadu al-lā ilāha illā Anta, aʿūdhu bika min sharri nafsī wa min sharri-sh-shayṭāni wa shirkihī wa an aqtarifa ʿalā nafsī sū’an aw ajurrahū ilā muslim.",
+                                "dua_meaning": "O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, the Lord and Sovereign of everything; I bear witness that there is no god worthy of worship but You. I seek Your protection from the evil of my own self, from the evil of Shayṭān and from the evil of polytheism to which he calls,and from inflicting evil on myself, or bringing it upon a Muslim.",
+                                "dua_virtue": "Abū Bakr al-Ṣiddīq (raḍiy Allāhu ʿanhu) said: “O Messenger of Allah, instruct me what to say in morning and in the evening.” He said: “Say [the above].” (Composite: Tirmidhī 3392, 3529)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "Entrust All Your Matters to Allah",
+                            "dua_details": {
+                                "dua_arb": "يَا حَيُّ يَا قَيُّوْمُ ، بِرَحْمَتِكَ أَسْتَغِيْثُ ، أَصْلِحْ لِيْ شَأْنِيْ كُلَّهُ ، وَلَا تَكِلْنِيْ إِلَىٰ نَفْسِيْ طَرْفَةَ عَيْنٍ",
+                                "dua_transliteration": "Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth, aṣliḥ lī sha’nī kullah, wa lā takilnī ilā nafsī ṭarfata ʿayn",
+                                "dua_meaning": "O The Ever Living, The Sustainer of all. ; I seek assistance through Your mercy. Rectify all of my affairs and do not entrust me to myself for the blink of an eye.",
+                                "dua_virtue": "Anas b. Mālik (raḍiy Allāhu ʿanhu) narrates that the Prophet ﷺ said to Fāṭimah (raḍiy Allāhu ʿanhā), “What is preventing you from (doing) what I am advising you; that you say [the above] in the morning and evening?” (Nasā’ī in ʿAmal al-Yawm wa-l-Laylah 570)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 8,
+                            "dua_title": "Fulfil Your Obligation to Thank Allah",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ مَا أَصْبَحَ بِيْ مِنْ نِّعْمَةٍ أَوْ بِأَحَدٍ مِّنْ خَلْقِكَ ، فَمِنْكَ وَحْدَكَ لَا شَرِيْكَ لَكَ ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.",
+                                "dua_transliteration": "Allāhumma mā aṣbaḥa bī min niʿmatin aw bi-aḥadim-min khalqik, fa-minka waḥdaka lā sharīka lak, fa laka-l-ḥamdu wa laka-sh-shukr.",
+                                "dua_meaning": "O Allah, all the favours that I or anyone from Your creation has received in the morning, are from You Alone. You have no partner. To You Alone belong all praise and all thanks.",
+                                "dua_virtue": "ʿAbdullāh b. Ghannām (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “Whoever says [the above] in the morning has fulfilled his obligation to thank Allah for that day. And whoever says it in the evening has fulfilled his obligation for that night.” (Abū Dāwūd 5073)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 9,
+                            "dua_title": "Start Your Day by Renewing Tawhid",
+                            "dua_details": {
+                                "dua_arb": "أَصْبَحْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ ، وَعَلَىٰ دِيْنِ نَبِيِّنَا مُحَمَّدٍ ، وَعَلَىٰ مِلَّةِ أَبِيْنَا إِبْرَاهِيْمَ حَنِيْفًا مُّسْلِمًا وَّمَا كَانَ مِنَ الْمُشْرِكِيْنَ.",
+                                "dua_transliteration": "Aṣbaḥnā ʿalā fiṭrati-l-islām. wa ʿalā kalimati-l-ikhlāṣ, wa ʿalā dīni Nabiyyinā Muḥammadin ṣallallāhu ʿalayhi wa sallam, wa ʿalā millati abīnā Ibrāhīma ḥanīfam-muslima, wa mā kāna min-l-mushrikīn.",
+                                "dua_meaning": "We have entered the morning upon the natural religion of Islam, the statement of pure faith (i.e. Shahādah), the religion of our Prophet Muhammad ﷺ and upon the way of our father Ibrāhīm, who turned away from all that is false, having surrendered to Allah, and he was not of the polytheists",
+                                "dua_virtue": "ʿAbd al-Raḥmān b. Abzā (raḍiy Allāhu ʿanhu) narrates that the Prophet ﷺ said [the above]. (Aḥmad 15360)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 10,
+                            "dua_title": "Start the Morning by Praising Allah",
+                            "dua_details": {
+                                "dua_arb": "أَصْبَحْتُ أُثْنِيْ عَلَيْكَ حَمْدًا ، وَأَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ",
+                                "dua_transliteration": "Aṣbaḥtu uthnī ʿalayka ḥamdā, wa ash-hadu al-lā ilāha illāl- Allāh.",
+                                "dua_meaning": "I have entered the morning praising You, and I bear witness that there is no god worthy of worship but Allah.",
+                                "dua_virtue": "Abū Hurayrah (raḍiy Allāhu ʿanhu) narrated that the Messenger of Allah ﷺ said: “When one of you enters the morning, they should say [the above] three times. And when they enter the evening, they should say the same.” (Nasā’ī in Sunan al-Kubrā 10406)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 11,
+                            "dua_title": "Ask Allah for a Good Day",
+                            "dua_details": {
+                                "dua_arb": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلّٰهِ وَالْحَمْدُ لِلّٰهِ ، لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ ، رَبِّ أَعُوْذُ بِكَ مِنَ . الْكَسَلِ وَسُوْءِ الْكِبَرِ ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
+                                "dua_transliteration": "Aṣbaḥnā wa aṣbaḥa-l-mulku li-llāhi Rabbi-l-ʿālamīn, Allāhumma innī as’aluka khayra hādha-l-yawm, fatḥahū wa naṣrahū wa nūrahū wa barakatahū wa hudāh, wa aʿūdhu bika min sharri mā fīhi wa sharri mā baʿdah.",
+                                "dua_meaning": "We have entered the morning and at this very time the whole kingdom belongs to Allah, Lord of the Worlds. O Allah, I ask You for the goodness of this day: its victory, its help, its light, and its blessings and guidance. I seek Your protection from the evil that is in it and from the evil that follows it.",
+                                "dua_virtue": "Abū Mālik al-Ashʿarī (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “When one of you enters the morning, they should say [the above]; and when they reach the evening, they should say the same.” (Abū Dāwūd 5084)"
+                            },
+                            "status": true
+                        }
+                    ],
+                    "status": true
+                },
+                {
+                    "item_id": 2,
+                    "item_title": "Evening",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "Ayat al-Kursi",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّوْمُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ.",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.",
+                                "dua_meaning":"I seek the protection of Allah from the accursed Shayṭān. Allah, there is no god worthy of worship but He, the Ever Living, The Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him Alone belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except with His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent. (2:255)",
+                                "dua_virtue": ""
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "3 Quls",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللّٰهُ أَحَدٌ ، اَللّٰهُ الصَّمَدُ ، لَمْ يَلِدْ وَلَمْ يُوْلَدْ ، وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ ، مِنْ شَرِّ مَا خَلَقَ ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ النَّاسِ ، مَلِكِ النَّاسِ ، إِلٰهِ النَّاسِ ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ، اَلَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ ، مِنَ الْجِنَّةِ وَالنَّاسِ.",
+                                "dua_transliteration": "In the name of Allah, the All-Merciful, the Very Merciful. Say, He is Allah, the One, the Self-Sufficient Master, Who has not given birth and was not born, and to Whom no one is equal. (112) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of the daybreak, from the evil of what He has created, and from the evil of the darkening night when it settles, and from the evil of the blowers in knots, and from the evil of the envier when he envies. (113) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of mankind, the King of mankind, the God of mankind, from the evil of the whisperer who withdraws, who whispers in the hearts of mankind, whether they be Jinn or people. (114)",
+                                "dua_virtue":"Muʿādh b. ʿAbdullāh b. Khubaib narrated from his father (raḍiy Allāhu ‘anhu), who said the Messenger of Allah ﷺ said: “Recite Sūrah al-Ikhlās and al-Mu’awwidhatayn (Sūrah al-Falaq and Sūrah al-Nās) three times in the morning and the evening. It will suffice you in all respects.” (Tirmidhī 3575)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "Sayyid al-Istighfar",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ أَنْتَ رَبِّيْ لَا إِلٰهَ إِلَّا أَنْتَ ، خَلَقْتَنِيْ وَأَنَا عَبْدُكَ ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ ، أَبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوْءُ لَكَ بِذَنْبِيْ ، فَاغْفِرْ لِيْ فَإِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ.",
+                                "dua_transliteration": "Allāhumma Anta Rabbī, lā ilāha illā Ant, khalaqtanī wa ana ʿabduk, wa ana ʿalā ʿahdika wa waʿdika mā’staṭaʿt, aʿūdhu bika min sharri mā ṣanaʿt, abū’u laka bi niʿmatika ʿalayya wa abū’u laka bi-dhambī fa-ghfir lī fa-innahū lā yaghfiru-dh-dhunūba illā Ant.",
+                                "dua_meaning":"O Allah, You are my Lord. There is no god worthy of worship except You. You have created me, and I am Your slave, and I am under Your covenant and pledge (to fulfil it) to the best of my ability. I seek Your protection from the evil that I have done. I acknowledge the favours that You have bestowed upon me, and I admit my sins. Forgive me, for none forgives sins but You.",
+                                "dua_virtue":"Muʿādh b. ʿAbdullāh b. Khubaib narrated from his father (raḍiy Allāhu ‘anhu), who said the Messenger of Allah ﷺ said: “Recite Sūrah al-Ikhlās and al-Mu’awwidhatayn (Sūrah al-Falaq and Sūrah al-Nās) three times in the morning and the evening. It will suffice you in all respects.” (Tirmidhī 3575)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "Protection From Anxiety, Laziness, Debt etc",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ ، وَأَعُوْذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوْذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ ، وَأَعُوْذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bika min-l-hammi wa-l-ḥazan, wa aʿūdhu bika min-l-ʿajzi wa-l-kasal, wa aʿūdhu bika min-l-jubni wa-l-bukhl, wa aʿūdhu bika min ghalabati-d-dayni wa qahri-r-rijāl.",
+                                "dua_meaning":"O Allah, I seek Your protection from anxiety and grief. I seek Your protection from inability and laziness. I seek Your protection from cowardice and miserliness, and I seek Your protection from being overcome by debt and being overpowered by men.",
+                                "dua_virtue":"Abū Saʿīd al-Khudrī (raḍiy Allāhu ʿanhu) narrated that the Messenger of Allah ﷺ then asked, “Shall I not teach you words by which, when you say them, Allah will remove your worries, and settle your debts?” He ﷺ said, “Say in the morning and evening [the above].” (Abū Dāwūd 1555)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 5,
+                            "dua_title": "Well-being in this World and the Hereafter",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ ، اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِيْ دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ ، اَللّٰهُمَّ اسْتُرْ عَوْرَاتِيْ وَآمِنْ رَوْعَاتِيْ ، اَللّٰهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ ، وَمِنْ خَلْفِيْ ، وَعَنْ يَّمِيْنِيْ ، وَعَنْ شِمَالِيْ ، وَمِنْ فَوْقِيْ ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ.",
+                                "dua_transliteration": "Allāhumma innī as’aluka-l-ʿāfiyata fi-d-dunyā wa-l-ākhirah. Allāhumma innī as’aluka-l-ʿafwa wa-l-ʿāfiyata fī dīnī wa dunyāya wa ahlī wa mālī, Allāhumma-stur ʿawrātī wa āmin rawʿātī. Allāhumma-ḥfaẓnī mim bayni yadayya wa min khalfī, wa ʿay-yamīnī wa ʿan shimālī wa min fawqī, wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
+                                "dua_meaning":"O Allah, I ask You for well-being in this world and the next. O Allah, I ask You for forgiveness and well-being in my religion, in my worldly affairs, in my family and in my wealth. O Allah, conceal my faults and calm my fears. O Allah, guard me from in front of me and behind me, from my right, and from my left, and from above me. I seek protection in Your Greatness from being unexpectedly destroyed from beneath me.",
+                                "dua_virtue":"ʿAbdullāh b. ʿUmar (raḍiy Allāhu ʿanhumā) narrated: “The Messenger of Allah ﷺ never failed to say these words in the morning and in the evening.” (Abū Dāwūd 5074)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "Protect Yourself From the Four Evils",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ ، فَاطِرَ السَّمٰوَاتِ وَالْأَرْضِ ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ ، أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا أَنْتَ ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِيْ سُوْءًا ، أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ.",
+                                "dua_transliteration": "Allāhumma ʿālima-l-ghaybi wa-sh-shahādah, fāṭir-as-samāwāti wa-l-arḍi, rabba kulli shay’iw-wa malīkah, ash-hadu al-lā ilāha illā Anta, aʿūdhu bika min sharri nafsī wa min sharri-sh-shayṭāni wa shirkihī wa an aqtarifa ʿalā nafsī sū’an aw ajurrahū ilā muslim.",
+                                "dua_meaning":"O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, the Lord and Sovereign of everything; I bear witness that there is no god worthy of worship but You. I seek Your protection from the evil of my own self, from the evil of Shayṭān and from the evil of polytheism to which he calls,and from inflicting evil on myself, or bringing it upon a Muslim.",
+                                "dua_virtue":"ʿAbū Bakr al-Ṣiddīq (raḍiy Allāhu ʿanhu) said: “O Messenger of Allah, instruct me what to say in morning and in the evening.” He said: “Say [the above].” (Composite: Tirmidhī 3392, 3529) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "Entrust All Your Matters to Allah",
+                            "dua_details": {
+                                "dua_arb": "يَا حَيُّ يَا قَيُّوْمُ ، بِرَحْمَتِكَ أَسْتَغِيْثُ ، أَصْلِحْ لِيْ شَأْنِيْ كُلَّهُ ، وَلَا تَكِلْنِيْ إِلَىٰ نَفْسِيْ طَرْفَةَ عَيْنٍ.",
+                                "dua_transliteration": "Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth, aṣliḥ lī sha’nī kullah, wa lā takilnī ilā nafsī ṭarfata ʿayn.",
+                                "dua_meaning":"O The Ever Living, The Sustainer of all. ; I seek assistance through Your mercy. Rectify all of my affairs and do not entrust me to myself for the blink of an eye.",
+                                "dua_virtue":"Anas b. Mālik (raḍiy Allāhu ʿanhu) narrates that the Prophet ﷺ said to Fāṭimah (raḍiy Allāhu ʿanhā), “What is preventing you from (doing) what I am advising you; that you say [the above] in the morning and evening?” (Nasā’ī in ʿAmal al-Yawm wa-l-Laylah 570)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 8,
+                            "dua_title": "Fulfil Your Obligation to Thank Allah",
+                            "dua_details": {
+                                "dua_arb": " اَللّٰهُمَّ مَا أَمْسَىٰ بِيْ مِنْ نِّعْمَةٍ أَوْ بِأَحَدٍ مِّنْ خَلْقِكَ ، فَمِنْكَ وَحْدَكَ لَا شَرِيْكَ لَكَ ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.",
+                                "dua_transliteration": "Allāhumma mā amsā bī min niʿmatin aw bi-aḥadin min khalqik, fa-minka waḥdaka lā sharīka lak, fa laka-l-ḥamdu wa laka-sh-shukr.",
+                                "dua_meaning":"O Allah, all the favours that I or anyone from Your creation has received in the evening, are from You Alone. You have no partner. To You Alone belong all praise and all thanks.",
+                                "dua_virtue":"ʿAbdullāh b. Ghannām (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “Whoever says [the above] in the morning has fulfilled his obligation to thank Allah for that day. And whoever says it in the evening has fulfilled his obligation for that night.” (Abū Dāwūd 5073)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 9,
+                            "dua_title": "Start Your Evening by Renewing Tawhid",
+                            "dua_details": {
+                                "dua_arb": "أَمْسَيْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ ، وَعَلَىٰ دِيْنِ نَبِيِّنَا مُحَمَّدٍ ، وَعَلَىٰ مِلَّةِ أَبِيْنَا إِبْرَاهِيْمَ حَنِيْفًا مُّسْلِمًا وَّمَا كَانَ مِنَ الْمُشْرِكِيْنَ.",
+                                "dua_transliteration": "Amsaynā ʿalā fiṭrati-l-islām, wa ʿalā kalimati-l-ikhlāṣ, wa ʿalā dīni Nabiyyinā Muḥammadin ṣallallāhu ʿalayhi wa sallam, wa ʿalā millati abīnā Ibrāhīma ḥanīfam-muslima, wa mā kāna mina-l-mushrikīn.",
+                                "dua_meaning":"We have entered the evening upon the natural religion of Islam, the statement of pure faith (i.e. Shahādah), the religion of our Prophet Muhammad ﷺ and upon the way of our father Ibrāhīm, who turned away from all that is false, having surrendered to Allah, and he was not of the polytheists.",
+                                "dua_virtue":"ʿAbd al-Raḥmān b. Abzā (raḍiy Allāhu ʿanhu) narrates that the Prophet ﷺ said [the above]. (Aḥmad 15360)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 10,
+                            "dua_title": "Start the Evening by Praising Allah",
+                            "dua_details": {
+                                "dua_arb": "أَمْسَيْتُ أُثْنِيْ عَلَيْكَ حَمْدًا ، وَأَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ. ",
+                                "dua_transliteration": "Amsaytu uthnī ʿalayka ḥamdā, wa ash-hadu al-lā ilāha illāl-llāh. ",
+                                "dua_meaning":" I have entered the evening praising You, and I bear witness that there is no god worthy of worship but Allah.",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ‘anhu) narrated that the Messenger of Allah ﷺ said: “When one of you enters the morning, they should say [the above] three times. And when they enter the evening, they should say the same.” (Nasā’ī in Sunan al-Kubrā 10406) "
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 11,
+                            "dua_title": "Ask Allah for a Good Evening",
+                            "dua_details": {
+                                "dua_arb": " أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلّٰهِ وَالْحَمْدُ لِلّٰهِ ، لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا ، رَبِّ أَعُوْذُ بِكَ مِنَ الْكَسَلِ وَسُوْءِ الْكِبَرِ ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.",
+                                "dua_transliteration": "Amsaynā wa amsa-l-mulku li-llāh, wa-l-ḥamdu li-llāh, lā ilāha illa-llāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamd, wa huwa ʿalā kulli shay’in Qadīr, Rabbi as’aluka khayra mā fī hādhihi-l-laylati wa khayra mā baʿdah, wa aʿūdhu bika min sharri mā fī hādhihi-l-laylati wa sharri mā baʿdah. Rabbi aʿūdhu bika mina-l-kasali wa sū’i-l-kibar, Rabbi aʿūdhu bika min ʿadhābin fi-n-nāri wa ʿadhābin fi-l-qabr. ",
+                                "dua_meaning":"We have entered the evening and at this very time the whole kingdom belongs to Allah. All praise is due to Allah. There is no god worthy of worship except Allah, the One; He has no partner with Him. The entire kingdom belongs solely to Him, to Him is all praise due, and He is All-Powerful over everything. My Lord, I ask You for the good that is in this night and the good that follows it, and I seek Your protection from the evil that is in this night and from the evil that follows it. My Lord, I seek Your protection from laziness and the misery of old age. My Lord, I seek Your protection from the torment of the Hell-fire and the punishment of the grave. ",
+                                "dua_virtue":" ʿAbdullāh b. Masʿūd (raḍiy Allāhu ʿanhu) narrates that when the Messenger of Allah ﷺ used to enter the evening, he would say [the above]. (Muslim 2723)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 12,
+                            "dua_title": "Ask Allah to Bless Your Evening",
+                            "dua_details": {
+                                "dua_arb": " أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ ، اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ خَيْرَ هـٰذِهِ اللَّيْلَةِ ، فَتْحَهَا وَنَصْرَهَا وَنُوْرَهَا وَبَرَكَتَهَا وَهُدَاهَا ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْهَا وَشَرِّ مَا بَعْدَهَا.",
+                                "dua_transliteration": "Amsaynā wa amsa-l-mulku li-llāhi Rabbi-l-ʿālamīn, Allāhumma innī as’aluka khayra hādhihi-l-laylah, fatḥahā wa naṣrahā wa nūrahā wa barakatahā wa hudāhā, wa aʿūdhu bika min sharri mā fīhā wa sharri mā baʿdahā. ",
+                                "dua_meaning":" We have entered the evening and at this very time the whole kingdom belongs to Allah, Lord of the Worlds. O Allah, I ask You for the goodness of this day/night: its victory, its help, its light, and its blessings and guidance. I seek Your protection from the evil that is in it and from the evil that follows it.",
+                                "dua_virtue":" Abū Mālik al-Ashʿarī (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “When one of you enters the morning, they should say [the above]; and when they reach the evening, they should say the same.” (Abū Dāwūd 5084)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 13,
+                            "dua_title": "Get Yourself Freed from the Hell-fire",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَمْسَيْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيْعَ خَلْقِكَ ، أَنَّكَ أَنْتَ اللّٰهُ لَا إِلٰهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيْكَ لَكَ ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُوْلُكَ.",
+                                "dua_transliteration": "Allāhumma innī amsaytu ush-hiduka, wa ush-hidu ḥamlata ʿarshika, wa malā’ikatika, wa jamī’a khalqika, annaka Anta-llāhu lā ilāha illā Anta waḥdak, lā sharīka lak, wa an-na Muḥammadan ʿabduka wa rasūluk.",
+                                "dua_meaning":"O Allah, I have entered the evening, and I call upon You, the bearers of Your Throne, Your angels and all creation, to bear witness that surely You are Allah. There is no god worthy of worship except You Alone. You have no partners, and that Muḥammad ﷺ is Your slave and Your Messenger.",
+                                "dua_virtue":"Anas b. Mālik (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “Whosoever reads [the above] in the morning or evening once, Allah frees a quarter of him from the Hell-fire. If he reads it twice, Allah frees half of him from the Hell-fire. If he reads it thrice, Allah frees three-quarters of him from the Hell-fire. And if he reads it four times, Allah (completely) frees him from the Hell-fire.” (Abū Dāwūd 5069) Anas b. Mālik (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “Whoever says the above in the morning, Allah will forgive the sins he commits in that day; and whoever says it in the evening, Allah will forgive the sins he commits in that night.” (Abū Dāwūd 5078) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 14,
+                            "dua_title": "Upon Entering the Evening",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوْتُ وَإِلَيْكَ الْمَصِيْرُ.",
+                                "dua_transliteration": " Allāhumma bika amsaynā wa bika aṣbaḥnā wa bika naḥyā wa bika namūtu wa ilayka-l-maṣī",
+                                "dua_meaning":" O Allah, by You we have entered the evening and by You we enter upon the morning. By You, we live and we die, and to You is the resurrection/return. ",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ʿanhu) narrated that the Messenger of Allah ﷺ used to say [the above] when he would enter the evening.” (Al-Adab al-Mufrad 1199) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 15,
+                            "dua_title": "Ask Allah For Good Health and Protection",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ عَافِنِيْ فِيْ بَدَنِيْ ، اَللّٰهُمَّ عَافِنِيْ فِيْ سَمْعِيْ ، اَللّٰهُمَّ عَافِنِيْ فِيْ بَصَرِيْ ، لَا إِلٰهَ إِلَّا أَنْتَ ، اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، وأَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلٰهَ إِلَّا أَنْتَ.",
+                                "dua_transliteration": "Allāhumma ʿāfinī fī badanī, Allāhumma ʿāfinī fī samʿī, Allāhumma ʿāfinī fī baṣarī, lā ilāha illā Ant, Allāhumma innī aʿūdhu bika mina-l-kufri wa-l-faqr, wa aʿūdhu bika min ʿadhābi-l-qabr, lā ilāha illā Ant.",
+                                "dua_meaning":"O Allah, grant me well-being in my body. O Allah, grant me well-being in my hearing. O Allah, grant me well-being in my sight. There is no god worthy of worship except You. O Allah, I seek Your protection from disbelief and poverty and I seek Your protection from the punishment of the grave. There is no god worthy of worship except You.",
+                                "dua_virtue":"‘Abd al-Raḥmān b. Abī Bakrah (raḍiy Allāhu ʿanhu) narrates that he said to his father, “O my father! I hear you supplicating with [the above] every morning. You repeat them three times in the morning and three times in the evening.” He said, “Indeed I heard the Messenger of Allah ﷺ supplicating with these (words) and I love to follow his practice.” (Abū Dāwūd 5090, Aḥmad 20430)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 16,
+                            "dua_title": "Allah Will Suffice You in Everything",
+                            "dua_details": {
+                                "dua_arb": "حَسْبِيَ اللّٰهُ لَا إِلٰهَ إِلَّا هُوَ ، عَلَيْهِ تَوَكَّلْتُ ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيْمِ.",
+                                "dua_transliteration": "Ḥasbiya-Allāhu lā ilāha illā Huwa, ʿalayhi tawakkaltu, wa Huwa Rabbu-l-ʿArshi-l-ʿaẓīm.",
+                                "dua_meaning":"Allah is sufficient for me. There is no god worthy of worship except Him. I have placed my trust in Him only and He is the Lord of the Magnificent Throne.",
+                                "dua_virtue":""
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 17,
+                            "dua_title": "Have the Prophet ﷺ Hold Your Hand and Admit You to Paradise",
+                            "dua_details": {
+                                "dua_arb": "رَضِيْتُ بِاللّٰهِ رَبًّا ، وَبِالْإِسْلَامِ دِيْنًا ، وَبِمُحَمَّدٍ نَّبِيًّا.", 
+                                "dua_transliteration": "Raḍītu bi-llāhi Rabbā, wa bi-l-islāmi dīnā, wa bi Muḥammadin-Nabiyyā.",
+                                "dua_meaning":"I am pleased with Allah as my Lord, with Islām as my religion and with Muhammad ﷺ as my Prophet.",
+                                "dua_virtue":"Thawbān (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “Allah has promised that anyone who says [the above] three times every morning and evening will be pleased on the Day of Judgement.” (Ahmad 18927) The Messenger of Allah ﷺ said: “Whoever says [the above] in the morning, I guarantee that I will take hold of his hand until I enter him into Paradise.” (Tabarānī in Mu’jam al-Kabīr 838)"
+                            },
+                            "status":true
+                        },
+                        {
+                            "dua_id": 18,
+                            "dua_title": "Protect Yourself From All Harm",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ الَّذِيْ لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ ، وَهُوَ السَّمِيْعُ الْعَلِيْمُ.",
+                                "dua_transliteration": "Bismi-llāhi-lladhī lā yaḍurru maʿsmihi shay’un fi-l-arḍi wa lā fi-s-samā’, wa Huwa-s-Samīʿu-l-ʿAlīm.",
+                                "dua_meaning":"In the Name of Allah, with whose Name nothing can harm in the earth nor in the sky. He is The All-Hearing and All-Knowing",
+                                "dua_virtue":"Abān b. ʿUthmān narrated from ʿUthmān b. ʿAffān (raḍiy Allāhu ʿanhu) who mentioned that the Messenger of Allah ﷺ said: “There is no servant who says [the above] three times every morning and evening, except that nothing will harm him.” (Tirmidhī 3388) The Messenger of Allah ﷺ said: “Whoever says [the above] three times (in the evening), they will not be afflicted by a sudden calamity till the morning. And whoever says it three times in the morning, they will not be afflicted with a sudden calamity until the evening.” (Abū Dāwūd 5088) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 19,
+                            "dua_title": "Get Your Sins Forgiven",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ.",
+                                "dua_transliteration": "Subḥāna-llāhi wa biḥamdihi.",
+                                "dua_meaning":"Allah is free from imperfection, and all praise is due to Him.",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “He who recites [the above] in the morning and in the evening 100 times, will not be surpassed on the Day of Judgement by anyone with better deeds except the one who says the same words or more.” (Muslim 2692) Abū Hurayrah (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “Whoever says [the above] 100 times a day, all of his sins will be forgiven, even if they are as abundant as the foam of the sea.” (Bukhārī 6405)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 20,
+                            "dua_title": "An Unparalleled Reward",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ",
+                                "dua_transliteration": "Lā ilāha illā-Allāh, waḥdahū lā sharīka lah, lahu-l-mulk, wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr.",
+                                "dua_meaning":"There is no god but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “He who says [the above] 100 times in a day will have a reward equivalent to that of freeing 10 slaves. A 100 good deeds will be recorded to his credit, and a 100 of his sins will be blotted out from his scroll. He will be safeguarded against Shaytān on that day till the evening; and none will surpass him in doing better good deeds except someone who has recited these words more often than him.” (Bukhārī 3293)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 21,
+                            "dua_title": "Tasbih, Tahmid and Takbir",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ اللّٰهِ ، اَلْحَمْدُ لِلّٰهِ ، اَللّٰهُ أَكْبَرُ",
+                                "dua_transliteration": "Subḥāna-llāh, Alḥamdu li-llāh, Allāhu akbar",
+                                "dua_meaning":"Allah is free from imperfection. All praise be to Allah. Allah is the Greatest.",
+                                "dua_virtue":"Better than giving 100 camels, 100 horses for warriors, and freeing 100 slaves (when recited 100 times each before sunrise and sunset)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 22,
+                            "dua_title": "Receive the Intercession of the Prophet ﷺ",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَّعَلَىٰ اٰلِ مُحَمَّدٍ ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ إِبْرَاهِيْمَ ، إِنَّكَ حَمِيْدٌ مَّجِيْدٌ ، اَللّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَّعَلَىٰ اٰلِ مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ إِبْرَاهِيْمَ ، إِنَّكَ حَمِيْدٌ مَّجِيْدٌ",
+                                "dua_transliteration": "Allahumma salli ala Muhammadin wa ala ali Muhammadin, kama sallaita ala Ibrahima wa ala ali Ibrahima, innaka hamidun majid. Allahumma barik ala Muhammadin wa ala ali Muhammadin, kama barakta ala Ibrahima wa ala ali Ibrahima, innaka hamidun majid",
+                                "dua_meaning":"O Allah, honour and have mercy upon Muhammad and the family of Muhammad as You have honoured and had mercy upon Ibrāhīm and the family of Ibrāhīm. Indeed, You are the Most Praiseworthy, the Most Glorious. O Allah, bless Muhammad and the family of Muhammad as You have blessed Ibrāhīm and the family of Ibrāhīm. Indeed, You are the Most Praiseworthy, the Most Glorious.",
+                                "dua_virtue":"Abū al-Dardā (raḍiy Allāhu ʿanhu) narrates that the Messenger of Allah ﷺ said: “Whoever sends ṣalāh upon me 10 times in the morning and 10 times in the evening will receive my intercession.” (Ṭabarānī: al-Muʿjam al-Kabīr 6357) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 23,
+                            "dua_title": "Protection from all Evil",
+                            "dua_details": {
+                                "dua_arb":"أَعُوْذُ بِكَلِمَاتِ اللّٰهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ. ",
+                                "dua_transliteration": "Aʿūdhu bi kalimāti-l-llāhi-t-tāmmāti min sharri mā khalaq. ",
+                                "dua_meaning":"I seek protection in Allah’s perfect words from the evil of whatever He has created.",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “Whoever recites [the above] three times in the evening will not be harmed by insect stings in that night.” Suhayl (a narrator) said: “So our family used to learn it and they used to say it every night. A girl among them was stung, and she did not feel any pain.” (Tirmidhī 3604)"
+                            },
+                            "status": true
+                        }
+
+                    ],
+
+                    "status": true
+                },
+                {
+                    "item_id": 3,
+                    "item_title": "Before Sleep",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "Surah al-Sajdah & Surah al-Mulk",
+                            "dua_details": {
+                                "dua_arb": "(الٓمٓ تَنْزِيْلُ… (سورة السجدة) & تَبَارَكَ الَّذِيْ… (سورة الملكأَ",
+                                "dua_transliteration": "",
+                                "dua_meaning":"",
+                                "dua_virtue": "The Messenger of Allah ﷺ would not sleep until he had recited [the above two Sūrahs]. (Tirmidhī 3404) The Messenger of Allah ﷺ said: “A Sūrah from the Qur’ān containing 30 verses will intercede for a man until he is forgiven. It is Sūrah al-Mulk.” (Tirmidhī 2891) ‘Abdullāh ibn Mas‘ūd (raḍiy Allāhu ‘anhu) narrated that whoever reads Sūrah al-Mulk every night, Allah will protect him from the punishment of the grave. He said: “At the time of the Messenger of Allah ﷺ, we used to call it ‘al-māni‘ah’ (the protector). Indeed there is a Sūrah in the Book of Allah [i.e. this Sūrah]; whoever recites it every night has done very well.” (Nasā’ī in ‘Amal al-Yawm wal-Laylah 711)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "Ayat al-Kursi: Exclusive Protection",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّومُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِندَهُٓ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ.",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.", 
+                                "dua_meaning": "I seek the protection of Allah from the accursed Shayṭān. Allah, there is no god worthy of worship but He, the Ever Living, The Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him Alone belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except with His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent. (2:255)",
+                                "dua_virtue":"Muʿādh b. ʿAbdullāh b. Khubaib narrated from his father (raḍiy Allāhu ‘anhu), who said the Messenger of Allah ﷺ said: “Recite Sūrah al-Ikhlās and al-Mu’awwidhatayn (Sūrah al-Falaq and Sūrah al-Nās) three times in the morning and the evening. It will suffice you in all respects.” (Tirmidhī 3575)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "Last Two Ayahs of Surah al-Baqarah: Will Suffice You",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اٰمَنَ الرَّسُوْلُ بِمَآ أُنْزِلَ إِلَيْهِ مِنْ رَّبِّهِ وَالْمُؤْمِنُوْنَ ، كُلٌّ اٰمَنَ بِاللّٰهِ وَمَلآئِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ ، لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّنْ رُّسُلِهِ ، وَقَالُوْا سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيْرُ. لَا يُكَلِّفُ اللّٰهُ نَفْسًا إِلَّا وُسْعَهَا ، لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ، رَبَّنَا لَا تُؤَاخِذْنَآ إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا ، رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِيْنَ مِنْ قَبْلِنَا ، رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ، وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ، أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكٰـفِرِيْنَ.",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Āmana-r-rasūlu bimā unzila ilayhi mi-r-rabbihī wa-l-mu’minūn, kullun āmana bi-l-llāhi wa malā’ikatihī wa kutubihī wa rusulih, lā nufarriqu bayna aḥadim-mi-r-rusulih, wa qālū samiʿnā wa aṭaʿnā ghufrānaka Rabbanā wa ilayka-l-maṣīr. Lā yukallifu-l-llāhu nafsan illā wusʿahā, lahā mā kasabat wa ʿalayhā ma-ktasabat, Rabbanā lā tuākhidhnā i-n-nasīnā aw akhṭa’nā, Rabbanā walā taḥmil ʿalaynā iṣran kamā ḥamaltahū ʿala-l-ladhīna min qablinā, Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih, waʿfu ʿannā wa-ghfir lanā war-ḥamnā, Anta Mawlānā fan-ṣurnā ʿala-l-qawmi-l-kāfirīn.",
+                                "dua_meaning":"I seek the protection of Allah from the accursed Shayṭān. The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah, His angels, His books and His messengers, [saying], “We make no distinction between any of His Messengers.” And they say, “We hear and we obey. We seek Your forgiveness, our Lord, and to You is the final destination.” Allah does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. “Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.” (2:285-6)",
+                                "dua_virtue":"The Messenger of Allah ﷺ said: “Whoever recites the last two verses of Sūrah al-Baqarah at night, they will suffice him.” (Bukhārī 4008, 807)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "Surah al-Kafirun: Negation of Shirk",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ يَـٰٓأَيُّهَا الْكَافِرُوْنَ ، لَآ أَعْبُدُ مَا تَعْبُدُوْنَ ، وَلَآ أَنْتُمْ عَابِدُوْنَ مَآ أَعْبُدُ ، وَلَآ أَنَا عَابِدٌ مَّا عَبَدْتُّمْ ، وَلَآ أَنْتُم عَابِدُوْنَ مَآ أَعْبُدُ ، لَكُمْ دِيْنُكُمْ وَلِيَ دِيْنِ.",
+                                "dua_transliteration": "Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul yā ayyuha-l-kāfirūn, lā aʿbudu mā taʿbudūn, wa lā antum ʿābidūna mā aʿbud, wa lā ana ʿābidūm-mā ʿabat-tum, wa lā antum ʿābidūna mā aʿbud, lakum dīnukum waliya dīn",
+                                "dua_meaning":"In the name of Allah,the All-Merciful, the Very Merciful. Say: O disbelievers, I worship not that which you worship. And nor do you worship that which I worship. And I shall not worship that which you worship. Nor will you worship that which I worship. To you be your religion, and to me my religion. (109)",
+                                "dua_virtue":"The Messenger of Allah ﷺ said: “Recite [the above] then go to sleep at the end of it, for it is a disavowal of polytheism.” (Tirmidhī 3403)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 5,
+                            "dua_title": "The Three Quls/Muʿawwidhat",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللّٰهُ أَحَدٌ ، اَللّٰهُ الصَّمَدُ ، لَمْ يَلِدْ وَلَمْ يُوْلَدْ ، وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ ، مِنْ شَرِّ مَا خَلَقَ ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ. بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ النَّاسِ ، مَلِكِ النَّاسِ ، إِلٰهِ النَّاسِ ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ، اَلَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ ، مِنَ الْجِنَّةِ وَالنَّاسِ",
+                                "dua_transliteration": "Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul Huwa-llāhu Aḥad. Allāhu-ṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi Rabbi-l-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri-n-naffāthāti fi-l-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi rabbi-n-nās. Maliki-n-nās. Ilāh-hin-nās. Min sharri-l-waswāsi-l-khannās. Al-ladhī yuwaswisu fī ṣudūri-n-nās. Mina-l-jinnati wa-n-nās.",
+                                "dua_meaning":"In the name of Allah, the All-Merciful, the Very Merciful. Say, He is Allah, the One, the Self-Sufficient Master, Who has not given birth and was not born, and to Whom no one is equal. (112) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of the daybreak, from the evil of what He has created, and from the evil of the darkening night when it settles, and from the evil of the blowers in knots, and from the evil of the envier when he envies. (113) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of mankind, the King of mankind, the God of mankind, from the evil of the whisperer who withdraws, who whispers in the hearts of mankind, whether they be Jinn or people. (114)",
+                                "dua_virtue":"‘Ā’ishah (raḍiy Allāhu ‘anhā) narrated that when the Messenger of Allah ﷺ retired to bed every night, he would hold his hands together and then blow into them. He would recite [the above Sūrahs] into them. Then he would wipe them over whatever he could of his body, starting with his head and face and the front of his body, and he would do that three times. (Bukhārī 5017)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "Tasbih, Tahmid and Takbir",
+                            "dua_details": {
+                                "dua_arb": "x33 - سُبْحَانَ اللّٰهِ. x33 - اَلْحَمْدُ لِلّٰهِ. x34 - اَللّٰهُ أَكْبَرُ.",
+                                "dua_transliteration": "Subḥāna-llāh. Alḥamdu li-llāh, Allāhu akbar.",
+                                "dua_meaning":"Allah is free from imperfection. All praise is for Allah. Allah is the Greatest.",
+                                "dua_virtue":"Fātimah (raḍiy Allāhu ‘anhā) came to the Messenger of Allah ﷺ and asked him for a servant. He ﷺ said: “Shall I not tell you of something that is better for you than that? When you go to sleep, say: ‘Subhānallah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times.’” (Bukhārī 3705)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "Mercy & Protection",
+                            "dua_details": {
+                                "dua_arb":  "بِاسْمِكَ رَبِّيْ وَضَعْتُ جَنْبِيْ ، وَبِكَ أَرْفَعُهُ ، إِنْ أَمْسَكْتَ نَفْسِيْ فَارْحَمْهَا ، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِيْنَ",
+                                "dua_transliteration": "Bismika Rabbī waḍaʿtu jambī, wa bika arfaʿuh, in amsakta nafsī fa-r-ḥamhā, wa in arsaltahā, fa-ḥ-faẓhā bimā taḥfaẓu bihī ʿibādaka-s-sāliḥīn.",
+                                "dua_meaning":"In Your Name my Lord, I lie down, and in Your Name, I rise. If You take my soul away then have mercy upon it, and if You return my soul then protect it with what you protect Your righteous servants with.",
+                                "dua_virtue":"Abū Hurayra (raḍiy Allāhu ‘anhu) narrates that the Prophet ﷺ said: “When any of you goes to bed, he should shake out his bed with the inside of his waist sheet, for he does not know what has come on to it after him, and then he should say: [the above].” (Bukhārī 6320)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 8,
+                            "dua_title": "Protection From Punishment",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ قِنِيْ عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ.",
+                                "dua_transliteration": "Allāhumma qinī ʿadhābaka yawma tabʿathu ʿibādak.",
+                                "dua_meaning":"O Allah, protect me from Your punishment on the day You resurrect Your servants.",
+                                "dua_virtue":"Hafsah (raḍiy Allāhu ‘anhā), the wife of the Messenger of Allah ﷺ narrates that when the Messenger of Allah ﷺ wanted to go to sleep, he put his right hand under his cheek and would then say [the above] three times. (Abū Dāwūd 5045)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 9,
+                            "dua_title": "Thank Allah for Blessing You",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَطْعَمَنَا وَسَقَانَا ، وَكَفَانَا ، وَآوَانَا ، فَكَمْ مِّمَّنْ لَا كَافِيَ لَهُ وَلَا مُؤْوِيَ.",
+                                "dua_transliteration": "Al-ḥamdu li-llāhi-l-ladhī aṭʿamanā wa saqānā, wa kafānā, wa āwānā, fakam-mim-man lā kāfīya lahū walā mu’wiy.",
+                                "dua_meaning":"All praise is for Allah, Who provided us food and drink and Who sufficed us and has sheltered us; for how many have none to suffice them or shelter them",
+                                "dua_virtue":"Anas (raḍiy Allāhu ‘anhu) narrates that when the Messenger of Allah ﷺ would retire to bed, he would say [the above]. (Muslim 2715)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 10,
+                            "dua_title": "Protect Yourself From the 4 Evils",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ ، فَاطِرَ السَّمٰوَاتِ وَالْأَرْضِ ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ ، أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا أَنْتَ ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِيْ سُوْءًا ، أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ.",
+                                "dua_transliteration": "Allāhumma ʿālima-l-ghaybi wa-sh-shahādah, fāṭir-as-samāwāti wa-l-arḍi, rabba kulli shay’iw-wa malīkah, ash-hadu al-lā ilāha illā Anta, aʿūdhu bika min sharri nafsī wa min sharri-sh-shayṭāni wa shirkihī wa an aqtarifa ʿalā nafsī sū’an aw ajurrahū ilā muslim ",
+                                "dua_meaning":"O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, Lord and Sovereign of everything; I bear witness that there is no god but You. I seek Your protection from the evil of my own self, from the evil of Shaytān and from the evil of polytheism to which he calls, and from inflicting evil on myself, or bringing it upon a Muslim.",
+                                "dua_virtue":" Abū Hurayrah (raḍiy Allāhu ‘anhu) narrates: “Abū Bakr (raḍiy Allāhu ‘anhu) said: ‘O Messenger of Allah, command me with something that I may say in the morning and evening.’ He ﷺ said: ‘Say: [the above].’ He said: ‘Say it in the morning, and evening, and when you retire to bed.’” (Tirmidhī 3392, 3529, Musnad Aḥmad 82)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 11,
+                            "dua_title": "Protection from Evil and Settling of Debts",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ رَبَّ السَّمٰوَاتِ وَرَبَّ الأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيْمِ ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ ، فَالِقَ الْحَبِّ وَالنَّوَىٰ ، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيْلِ وَالْفُرْقَانِ ، أَعُوْذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ ، اَللّٰهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُوْنَكَ شَيْءٌ ، اِقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+                                "dua_transliteration": "Allāhumma Rabb-as-samāwāti wa Rabba-l-arḍi wa Rabba-l-ʿArshi-l-ʿaẓīm, Rabbanā wa Rabba kulli shay’, fāliqa-l-ḥabbi wa-n-nawā, wa munzila-t-tawrāti wa-l-injīli wa-l-furqān, aʿūdhu bika min sharri kulli shay’in Anta ākhidhun bi-nāṣiyatih, Allāhumma Anta-l-Awwalu fa-laysa qablaka shay’, wa Anta-l-Ākhiru fa-laysa baʿdaka shay’, wa Anta-ẓ- Ẓāhiru fa-laysa fawqaka shay’, wa Anta-l-Bāṭinu fa-laysa dūnaka shay’, iqḍi ʿanna-d-dayna wa aghninā mina-l-faqr.",
+                                "dua_meaning":"O Allah, Lord of the heavens, Lord of the Magnificent Throne, our Lord and Lord of all things, Splitter of the seed and the date stone, Revealer of the Torah, the Injīl and the Criterion (Qur’ān); I seek Your protection from the evil of every thing You hold by the forehead. You are the First and there is nothing before You. You are the Last and there is nothing after You. You are the Most High and there is nothing above You. You are the Most Near and nothing is closer than You; settle our debts for us and spare us from poverty.",
+                                "dua_virtue":"Suhayl (raḥimahullāh) reported that Abū Ṣālih (raḥimahullāh) used to command us: “When any one of you intends to go to sleep, he should lie on the bed on his right side and then say [the above]. Abū Sālih used to narrate it from Abū Hurayrah (raḍiy Allāhu ‘anhu) who narrated it from Messenger of Allah ﷺ. (Muslim 2713)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 13,
+                            "dua_title": "Ask Allah to Protect You From Evil",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِوَجْهِكَ الْكَرِيْمِ ، وَكَلِمَاتِكَ التَّامَّةِ مِنْ شَرِّ مَا أَنْتَ آخِذٌ بِنَاصِيَتِهِ ، اَللّٰهُمَّ أَنْتَ تَكْشِفُ الْمَغْرَمَ وَالْمَأْثَمَ ، اَللّٰهُمَّ لَا يُهْزَمُ جُنْدُكَ ، وَلَا يُخْلَفُ وَعْدُكَ ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ ، سُبْحَانَكَ وَبِحَمْدِكَ",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bi wajhika-l-karīm, wa kalimātika-t-tāmmati min sharri mā Anta ākhidhun bi nāṣiyatih, Allāhumma Anta takshifu-l-maghrama wa-l-ma’tham, Allāhumma lā yuhzamu junduk, wa lā yukhlafu waʿduk, wa lā yanfaʿu dha-l-jaddi minka-l-jadd, subḥānaka wa bi-ḥamdik.",
+                                "dua_meaning":"O Allah, I seek protection by Your Noble Countenance and by Your perfect words from the evil of all that You hold by the forehead. O Allah, it is You who removes debt and sin. O Allah, Your army is never defeated and Your promise is never broken. The wealth of the wealthy does not avail them against You. You are free from imperfection, and to You belongs all praise.",
+                                "dua_virtue":"ʿAlī b. Abī Tālib (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah used to say [the above] when he retired to bed. (Abū Dāwūd 5052) "
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 14,
+                            "dua_title": "Protection, Well-being and Forgiveness",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنَّكَ خَلَقْتَ نَفْسِيْ وَأَنْتَ تَوَفَّاهَا ، لَكَ مَمَاتُهَا وَمَحْيَاهَا ، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا ، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا ، اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ الْعَافِيَة.",
+                                "dua_transliteration": "Allāhumma innaka khalaqta nafsī wa Anta tawaffāhā, laka mamātuhā wa maḥyāhā, in aḥyaytahā fa-ḥfaẓhā, wa in amattahā fa-ghfir lahā, Allāhumma innī as’aluka-l-ʿāfiyah.",
+                                "dua_meaning":"O Allah, verily You have created my soul and You shall take its life. To You Alone belongs its life and death. If You keep my soul alive then protect it, and if You take it away, then forgive it. O Allah, I ask You to grant me well-being.",
+                                "dua_virtue":"ʿAbdullah b. ʿUmar (radiy Allāhū ‘anhumā) narrates that he instructed a man to say [the above] when going to sleep. The man asked him: ‘Did you hear this from ʿUmar?’ He replied: ‘Someone better than ʿUmar; from the Messenger of Allah ﷺ.’ (Aḥmad 5502)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 15,
+                            "dua_title": "Forgiveness & Protection",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ وَضَعْتُ جَنْبِيْ ، اَللّٰهُمَّ اغْفِرْ لِيْ ذَنْبِيْ ، وَأَخْسِئْ شَيْطَانِيْ ، وَفُكَّ رِهَانِيْ ، وَاجْعَلْنِيْ فِي النَّدِيِّ الْأَعْلَىٰ.",
+                                "dua_transliteration": "Bismillāhi waḍaʿtu jambī, Allāhumma-ghfir lī dhambī, wa akhsi’ shayṭānī, wa fukka rihānī, wa-jʿalnī fi-n-Nadiyyi-l-Aʿlā.",
+                                "dua_meaning":"n the Name of Allah, I lie down. O Allah, forgive my sins, ward off from me my shaytān, free me from my obligations (to others) and enter me into the loftiest assembly (of angels).",
+                                "dua_virtue":"Abū al-Azhar al-Anmārī (raḍiy Allāhu ‘anhu) narrates that when the Messenger of Allah ﷺ retired to bed at night, he would say [the above]. (Abū Dāwūd 5054) "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 16,
+                            "dua_title": "Praise Allah With the Praises of the Entire Creation",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ كَفَانِيْ وَآوَانِيْ ، اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَطْعَمَنِيْ وَسَقَانِيْ ، اَلْحَمْدُ لِلّٰهِ الَّذِيْ مَنَّ عَلَيَّ فَأَفْضَلَ ، اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِعِزَّتِكَ أَنْ تُنَجِّيَنِيْ مِنَ النَّارِ.",
+                                "dua_transliteration": "Al-ḥamdu li-llāhi-lladhī kafānī wa āwānī, al-ḥamdu li-llāhi-lladhī aṭʿamanī wa saqānī, al-ḥamdu li-llāhi-l-ladhī manna ʿalayya fa-afḍal, allāhumma innī as’aluka bi ʿizzatika an tunajjiyanī min-an-nār. ",
+                                "dua_meaning":"All praise is for Allah Who has sufficed me and given me refuge. All praise is for Allah Who has fed me and given me drink. All praise is for Allah Who has been gracious to me and showered favours on me. O Allah, I ask You by Your Glory, save me from the Hell-Fire. (Ḥākim)",
+                                "dua_virtue":"The Messenger of Allah ﷺ said: “Whoever says [the above] when retiring to bed has praised Allah with all the praises of His entire creation.” (Hākim 2001)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 17,
+                            "dua_title": "Sleep in the Name of Your Lord",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ بِاسْمِكَ أَمُوْتُ وَأَحْيَا.",
+                                "dua_transliteration": "Allāhumma bismika amūtu wa aḥyā.",
+                                "dua_meaning":"O Allah, solely in Your Name I die and I live.",
+                                "dua_virtue":"Abū Dhar (raḍiy Allāhu ‘anhu) narrates that whenever the Prophet ﷺ lay on his bed, he used to say: [the above], and when he woke up he would say: ‘All praise is for Allah Who gave us life after having taken it from us and unto Him is the resurrection.’ (Bukhārī 6325)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 18,
+                            "dua_title": "Get Forgiven Before Going to Sleep",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ ، سُبْحَانَ اللّٰهِ وَالْحَمْدُ لِلّٰهِ وَلَا إِلٰهَ إِلَّا اللّٰهُ وَاللّٰهُ أَكْبَرُ", 
+                                "dua_transliteration": "Lā ilāha illā-l-lāhu waḥdahu lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in qadīr, wa lā ḥawla wa lā quwwata illā billāh, subḥāna-llāhi wa-l-ḥamdu lillāhi wa lā ilāha illā Allāhu wa-l-Allāhu akbar",
+                                "dua_meaning":"There is no god but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful. There is no power (in averting evil) or strength (in attaining good) except through Allah. Allah is free from imperfection, and all praise is for Allah. There is no god but Allah and Allah is the Greatest.",
+                                "dua_virtue":"The Messenger of Allah ﷺ said: “Whoever says [the above] when retiring to bed, all of his sins will be forgiven, even if they are as abundant as the foam of the sea.” (Nasā’ī)"
+                            },
+                            "status":true
+                        },
+                        {
+                            "dua_id": 19,
+                            "dua_title": "Die Upon the Fitrah",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ أَسْلَمْتُ نَفْسِيْ إِلَيْكَ ، وَفَوَّضْتُ أَمْرِيْ إِلَيْكَ ، وَوَجَّهْتُ وَجْهِيْ إِلَيْكَ ، وَأَلْجَاْتُ ظَهْرِيْ إِلَيْكَ ، رَغْبَةً وَرَهْبَةً إِلَيْكَ ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ ، آمَنْتُ بِكِتَابِكَ الَّذِيْ أَنْزَلْتَ وَبِنَبِيِّكَ الَّذِيْ أَرْسَلْتَ",
+                                "dua_transliteration": "Allāhumma aslamtu nafsī ilayk, wa fawwaḍtu amrī ilayk, wa wajjahtu wajhī ilayk, wa alja’tu ẓahrī ilayk, raghbatan wa rahbatan ilayk, lā malja’a wa lā manjā minka illā ilayk, āmantu bi kitābika-l-ladhī anzalt, wa bi Nabiyyika-lladhī arsalt.",
+                                "dua_meaning":"O Allah, I submit my soul unto You, and I entrust my affair unto You, and I turn my face towards You, and I totally rely on You, in hope and fear of You. Verily there is no refuge or safe haven from You except with You. I believe in Your Book which You have revealed and in Your Prophet whom You have sent.",
+                                "dua_virtue":"The Messenger of Allah ﷺ said: “Before you go to bed, perform wudhū as you would for prayer, then lie down on your right side and say [the above]. Whoever says this and dies in his sleep, will die upon the ‘fitrah’ (natural monotheism).” (Bukhārī 6313) In another narration the Messenger of Allah ﷺ said: “Let the aforesaid words be your last utterance (before sleep).” (Bukhārī 247) "
+                            },
+                            "status": true
+                        }
+                    ],
+                    "status": true
+                },
+                {
+                    "item_id": 4,
+                    "item_title": "Salah",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #1",
+                            "dua_details": {
+                                "dua_arb":"سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ ، وَتَبَارَكَ اسْمُكَ ، وَتَعَالَىٰ جَدُّكَ ، وَلَا إِلٰهَ غَيْرُكَ.",
+                                "dua_transliteration": "Subḥānaka Allāhumma wa bi-ḥamdika wa tabāraka-smuka wa taʿālā jadduka wa lā ilāha ghayruk.",
+                                "dua_meaning":"How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.",
+                                "dua_virtue": "Abū Sa’īd al-Khudrī (raḍiy Allāhu ‘anhu) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said [the above]. He then said: لاَ إِلَهَ إِلاَّ اللَّهُ (There is no god but Allah) three times. He then said: اللَّهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said: أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ (I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.) (Abū Dāwūd 775)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #2",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ بَاعِدْ بَيْنِـيْ وَبَيْنَ خَطَايَاىَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ ، اَللّٰهُمَّ نَقِّنِيْ مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ، اَللّٰهُمَّ اغْسِلْ خَطَايَاىَ بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ.",
+                                "dua_transliteration": "Allāhumma bāʿid baynī wa bayna khaṭāyāya kamā bāʿadta bayna-l-mashriqi wa-l-maghrib, Allāhumma naq-qinī min khaṭāyāya kamā yunaq-qa-th-thawbul-abyaḍu mina-d-danas, Allāhumma-ghsilnī min khaṭāyāya bil-māi’ wa-th-thalji wal-barad.", 
+                                "dua_meaning": "O Allah, distance me from my sins as You have distanced the East from the West. O Allah purify me from my sins as white cloth is purified from dirt. O Allah wash away my sins with water, hail and snow.",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ‘anhu) narrates: “The Messenger of Allah ﷺ would pause between the opening takbir and the recitation. I said: ‘May my father and mother be sacrificed for you, the pause between the opening takbir and the recitation, what do you say?’ He replied: ‘I say [the above].’ (Bukhārī 744, Muslim 598)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #3",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ حَمْدًا كَثِيْرًا طَيِّبًا مُّبَارَكًا فِيْهِ.",
+                                "dua_transliteration": "Alḥamdu li-llāh ḥamdan kathīran ṭayyiban mubārakan fīh.",
+                                "dua_meaning":"All praise is for Allah; an abundant, sincere and blessed praise.",
+                                "dua_virtue":"Anas (raḍiy Allāhu ‘anhu) narrated that a man came panting and joined the row (of congregants in ṣalāh), and then uttered [the above]. When the Messenger of Allah ﷺ finished his ṣalāh, he said, “…I saw twelve angels competing with each other to ascend with it.” (Muslim 600)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #4",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُ أَكْبَرُ كَبِيْرًا ، وَالْحَمْدُ لِلّٰهِ كَثِيْرًا ، وَسُبْحَانَ اللّٰهِ بُكْرَةً وَّأَصِيْلًا.",
+                                "dua_transliteration": "Allāhu akbaru kabīrā, wa-lḥamdu li-llāh kathīrā, wa subḥāna-llāhi bukratan wa aṣilā.",
+                                "dua_meaning":"Allah is Greater, the Greatest: abundant praise is for Allah, and how Perfect is Allah in the morning and the evening.",
+                                "dua_virtue":"ʿAbdullāh b. ʿUmar (radiy Allāhū ‘anhumā) narrated, “Once we were praying with the Messenger of Allah ﷺ when a man said [the above]. The Messenger of Allah ﷺ (after the ṣalāh) asked, “Who uttered those words?” The man replied, “It was me, O Messenger of Allah.” He ﷺ said, “I was amazed by them – the doors of heaven were opened for them.” Ibn ʿUmar said, “I have not stopped saying these words since I heard this statement of the Messenger of Allah ﷺ.” (Muslim 601)."
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 5,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #5",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ رَبَّ جَبْرَائِيْلَ وَمِيْكَائِيْلَ وَإِسْرَافِيْلَ ، فَاطِرَ السَّمٰـوٰتِ وَالْأَرْضِ ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيْمَا كَانُوْا فِيْهِ يَخْتَلِفُوْنَ ، اِهْدِنِيْ لِمَا اخْتُلِفَ فِيْهِ مِنَ الْحَقِّ بِإِذْنِكَ ، إِنَّكَ تَهْدِيْ مَنْ تَشَآءُ إِلَىٰ صِرَاطٍ مُّسْتَقِيْمٍ.",
+                                "dua_transliteration": "Allāhumma Rabba Jabrā’īla, wa Mīkā’īla, wa Isrāfīl, fāṭira-s-samāwāti wa-l-arḍ, ʿālima-l-ghaybi wa-sh-shahādah, Anta taḥkumu bayna ʿibādika fīmā kānū fīhi yakhtalifūn, ihdinī lima-khtulifa fīhi mina-l-ḥaqqi bi-idhnik, innaka tahdī man tashā’u ilā Ṣirāṭi-m-Mustaqīm.",
+                                "dua_meaning":"O Allah, Lord of Jabrā’īl, Mīkā’īl and Isrāfīl; Creator of the heavens and the earth; Knower of the unseen and seen, You will judge between Your servants in what they used to differ. Guide me in what is contentious to the truth, by Your Will. Certainly, You guide whomsoever You will to a straight path.",
+                                "dua_virtue":"ʿAbdur Raḥmān b. ʿAwf (raḍiy Allāhu ‘anhu) narrated: I asked ‘A’isha (raḍiy Allāhu ‘anhā), the mother of the believers, (to tell me) the words with which the Messenger of Allah ﷺ commenced the Ṣalāh when he got up at night. She said: “When he got up at night he would commence his Ṣalāh with [the above] words. (Muslim 770)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "",
+                            "dua_details": {
+                                "dua_arb":  "وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمٰـوٰتِ وَالْأَرْضَ حَنِيْفًا وَّمَآ أَنَا مِنَ الْمُشْرِكِيْنَ ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ ، وَبِذٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ ، اَللّٰهُمَّ أَنْتَ الْمَلِكُ لَا إِلٰهَ إِلَّا أَنْتَ ، ‏أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ ، لَبَّيْكَ وَسَعْدَيْكَ ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ ، وَالشَّرُّ لَيْسَ إِلَيْكَ ، أَنَا بِكَ وَإِلَيْكَ ، تَبَارَكْتَ وَتَعَالَيْتَ ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ.",
+                                "dua_transliteration": "Wajjahtu wajhī lil-ladhī faṭara-s-samāwāti wal-arḍa ḥanīfan wa mā ana mina-l-mushrikīn, inna ṣalātī, wa nusukī, wa maḥyāya, wa mamātī lil-lāhi Rabbi-l-ʿĀlamīn, la sharīka lahu wa bi-dhālika umirtu wa ana mina-l-muslimīn. Allāhumma Antal-Maliku lā ilāha illā Ant, Anta Rabbī wa ana ʿabduk, ẓalamtu nafsī waʿtaraftu bi-dhambī, fa-ghfir lī dhunūbī jamīʿā, innahū lā yaghfiru-dh-dhunūba illā Ant, wa-hdinī li-aḥsani-l-akhlāqi lā yahdī li-aḥsanihā illā Ant, wa-ṣrif ʿannī sayyi’ahā lā yaṣrifu ʿannī sayyi’ahā illā Ant, labbayka wa saʿdayk, wal-khayru kulluhū fī yadayk, wa-sh-sharru laysa ilayk, ana bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
+                                "dua_meaning":"I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil is attributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.",
+                                "dua_virtue":" ʿAlī b. Abū Tālib (raḍiy Allāhu ‘anhu) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say: [the above].When he would do rukū, he would say: /n/n اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)/n/n When he would raise his head from rukū, he would say:/n/n اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)/n/n "
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #7",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ لَكَ الْحَمْدُ ، أَنْتَ نُوْرُ السَّمٰـوٰتِ وَالْأَرْضِ وَمَنْ فِيْهِنَّ ، وَلَكَ الْحَمْدُ أَنْتَ قَيِّمُ السَّمٰـوٰتِ وَالْأَرْضِ وَمَنْ فِيْهِنَّ ، وَلَكَ الْحَمْدُ أَنْتَ الْحَقُّ ، وَوَعْدُكَ حَقٌّ ، وَقَوْلُكَ حَقٌّ ، وَلِقَاؤُكَ حَقٌّ ، وَالْجَنَّةُ حَقٌّ ، وَالنَّارُ حَقٌّ ، وَالسَّاعَةُ حَقٌّ ، وَالنَّبِيُّوْنَ حَقٌّ ، وَمُحَمَّدٌ حَقٌّ ، اَللّٰهُمَّ لَكَ أَسْلَمْتُ وَعَلَيْكَ تَوَكَّلْتُ وَبِكَ اٰمَنْتُ، وَإِلَيْكَ أَنَبْتُ ، وَبِكَ خَاصَمْتُ وَإِلَيْكَ حَاكَمْتُ.",
+                                "dua_transliteration": "Allāhumma laka-l-ḥamdu Anta Nūru-s-samāwāti wa-l-arḍi wa man fīhinn, wa laka-l-ḥamdu Anta Qayyimu-s-samāwāti wa-l-arḍi wa man fīhinn, wa laka-l-ḥamd, Anta-l-Ḥaqq wa waʿduka ḥaqq, wa qawluka ḥaqq, wa liqā’uka ḥaqq, wal-jannatu ḥaqq, wa-n-nāru ḥaqq, wa-s-sāʿatu ḥaqq, wa-n-nabiyyūna ḥaqq, wa muḥammadun ḥaqq, Allāhumma laka aslamtu wa ʿalayka tawakkaltu wa bika āmantu, wa ilayka anabtu, wa bika khaṣamtu, wa ilayka ḥākamtu.",
+                                "dua_meaning":"O Allah, for You Alone is all praise; You are the Light of the heavens and the earth and whatever is therein. For You Alone is all praise; You are the Maintainer of the heavens and the earth and whatever is therein. And for You Alone is all praise; You are the Truth, Your promise is the truth, and Your speech is the truth. The meeting with You is the truth, Paradise is the truth, and Hell-Fire is the truth. The Final Hour is the truth, the Prophets are the truth and Muhammad  is the truth. O Allah, I surrender myself to You Alone, I put my trust in You Alone, and I believe in You Alone. I turn to You Alone, I complain of my opponents to You Alone and I refer judgement to You Alone.",
+                                "dua_virtue":"Ibn ʿAbbās (radiy Allāhū ‘anhumā) narrates: “When the Prophet ﷺ would stand for the night (tahajjud) prayer, he would say [the above].” (Bukhārī 6317, 7499)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 8,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #8",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ اللّٰهِ رَبِّ الْعَالَمِيْنَ ، سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ.",
+                                "dua_transliteration": "Subḥānallāhi Rabbi-l-ālamin, subḥānallāhi wa bi-ḥamdih.",
+                                "dua_meaning":"Allah is free from imperfection, the Lord of all the worlds. Allah is free from imperfection, and all praise is due to Him.",
+                                "dua_virtue":"Rabīʿah bin Kaʿb al-Aslamī (raḍiy Allāhu ‘anhu) said: “I used to stay overnight at the home of the Prophet ﷺ and I used to hear him when he prayed night saying: [the above] for a long time.” (Nasā’ī 1618)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 9,
+                            "dua_title": "Istiftah (The Opening Duʿa’) #9",
+                            "dua_details": {
+                                "dua_arb": "اَللهُ أَكْبَرُ (x10)، اَلْحَمْدُ لِلّٰهِ (x10)، سُبْحَانَ اللهِ (x10)، لَا إِلٰهَ إِلَّا اللهُ (x10)، أَسْتَغْفِرُ اللهَ (x10)، اَللّٰهُمَّ اغْفِرْ لِيْ وَاهْدِنِيْ وَارْزُقْنِيْ وَعَافِنِيْ ، أَعُوْذُ بِاللّٰهِ مِنْ ضِيْقِ الْمَقَامِ يَوْمَ الْقِيَامَةِ",
+                                "dua_transliteration": "Allāhu akbar (x10), alḥamdu li-llāh (x10), subḥāna-llāh (x10), lā ilāha illā-Allāh (x10), astaghfiru-l-llāh (x10), Allāhumma ghfir lī wa-hdinī wa-rzuqnī wa āfinī, aʿūdhu bi-llāhi min ḍīqi-l-maqāmi yawma-l-qiyāmah.",
+                                "dua_meaning":"Allah is the Greatest. All praise be to Allah. Allah is free from imperfection. There is no god but Allah. I seek Allah’s forgiveness. O Allah, forgive me, guide me, grant me sustenance and wellbeing. I seek your protection from the anguish of standing on the Day of Judgement.",
+                                "dua_virtue":"ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (raḍiy Allāhu ‘anhā) about what the Messenger of Allah ﷺ used to start his night prayer with. She said, “You have indeed asked me something which no one before you has asked me. The Messenger of Allah ﷺ used to say [the above]” (Nasā’ī 1617)."
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 10,
+                            "dua_title": "Istiʿadhah #1",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm.",
+                                "dua_meaning":"I seek protection in Allah from the rejected Shayṭān.",
+                                "dua_virtue":"Allah says: “When you recite the Quran, seek refuge with Allah from rejected Shayṭān.” (16:98)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 11,
+                            "dua_title": "Istiʿadhah #2",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللّٰهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi-s-Samīʿi-l-ʿAlīm mina-sh-Shayṭāni-r-rajīm, min hamzihī wa nafkhihī wa nafthih.",
+                                "dua_meaning":"I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.",
+                                "dua_virtue":"Abū Sa’īd al-Khudrī (raḍiy Allāhu ‘anhu) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:/n/n سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ ، وَتَبَارَكَ اسْمُكَ ، وَتَعَالَىٰ جَدُّكَ ، وَلاَ إِلٰهَ غَيْرُكَ (How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.)/n/n He then said: لاَ إِلٰهَ إِلاَّ اللَّهُ (There is no god but Allah) three times./n/nHe then said: اللّٰهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said [the above]. (Aḥmad 11260)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 12,
+                            "dua_title": "Bi-smi llāh",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللهِ الرَّحْمَـٰنِ الرَّحِيْمِ.",
+                                "dua_transliteration": "Bismi-llāhi-r-Raḥmāni-r-Raḥīm.",
+                                "dua_meaning":"",
+                                "dua_virtue":"In the Name of Allah, the All-Merciful, the Very Merciful."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 13,
+                            "dua_title": "Rukuʿ #1",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ رَبِّـيَ الْعَظِيْمِ.",
+                                "dua_transliteration": "Subḥāna Rabiyya-l-ʿAẓīm",
+                                "dua_meaning":"How perfect is my Lord, the Magnificent.",
+                                "dua_virtue":"Ḥudhayfah (raḍiy Allāhu ʿanhu) said, “I prayed with the Messenger of Allah ﷺ one night and he started reciting Sūrah al-Baqarah. I said to myself that he will do rukūʿ at the end of one hundred āyāt, but he carried on reciting. I then said to myself that he will perhaps recite the whole sūrah in a rakʿah, and he carried on reciting. (At the end of Sūrah al-Baqarah), I said to myself that he will (now) go into rukūʿ. However, he then started Sūrah al-Nisā’, and recited it. He then started Sūrah Āl ʿImrān and recited it slowly./n/n When he recited the āyāt which entailed the glorification of Allah (tasbīḥ), he glorified Him. When he recited the āyāt which entailed asking (duʿā’), he would ask Allah. And when he recited the āyāt which entailed the protection of Allah, he sought His protection./n/nHe ﷺ then went into rukūʿ and said, [the above]. His bowing lasted about the same length of time as his standing. He then said, ‘May Allah respond to the one who has praised Him’, and he then stood for a long time, about the same length of time as he had spent in bowing. He then performed sajdah and said, ‘How Perfect is my Lord, the Most Exalted’, and his prostration lasted nearly the same length of time as his standing” (Muslim 772)."
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 14,
+                            "dua_title": "Ruku#2",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ ذِي الْجَبَرُوْتِ ، والْمَلَكُوْتِ ، والْكِبْرِيَاءِ ، والْعَظَمَةِ.",
+                                "dua_transliteration": "Subḥāna dhi-l-jabarūt, wa-l-malakūt, wa-l kibriyā', wa-l-ʿaẓamah.",
+                                "dua_meaning":"How perfect is the Owner of might, dominion, grandeur and greatness!",
+                                "dua_virtue":"ʿAwf b. Mālik (raḍiy Allāhu ‘anhu) narrates: “I stood with the Prophet ﷺ. He started by using the siwāk and performing wuḍū, then he stood and prayed. He started reciting al-Baqarah and he did not come to any verse that spoke of mercy but he paused and asked for mercy, and he did not come to any verse that spoke of punishment but he paused (and sought refuge with Allah from that). Then he bowed and he stayed bowing for as long as he had stood, and he said while bowing: [the above] Then he prostrated for as long as he had bowed, saying while prostrating: [the above]. Then he recited al ʿImrān, then another sūrah and another, doing that each time.” (Nasā’ī 1132, Abū Dāwūd 873)"
+                            },
+                            "status": true
+                        }, 
+                        {
+                            "dua_id": 15,
+                            "dua_title": "Ruku#3",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ لَكَ رَكَعْتُ ، وَبِكَ اٰمَنْتُ ، وَلَكَ أَسْلَمْتُ ، خَشَعَ لَكَ سَمْعِيْ ، وَبَصَرِيْ ، وَمُخِّيْ ، وَعَظْمِيْ ، وَعَصَبِيْ.",
+                                "dua_transliteration": "Allāhumma laka rakʿatu, wa bika āmantu, wa laka aslamtu, khashʿa laka samʿī, wa baṣarī, wa mukhkhī, wa aẓmī, wa aṣabī.",
+                                "dua_meaning":"O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.",
+                                "dua_virtue":"Alī b. Abī Tālib (raḍiy Allāhu ’anhu) narrates: When the Messenger of Allah ﷺ would do rukū, he would say [the above].(Muslim 771)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 16,
+                            "dua_title": "Between the Two Sajdahs ",
+                            "dua_details": {
+                                "dua_arb": "رَبِّ اغْفِرْ لِيْ ، رَبِّ اغْفِرْ لِيْ.",
+                                "dua_transliteration": "Rabbi-ghfir lī, Rabbi-ghfir lī.",
+                                "dua_meaning":"My Lord, forgive me. My Lord, forgive me.",
+                                "dua_virtue":"Hudhayfah (raḍiy Allāhu ’anhu) saw the Messenger of Allah ﷺ praying at night. He said: “Allah is the greatest“ (three times). /n/n He then said: “How perfect is the Owner of dominion, might, grandeur and greatness!“ He then began (his salah) and recited Surah al-Baqarah; /n/n then he bowed and he paused in bowing as long as he stood up; he said while bowing, “How perfect is my Lord, the Magnificent.“ “How perfect is my Lord, the Magnificent.“; then he raised his head, after bowing: then he stood up and he paused as long as he paused in bowing and said, “Praise be to my Lord“ ; then he prostrated and paused in prostration as long as he paused in the standing position; he said while prostrating: How Perfect is my Lord, the Most High. then he raised his head after prostration, and sat as long as he prostrated, and said while sitting: O my Lord forgive me.He offered four rak’ahs of prayer and recited in them Sūrah al-Baqarah, Āl Imran, an-Nisā, al-Mā’idah, or al-An’ām. The narrator Shu’bah doubted. (Abu Dāwūd 874)"
+                            },
+                            "status": true
+                        },
+                       
+                        {
+                            "dua_id": 17,
+                            "dua_title": "Tashahhud",
+                            "dua_details": {
+                                "dua_arb": "َلتَّحِيَّاتُ لِلّٰهِ، وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ ، اَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ، أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ.",
+                                "dua_transliteration": "At-taḥiyyātu lil-lāhi, wa-ṣalawātu, wa- ṭayyibātu, as-salāmu ʿalyaka ayyuha-n-nabiyyu wa raḥmatul-lāhi wa barakātuh, as-salāmu ʿalyanā wa ʿalā ʿibādillah-ṣ-ṣalihīn, ash-hadu an-lā ilāha illa-l-lāhu wa ashadu an-na Muḥammadan ʿabduhū wa rasūluh.",
+                                "dua_meaning":"All royal greetings belong to Allah, as do prayers and good (deeds and words). May peace, the mercy of Allah and His blessings be upon you O Prophet. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god except Allah and I bear witness that Muhammad is His slave and Messenger.",
+                                "dua_virtue":"Ibn Mas’ūd (raḍiy Allāhu ‘anhu) said: “The Messenger of Allah ﷺ taught me the Tashahhud as he taught me a sūrah from the Qur’an, while my hand was between his hands. (Bukhārī 6265)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 18,
+                            "dua_title": "Salah on the Prophet ﷺ",
+                            "dua_details": {
+                                "dua_arb": "َللّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَّعَلَىٰ اٰلِ مُحَمَّدٍ ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ إِبْرَاهِيْمَ ، إِنَّكَ حَمِيْدٌ مَّجِيْدٌ ، اَللّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَّعَلَىٰ اٰلِ مُحَمَّدٍ ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيْمَ وَعَلَىٰ اٰلِ إِبْرَاهِيْمَ ، إِنَّكَ حَمِيْدٌ مَّجِيْدٌ.",
+                                "dua_transliteration": "Allāhumma ṣalli ʿalā Muḥammad wa ʿalā āli Muḥammad, kamā ṣallayta ʿalā Ibrāhīma wa ʿalā āli Ibrāhīm, innaka Ḥamīdu-m-Majīd, Allāhumma bārik ʿalā Muḥammad, wa ʿalā āli Muḥammad, kamā bārakta ʿalā Ibrāhīma wa ʿalā āli Ibrāhīm, innaka Ḥamīdu-m-Majīd.",
+                                "dua_meaning":"O Allah, honour and have mercy upon Muḥammad and the family of Muḥammad as You have honoured and had mercy upon Ibrāhīm and the family of Ibrāhīm: indeed, You are the Most Praiseworthy, the Most Glorious. O Allah, bless Muḥammad and the family of Muḥammad as You have blessed Ibrāhīm and the family of Ibrāhīm: indeed, You are the Most Praiseworthy, the Most Glorious.",
+                                "dua_virtue":"Abd al-Raḥmān ibn Abī Laylā (raḥimahullāh) said: “Kaʿb ibn ʿUjrah (raḍiy Allāhu ʿanhu) met me and said: ‘Shall I not give you a gift I received from the Messenger of Allah ﷺ?’ I replied: ‘Yes of course, gift it to me.’ So he said: ‘We asked the Messenger of Allah ﷺ: “O Messenger of Allah ﷺ, how should we invoke ṣalāh upon you, the members of the family, for Allah has taught us how to send salām upon you?” He ﷺ replied: “Say: [the above].” (Bukhārī 3370)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 19,
+                            "dua_title": "Duʿa",
+                            "dua_details": {
+                                "dua_arb": "َللّٰهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا ، وَّلَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ ، فَاغْفِرْ لِيْ مَغْفِرَةً مِّنْ عِنْدِكَ ، وَارْحَمْنِيْ إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ.",
+                                "dua_transliteration": "Allāhumma innī ẓalamtu nafsī ẓulman kathīrā, wa lā yaghfiru-dh-dhunūba illā Ant, fa-ghfir lī maghfirata-m-min ʿindik, war-ḥamnī, innaka Anta-l-Ghafūru-r-Raḥīm.",
+                                "dua_meaning":"O Allah, I have wronged myself greatly and no one forgives sins except You; grant me forgiveness from You and have mercy upon me. You are the Most Forgiving, the Most Merciful.",
+                                "dua_virtue":"Abū Bakr al-Ṣiddīq (raḍiy Allāhu ‘anhu) narrates: “I asked the Messenger of Allah ﷺ to teach me a du’ā so that I may invoke Allah with it in my salāh. He told me to say: [the above].” (Bukhārī 834)"
+                            },
+                            "status": true
+                        },
+                      
+                        {
+                            "dua_id": 20,
+                            "dua_title": "Salam",
+                            "dua_details": {
+                                "dua_arb": "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ ، اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللّٰهِ",
+                                "dua_transliteration": "Assālamu ʿalaykum wa Raḥmatu-llāhi, Assālamu ʿalaykum wa Raḥmatu-llāhi",
+                                "dua_meaning":"May the peace and mercy of Allah be upon you. May the peace and mercy of Allah be upon you.",
+                                "dua_virtue":"Abdullāh b. Masʿūd (raḍiy Allāhu ʿanhu) narrated that the Prophet ﷺ would do salām to his right and left until the whiteness of his cheek was seen, while saying [the above]. (Abū Dāwūd 996)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 21,
+                            "dua_title": "Qunut#1",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ اهْدِنِيْ فِيْمَنْ هَدَيْتَ ، وَعَافِنِيْ فِيْمَنْ عَافَيْتَ ، وَتَوَلَّنِيْ فِيْمَنْ تَوَلَّيْتَ ، وَبَارِكْ لِيْ فِيْمَا أَعْطَيْتَ ، وَقِنِيْ شَرَّ مَا قَضَيْتَ ، إِنَّكَ تَقْضِيْ وَلَا يُقْضَىٰ عَلَيْكَ ، وَإِنَّهُ لَا يَذِلُّ مَنْ وَّالَيْتَ ، وَلَا يَعِزُّ مَنْ عَادَيْتَ ، تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ.",
+                                "dua_transliteration": "Allāhumma-h-dinī fī-man hadayt, wa ʿāfinī fī-man ʿāfayt, wa tawallanī fī-man tawal-layt, wa bārik lī fī-mā aʿṭayt, wa qinī sha-ra mā qaḍayt, innaka taqḍī wa lā yuqḍā ʿalayk, wa innahū lā yadhillu man wālayt, wa lā yaʿizzu man ʿādayt, tabārakta rabbanā wa taʿālayt.",
+                                "dua_meaning":"O Allah, guide me amongst those You have guided, grant me wellbeing amongst those You have granted wellbeing, and befriend me amongst those You have befriended. Bless me in what You have given me and protect me from the evil of what You have decreed: You are the One who decrees and You are not decreed against. Whomsoever You befriend will never be disgraced, and whomsoever You oppose will never be honoured. You are the Most Blessed, our Lord and You are the Most Exalted.",
+                                "dua_virtue":"Ḥasan b. ʿAlī (radiy Allāhū ‘anhumā) narrates that the Messenger of Allah ﷺ taught me some words that I say during the witr ṣalāh. (The version of Ibn Jawwās has: I say them in the Qunūt (supplication) of the witr Salāh.) They were: [the above]. (Abū Dāwūd 1425)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 22,
+                            "dua_title": "Qunut#2",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنَّا نَسْتَعِيْنُكَ وَنَسْتَغْفِرُكَ ، وَنُؤْمِنُ بِكَ وَنُثْنِيْ عَلَيْكَ الْخَيْرَ وَلَا نَكْفُرُكَ ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَّفْجُرُكَ ، اَللّٰهُمَّ إِيَّاكَ نَعْبُدُ ، وَلَكَ نُصَلِّيْ وَنَسْجُدُ ، وَإِلَيْكَ نَسْعَىٰ وَنَحْفِدُ ، نَرْجُوْ رَحْمَتَكَ وَنَخْشَىٰ عَذَابَكَ ، إِنَّ عَذَابَكَ الْجِدَّ بِالْكُفَّارِ مُلْحِقٌ.",
+                                "dua_transliteration": "Allāhumma innā nastaʿīnuka wa nastaghfiruka, wa nu’minu bika wa nuthnī ʿalayka-l-khayr, wa lā nakfuruka wa naklaʿu wa natruku may-yafjuruk, Allāhumma iyyāka naʿbudu, wa laka nuṣallī, wa nasjud, wa ilayka nasʿā wa naḥfid, narjū raḥmatak, wa nakhshā ʿadhābak, inna ʿadhābaka-l-jidda bi-l-kuffāri mulḥiq.",
+                                "dua_meaning":"O Allah, we beg You for Your help and we seek Your forgiveness. We believe in You, we praise You highly, and we are not ungrateful to You. We move away from and leave those who disobey You. O Allah, You Alone we worship, to You Alone we pray and prostrate, to You Alone we strive and hasten. We hope for Your mercy and we fear Your punishment: Your severe punishment will surely be meted out to the disbelievers.",
+                                "dua_virtue":"Abū ʿAbdur Raḥmān relates: “Ibn Masʿūd (raḍiy Allāhu ‘anhu) taught us that we read [the above] in the qunūt.” (Ibn Abī Shaybah 518/4)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 23,
+                            "dua_title": "Qunut#3",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِرِضَاكَ مِنْ سَخَطِكَ ، وَأَعُوْذُ بِمُعَافَاتِكَ مِنْ عُقُوْبَتِكَ ، وَأَعُوْذُ بِكَ مِنْكَ ، لَا أُحْصِيْ ثَنَاءً عَلَيْكَ ، أَنْتَ كَمَا أَثْنَيْتَ عَلَىٰ نَفْسِكَ.",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bi-riḍāka min sakhatik, wa bi-muʿāfātika min ʿuqūbatik, wa aʿūdhu bika minka, lā uḥṣī thanā’an ʿalayk, Anta kamā athnayta ʿalā nafsik.",
+                                "dua_meaning":"O Allah, I seek protection in Your pleasure from Your anger. I seek protection in Your forgiveness from Your punishment. I seek protection in You from Your [aforementioned anger and punishment]. I cannot enumerate Your praise. You are as You have praised Yourself.",
+                                "dua_virtue":"ʿAlī b. Abī Ṭālib (raḍiy Allāhu ‘anhu) narrates: “The Messenger of Allah ﷺ used to say [the above] at the end of his witr ṣalāh.” (Abū Dāwūd 1427, Tirmidhī 3566, Ibn Mājah 1179) In another narration, it is narrated from Aishā (raḍiy Allāhu ‘anhā): “I noticed that the Messenger of Allah ﷺ was missing from his bed one night, so I went looking for him, and my hand touched the soles of his feet while he was prostrating with his feet upright. He was saying: [the above without the word إِنِّيْ].” (Muslim 486)"
+                            },
+                            "status": true
+                        }
+                    ],
+                    "status": true
+                },
+                {
+                    "item_id": 5,
+                    "item_title": "After Salah",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "After Salah #1",
+                            "dua_details": {
+                                "dua_arb":"اللَّهُمَّ أَنْتَ السَّلَامُ، وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ (x3) أَسْتَغْفِرُ اللَّهَ وَالأكْرَامُ",
+                                "dua_transliteration": "Astaghfiru-llāh (x3), Allāhumma Anta-s-Salām, wa minka-s-salām, tabārakta yā Dha-l-Jalāli wa-l-Ikrām.",
+                                "dua_meaning":"I seek the forgiveness of Allah (x3). O Allah, You are The Flawless and The Source of Peace, and from You comes peace. Blessed are You, full of Majesty and Honour.",
+                                "dua_virtue": "Thawbān (raḍiy Allāhu ‘anhu) reported that when the Messenger of Allah ﷺ finished his prayer, he would seek forgiveness three times and say [the above]. (Muslim 591)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "After Salah #2",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ ، اَللّٰهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ ، وَلَا يَنْفَعُ ذَا الْجَـدِّ مِنْكَ الْجَـدُّ. ",
+                                "dua_transliteration": "Lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku, wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr, Allāhumma lā māniʿa li-mā aʿaṭayt, wa lā muʿṭiya li-mā manʿat, wa lā yanfaʿu dha-l-jaddi minka-l-jadd.", 
+                                "dua_meaning": "There is no god but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful. O Allah, there is none who can withhold what You give, and none can give what You withhold; and the wealth of the wealthy does not avail them against You",
+                                "dua_virtue":"Warrād (the clerk of Mughīrah b. Shuʿba) narrated that once Mughīrah (raḍiy Allāhu ‘anhu) dictated to me in a letter addressed to Muʿāwiyya (raḍiy Allāhu ‘anhu) that the Prophet ﷺ used to say [the above] after every compulsory prayer. (Bukhārī 844)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "After Salah #3",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ ، لَا إِلٰهَ إِلَّا اللّٰهُ ، وَلَا نَعْبُدُ إِلَّا إيَّاهُ ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ ، لَا إِلٰهَ إِلَّا اللّٰهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ ، وَلَوْ كَرِهَ الْكَافِرُوْنَ.",
+                                "dua_transliteration": "",
+                                "dua_meaning":"",
+                                "dua_virtue":""
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "After Salah #4",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ أَعِنِّيْ عَلَىٰ ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ.",
+                                "dua_transliteration": "Allāhumma aʿinnī ʿalā dhikrika wa shukrika wa ḥusni ʿibādatik.",
+                                "dua_meaning":"O Allah, help me in remembering You, in being grateful to You, and in worshipping You in an excellent manner.",
+                                "dua_virtue":"Mu’ādh b. Jabal (raḍiy Allāhu ‘anhu) reported that the Messenger of Allah ﷺ took him by the hand and he said, “O Mu’ādh, I swear by Allah that I love you. I swear by Allah that I love you. O Mu’ādh, I advise you not to forget supplicating after every prayer by saying: [the above]. (Abū Dāwūd 1522)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 5,
+                            "dua_title": "After Salah #5",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْبُخْلِ ، وَأَعُوْذُ بِكَ مِنَ الْجُبْنِ ، وَأَعُوْذُ بِكَ مِنْ أَنْ أُرَدَّ إِلَىٰ أَرْذَلِ الْعُمُرِ ، وَأَعُوْذُ بِكَ مِنْ فِتْنَةِ الدُّنْيَا ، وأَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ.",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bika mina-l-bukhl, wa aʿūdhu bika mina-l-jubn, wa aʿūdhu bika min an uradda ilā ardhali-l-ʿumur, wa aʿūdhu bika min fitnati-d-dunyā, wa aʿūdhu bika min ʿadhābi-l-qabr.",
+                                "dua_meaning":"O Allah, I seek Your protection from miserliness and I seek Your protection from cowardice. I seek Your protection from being sent back to a miserable old age. I seek Your protection from the trials of the world and I seek Your protection from the punishment of the grave.",
+                                "dua_virtue":"‘Amr b. Maymūn al-Awdī narrated that Sa’d (raḍiy Allāhu ‘anhu) used to teach his sons the following words as a teacher teaches his students and he used to say that the Messenger of Allah ﷺ used to seek refuge with Allah from them [the above] at the end of every prayer. (Ibn Ḥibbān 2024)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "After Salah #6",
+                            "dua_details": {
+                                "dua_arb":  "(x33) سُبْحَانَ اللّٰهِ. (x33) اَلْحَمْدُ لِلّٰهِ. (x33) اَللّٰهُ أَكْبَرُ. لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ.",
+                                "dua_transliteration": "Subḥāna-llāh (x33), Alḥamduli-llāh (x33), Allāhu akbar (x33), Lā ilāha illā Allāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr.",
+                                "dua_meaning":"Allah is free from imperfection. All praise be to Allah. Allah is the Greatest. There is no god but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful.",
+                                "dua_virtue":"Abū Hurayrah (raḍiy Allāhu ‘anhu) narrated that the Messenger of Allah ﷺ said: “He who recites [the above] after every prayer will have all his sins forgiven even if they are as abundant as the foam of the sea.” (Muslim 597). /n/n Abū Hurayrah (raḍiy Allāhu ‘anhu) narrated that Abū Dharr said: “O Prophet of Allah, the wealthy people have all the rewards; they pray as we pray; they fast as we fast; and they have surplus wealth which they give in charity; but we have no wealth which we may give in charity. The Messenger of Allah ﷺ said: O Abū Dharr, should I not teach you phrases by which you acquire the rank of those who excel you? No one can acquire your rank except one who acts like you. He said: Why not, Messenger of Allah? He said: say [the above] after each prayer.” (Abū Dāwūd 1504)./n/n Ka’b bin ‘Ujra (raḍiy Allāhu ‘anhu) reported the Messenger of Allah ﷺ as saying: “There are certain utterances, the repeaters of which or the performers of which at the end of every obligatory prayer will never be caused disappointment: ‘Subhānallah’ 33 times, ‘Alhamdulillah’ 33 times and ‘Allahu Akbar’ 34 times after every prayer. (Muslim 596)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "After Salah #7",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّوْمُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ.",
+                                "dua_transliteration": "Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta’khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā’lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay’im-min ʿilmihī illā bi-mā shā’, wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya’ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.",
+                                "dua_meaning":"I seek the protection of Allah from the accursed Shayṭān. Allah, there is no god worthy of worship but He, the Ever Living, The Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him Alone belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except with His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent. (2:255)",
+                                "dua_virtue":"Abū Umāmah (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ said: “Whoever reads [Āyat al-Kursī] after every obligatory prayer, there is nothing that will prevent him from entering Paradise except death.” (Nasā’ī in ‘Amal al-Yawm wa-l-Laylah 100)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 8,
+                            "dua_title": "After Salah #8",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ هُوَ اللّٰهُ أَحَدٌ ، اَللّٰهُ الصَّمَدُ ، لَمْ يَلِدْ وَلَمْ يُوْلَدْ ، وَلَمْ يَكُنْ لَّهُ كُفُوًا أَحَدٌ.بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ الْفَلَقِ ، مِنْ شَرِّ مَا خَلَقَ ، وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ، وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ، وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ.بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ. قُلْ أَعُوْذُ بِرَبِّ النَّاسِ ، مَلِكِ النَّاسِ ، إِلٰهِ النَّاسِ ، مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ، اَلَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِ ، مِنَ الْجِنَّةِ وَالنَّاسِ.",
+                                "dua_transliteration": "Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul Huwa-llāhu Aḥad. Allāhu-ṣ-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakul-lahū kufuwan aḥad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi Rabbi-l-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri-n-naffāthāti fi-l-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad. Bismi-llāhi-r-Raḥmāni-r-Raḥīm. Qul aʿūdhu bi rabbi-n-nās. Maliki-n-nās. Ilāh-hin-nās. Min sharri-l-waswāsi-l-khannās. Al-ladhī yuwaswisu fī ṣudūri-n-nās. Mina-l-jinnati wa-n-nās.",
+                                "dua_meaning":"In the name of Allah, the All-Merciful, the Very Merciful. Say, He is Allah, the One, the Self-Sufficient Master, Who has not given birth and was not born, and to Whom no one is equal. (112) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of the daybreak, from the evil of what He has created, and from the evil of the darkening night when it settles, and from the evil of the blowers in knots, and from the evil of the envier when he envies. (113) In the name of Allah, the All-Merciful, the Very Merciful. Say, I seek protection of the Lord of mankind, the King of mankind, the God of mankind, from the evil of the whisperer who withdraws, who whispers in the hearts of mankind, whether they be Jinn or people. (114)",
+                                "dua_virtue":"‘Uqbah b. ‘Āmir (raḍiy Allāhu ‘anhu) said: “The Messenger of Allah ﷺ commanded me to recite ‘al-Mu’awwidhāt’ at the end of every prayer.” (Abū Dāwūd 1523)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 9,
+                            "dua_title": "To Be Read After Fajr & Maghrib #1",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ.",
+                                "dua_transliteration": "Lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamdu yuḥyī wa yumīt, wa Huwa ʿalā kulli shay’in Qadīr.",
+                                "dua_meaning":"There is no god but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He gives life and He gives death. He is over all things All-Powerful.",
+                                "dua_virtue":"Abū Dharr (raḍiy Allāhu ʿanhā) narrated that the Messenger of Allah ﷺ said: “Whoever says [the above] 10 times after Maghrib and Fajr, whilst sitting in the position of tashahhud and before moving, Allah will write 10 good deeds for him for each time he says it. (Likewise) He will forgive 10 sins and raise 10 stages for him. It will be a shield for him against all repulsive things and he will be guarded from Shaytān. No sin will be allowed to reach him that day (i.e. destroy him or invalidate his actions) except for shirk. He will be from the best of people in terms of actions, except for the one who recites it even more than him.” (Aḥmad 17990)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 10,
+                            "dua_title": "To Be Read After Fajr & Maghrib #2",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ أَجِرْنِيْ مِنَ النَّارِ.",
+                                "dua_transliteration": "Allāhumma ajirnī mina-n-nār.",
+                                "dua_meaning":"O Allah, protect me from the Hell-fire.",
+                                "dua_virtue":"Muslim b. Ḥārith al-Tamīmī (raḍiy Allāhu ‘anhu) narrates that the Messenger of Allah ﷺ secretly said to him: “When you finish Maghrib, say [the above] seven times. If you say that and then die during that night, it will be a protection for you. And after praying Fajr, say the same. If you die on that day, it will be a protection for you.” (Abū Dāwūd 5079)"
+                            },
+                            "status": true
+                        },{
+                            "dua_id": 11,
+                            "dua_title": "To Be Read After Fajr",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ عِلْمًا نَافِعًا ، وَرِزْقًا طَيِّبًا ، وَعَمَلًا مُتَقَبَّلًا.",
+                                "dua_transliteration": "Allāhumma innī as’aluka ʿilma-n-nāfiʿā, wa rizqan ṭayyibā, wa ʿamalam-mutaqabbalā.",
+                                "dua_meaning":"O Allah, I ask You for beneficial knowledge, wholesome sustenance, and deeds which are accepted",
+                                "dua_virtue":"Umm Salamah (raḍiy Allāhu ‘anhā) narrated that when the Prophet ﷺ performed the Fajr ṣalāh, he would say [the above], when he said the salām. (Ibn Mājah 925)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 12,
+                            "dua_title": "To Be Read After Witr",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَ الْمَلِكِ الْقُدُّوْسِ.",
+                                "dua_transliteration": "Subḥāna-l-Maliki-l-Quddūs.",
+                                "dua_meaning":"How perfect is the Sovereign, the Most Holy.",
+                                "dua_virtue":"Ubayy b. Ka’b (raḍiy Allāhu ‘anhu) narrated that the Messenger of Allah ﷺ used to pray the Witr with three rak’ahs. In the first he would recite: [Sūrah al-A’la] in the second: [Sūrah al-Kafirun], and in the third: [Sūrah al-Ikhlas]. And he would say the Qunūt before bowing, and when he finished he would say [the above], and would raise and extend his voice the third time. (Nasā’ī 1699)"
+                            },
+                            "status": true
+                        }
+                        
+                    ],
+                    "status": true
+                }
+            ],
+            "status": true
+        },
+        {
+            "category_id": 2,
+            "category_name": "Other",
+            "category_details": [
+                {
+                    "item_id": 1,
+                    "item_title": "Waking up",
+                    "item_icon": "assets/images/icons/best_yeah_allah.png",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "When Changing Sides at Night",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلاَّ اللّٰهُ الْوَاحِدُ الْقَهَّارُ ، رَبُّ السَّمٰـوٰتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيْزُ الْغَفَّارُ",
+                                "dua_transliteration": "Lā ilāha illa-Allāhu-l-Wāḥid-ul-Qahhār, Rabbu-s-samāwāti wa-l-ardi wa mā baynahuma-l-ʿAzīz-ul-Ghaffār.",
+                                "dua_meaning": "There is no god worthy of worship but Allah: The One, The All-Dominant; Lord of the heavens, the earth and whatever is between them; The Mighty, The Most Forgiving.",
+                                "dua_virtue": "ʿĀishah (raḍiy Allāhu ʿanhā) narrates that when the Messenger of Allah would turn and change sides at night, he would say [the above]. (Nasā’ī in Sunan al-Kubrā 10700)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "When One Wakes Up At Night",
+                            "dua_details": {
+                                "dua_arb": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، لَهُ الْمُلْكُ ، وَلَهُ الْحَمْدُ ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ‏ ، اَلْحَمْدُ لِلّٰهِ‏ ، وَسُبْحَانَ اللّٰهِ ، وَلَا إِلٰهَ إِلَّا اللّٰهُ ، وَاللّٰهُ أَكْبَرُ ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ ، اَللّٰهُمَّ اغْفِرْ لِيْ.",
+                                "dua_transliteration": "Lā ilāha illā-l-lāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamd, wa Huwa ʿalā kulli shay’in Qadīr, alḥamdu li-llāh, wa subḥāna-llāh, wa lā ilāha illā-l-llāh, wa-llāhu akbar, wa lā ḥawla wa lā quwwata illā bi-llāh, allāhumma-ghfir lī.",
+                                "dua_meaning": "There is no god worthy of worship but Allah. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful. All praise be to Allah and Allah is free from imperfection. There is no god but Allah. Allah is the Greatest. There is no power (in averting evil) or strength (in attaining good) except through Allah. O Allah, forgive me.",
+                                "dua_virtue": "ʿThe Messenger of Allah ﷺ said: “Whoever gets up at night and says [the above] and then says: ‘O Allah, forgive me’ or makes duʿā’, it will be accepted. If he performs wuḍū’ and prays, his prayer will be accepted.” (Bukhārī)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "After Waking Up #1",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ عَافَانِيْ فِيْ جَسَدِيْ ، وَرَدَّ عَليَّ رُوْحِيْ ، وَأَذِنَ لِييْ بِذِكْرِهِ.",
+                                "dua_transliteration": "Alḥamdu li-llāhi-l-ladhī ʿāfānī fī jasadī, wa radda ʿalayya rūḥī, wa adhina lī bi dhikrih.",
+                                "dua_meaning": "All praise is for Allah Who granted me well-being in my body, and returned my soul to me and allowed me to remember Him.",
+                                "dua_virtue": "ʿAbū Hurayrah (raḍiy Allāhu ʿanhu) narrated that the Messenger of Allah ﷺ said: “When one of you leaves his bed then returns to it, then he should dust it off with the edge of his garment three times, for indeed he does not know what came upon it after him. When he lies down, he should say: ‘In Your Name my Lord, I lie down, and in Your Name, I rise. If You take my soul away then have mercy upon it; and if You return my soul then protect it with what you protect Your righteous servants with.’ And when he wakes up, he should say [the above].” (Tirmidhī 3401)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "After Waking Up #2",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرُ",
+                                "dua_transliteration": "Alḥamdu li-llāhi-l-ladhī aḥyānā baʿda mā amātanā wa ilayhi-n-nushūr.",
+                                "dua_meaning": "All praise is for Allah who gave us life after having taken it from us, and unto Him is the resurrection.",
+                                "dua_virtue": "Abū Dharr (raḍiy Allāhu ʿanhu) said: “When the Prophet ﷺ would lie on his bed at night, he would say: ‘O Allah, solely in Your Name I die and I live,’ and when he would wake up, he would say [the above]. (Bukhārī 6325)"
+                            },
+                            "status": true
+                        },
+                        
+                        {
+                            "dua_id": 5,
+                            "dua_title": "Last 10 Ayat of Surah Al-Imran",
+                            "dua_details": {
+                                "dua_arb": "إِنَّ فِىْ خَلْقِ السَّمـٰوٰتِ وَالْأَرْضِ وَاخْتِلٰـفِ الَّيْلِ وَالنَّهَارِ لاٰيٰاتٍ لِّأُولِى الْأَلْبَـٰبِ. الَّذِيْنَ يَذْكُرُوْنَ اللّٰهَ قِيَـٰمًا وَّقُعُوْدًا وَّعَلَىٰ جُنُوْبِهِمْ وَيَتَفَكَّرُوْنَ فِىْ خَلْقِ السَّمـٰوٰتِ وَالْأَرْضِ ، رَبَّنَا مَا خَلَقْتَ هَـٰذَا بٰطِلًا ، سُبْحٰنَكَ فَقِنَا عَذَابَ النَّارِ. رَبَّنَآ إِنَّكَ مَنْ تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ ، وَمَا لِلظّـٰلِمِيْنَ مِنْ أَنصَارٍ. رَبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُّنَادِىْ لِلْإِيْمَـٰنِ أَنْ اٰمِنُوْا بِرَبِّكُمْ فَاٰمَنَّا ۚ ، رَبَّنَا فَاغْفِرْ لَنَا ذُنُوْبَنَا وَكَفِّرْ عَنَّا سَيِّـاٰتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ. رَبَّنَا وَاٰتِنَا مَا وَعَدْتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيـٰمَةِ ۗ ، إِنَّكَ لَا تُخْلِفُ الْمِيْعَادَ. فَاسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّىْ لَآ أُضِيْعُ عَمَلَ عَـامِلٍ مِّنْكُمْ مِّنْ ذَكَرٍ أَوْ أُنثَىٰ ۖ ، بَعْضُكُمْ مِّنۢ بَعْضٍ ۖ ، فَالَّذِيْنَ هَاجَرُوْا وَأُخْرِجُوْا مِن دِيَارِهِمْ وَأُوْذُوْا فِىْ سَبِيْلِىْ وَقٰتَلُوْا وَقُتِلُوْا لَأُكَفِّرَنَّ عَنْهُمْ سَيِّاٰتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّـٰتٍ تَجْرِىْ مِنْ تَحْتِهَا الْأَنْهٰرُ ، ثَوَابًا مِّنْ عِندِ اللّٰهِ ۗ ، وَاللّٰهُ عِندَهُۥ حُسْنُ الثَّوَابِ. لَا يَغُرَّنَّكَ تَقَلُّبُ الَّذِيْنَ كَفَرُوْا فِىْ الْبِلَـٰدِ ، مَتاَعٌ قَلِيْلٌ ثُمَّ مَأْوٰهُمْ جَهَنَّمُ ۚ وَبِئْسَ الْمِهَادُ. لٰكِنِ الَّذِيْنَ اتَّقَوْا رَبَّهُمْ لَهُمْ جَنَّـٰتٌ تَجْرِىْ مِنْ تَحْتِهَا الْأَنْهٰرُ خٰلِدِيْنَ فِيْهَا نُزُلًا مِّنْ عِنْدِ اللّٰهِ ۗ ، وَمَا عِنْدَ اللّٰهِ خَيْرٌ لِّلْأَبْرَارِ. وَإِنَّ مِنْ أَهْلِ الْكِتٰبِ لَمَنْ يُّؤْمِنُ بِاللّٰهِ وَمَآ أُنْزِلَ إِلَيْكُمْ وَمَآ أُنْزِلَ إِلَيْهِمْ خٰشِعِيْنَ لِلّٰهِ لَا يَشْتَرُوْنَ بِاٰيٰتِ اللّٰهِ ثَمَنًا قَلِيْلًا ۗ ، أُولـٰٓئِكَ لَهُمْ أَجْرُهُمْ عِنْدَ رَبِّهِمْ ۗ ، إِنَّ اللّٰهَ سَرِيْعُ الْحِسَابِ. يَـٰٓأَيُّهَا الَّذِيْنَ اٰمَنُوا اصْبِرُوْا وَصَابِرُوْا وَرَابِطُوْا وَاتَّقُوا اللّٰهَ لَعَلَّكُمْ تُفْلِحُونَ.",
+                                "dua_transliteration": "Inna fī khalqis samāwāti wa-l-arḍi wa-khtilāfi-l-layli wan-nahāri la āyātil li-uli-l-albāb, Alladhīna yadhkurūnal-lāha qiyāmaw-wa quʿudaw-wa ʿalā junūbihim wa yatafakkarūna fī khalqi-s-samāwāti wa-l-arḍi Rabbanā mā khalaqta hādhā bātilā, Subhānaka faqinā ʿadhāba-n-nār. Rabbāna innaka man tudkhili-n-nāra fa-qad akhzaytah wa mā li-dhālimīnā min anṣār. Rabbanā in-nanā samiʿnā munādiya-y-yunādi lil imāni an āminu bi Rabbikum fa āmannā; Rabbanā faghfir lanā dhunūbanā wa-kaffir ʿannā sayyi’ātinā wa tawaffanā maʿal abrār. Rabbanā wa ātinā mā wa'dattanā ʿalā rusulika wa lā tukhzinā Yawmal Qiyāmah; innaka lā tukhliful miʿād. Fastajāba lahum Rabbuhum annī lā udīu ʿamala ʿāmili-m-minkum min dhakariw-w-unthā ba'dhukum min ba'dhin fal-l-adhīna hājaru wa ukhrijū min diyārihim wa ūdhū fī sabīlī wa qātalu wa qutilū la-ukaffiranna ʿanhum sayyi’ātihim wa la-udkhilannahum Jannātin tajrī min taḥtiha-l-anhāru thawābam min ʿindi-l-lāh; wallāhu ʿindahu ḥusnu-th-thawāb. Lā yaghurrannaka taqal-lubul ladhīna kafarū fi-l-bilād. Matāʿun qalīl; thumma ma'wāhum Jahannam; wa bi'sa-l-mihād. Lākini-l-ladhīna-t-taqaw Rabbahum lahum Jannātun tajrī min tahtiha-l-anāru khālidīna fīhā nuzulam-min ʿindil lāh, wa mā ʿindal lāhi khayrul-lil-abrār. Wa inna min Ahli-l-Kitābi lamay-y-yu'minu billāhi wa mā unzila ilaykum wa mā unzila ilayhim khāshiʿeena lillāhi lā yashtaroona bi Āyātil lāhi samanan qaleelaa; ulā'ika lahum ajruhum 'inda Rabbihim; inna-l-lāha sarī'ul hisāb. Yā-ayyuha-l-ladhīna āmanu-ṣbirū wa ṣābirū wa rābiṭū wa-t-taqul-lāha laʿallakum",
+                                "dua_meaning": "Indeed, in the creation of the heavens and the earth and the alternation of the day and night there are signs for people of reason. (3:190) (They are) those who remember Allah while standing, sitting, and lying on their sides, and reflect on the creation of the heavens and the earth (and pray), “Our Lord! You have not created (all of) this without purpose. Glory be to You! Protect us from the torment of the Fire. (3:191) Our Lord! Indeed, those You commit to the Fire will be (completely) disgraced! And the wrongdoers will have no helpers. (3:192) Our Lord! We have heard the caller to (true) belief, (proclaiming,) ‘Believe in your Lord (alone),’ so we believed. Our Lord! Forgive our sins, absolve us of our misdeeds, and allow us ˹each˺ to die as one of the virtuous. (3:193) Our Lord! Grant us what You have promised us through Your messengers and do not put us to shame on Judgment Day—for certainly You never fail in Your promise.” (3:194) So their Lord responded to them: “I will never deny any of you—male or female—the reward of your deeds. Both are equal in reward. Those who migrated or were expelled from their homes, and were persecuted for My sake and fought and (some) were martyred—I will certainly forgive their sins and admit them into Gardens under which rivers flow, as a reward from Allah. And with Allah is the finest reward!” (3:195) Do not be deceived by the prosperity of the disbelievers throughout the land. (3:196) It is only a brief enjoyment. Then Hell will be their home—what an evil place to rest! (3:197) But those who are mindful of their Lord will be in Gardens under which rivers flow, to stay there forever—as an accommodation from Allah. And what is with Allah is best for the virtuous. (3:198) Indeed, there are some among the People of the Book who truly believe in Allah and what has been revealed to you and what was revealed to them. They humble themselves before Allah—never trading Allah’s revelations for a fleeting gain. Their reward is with their Lord. Surely Allah is swift in reckoning. (3:199) O believers! Patiently endure, persevere, stand on guard, and be mindful of Allah, so you may be successful. (3:200)",
+                                "dua_virtue": "ʿAbdullāh b. ʿAbbās (radiy Allāhu ʿanhumā) narrated that he stayed overnight in the house of Maymūnah (raḍiy Allāhu ʿanhā) the wife of the Prophet ﷺ, who was his aunt. (He said): “I lay horizontally while the Messenger of Allah ﷺ and his wife lay in the lengthwise direction of the cushion. The Messenger of Allah ﷺ slept till the middle of the night, either a little before or a little after it and then woke up, rubbing the traces of sleep off his face with his hands. **He then, recited the last ten verses of Sūrah Al-ʿImrān**. He then got up and went to a hanging water-skin, he performed wuḍū’ from it and he perfected his wuḍū’, and then stood up to offer the ṣalāh. I, too, got up and did as the Prophet ﷺ had done. Then I went and stood by his side. He placed his right hand on my head and held my right ear, pulling it (either to move him from the left side to the right side, or to help him feel less sleepy). He prayed two rakʿahs, then two rakʿahs, then two rakʿahs, then two rakʿahs, then two rakʿah, then two rakʿahs (i.e. 12 in total), and then one rakʿah (the witr). Then he lay down again until the mu’adhdhin came to him whereupon the Prophet ﷺ got up, offered two light rakʿahs and went out and performed the Morning prayer. (Bukhārī 183)"
+                            },
+                            "status": true
+                        }
+                    ],
+                    "status": true
+                },
+                {
+                   "item_id": 2,
+                    "item_title": "Nightmare",
+                    "item_icon": "",
+                    "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "After a Nightmare",
+                            "dua_details": {
+                                "dua_arb": "أَعُوْذُ بِكَلِمَاتِ اللّٰهِ التَّامَّاتِ مِنْ غَضَبِهِ وَعِقَابِهِ ، وَشَرِّ عِبَادِهِ ، وَمِنْ هَمَزَاتِ الشَّيَاطِيْنِ وَأَنْ يَّحْضُرُوْنِ.",
+                                "dua_transliteration": "Aʿūdhu bi kalimāt-i-llāhi-t-tāmmāti min ghaḍabihi wa ʿiqābih, wa sharri ʿibādih, wa min hamazāti-sh-shayaṭīn wa an yaḥḍurūn.",
+                                "dua_meaning": "I seek protection in the perfect words of Allah from His anger and punishment, and from the evil of His servants, and from the evil suggestions of the devils and from them appearing to me.",
+                                "dua_virtue": "ʿAmr b. Shuʿayb narrated from his father, who narrated from his grandfather, that the Messenger of Allah ﷺ said: “When one of you becomes frightened during sleep, then let him say: [the above]. For verily, they shall not harm him.” He said: “So ʿAbdullah b. ʿAmr (raḍiy Allāhu ‘anhu) used to teach it to those of his children who attained maturity, and those of them who did not, he would write it on a sheet and then hang it around their neck.” (Tirmidhī 3528)./n/n The Messenger of Allah ﷺ said: “A good dream is from Allah, so if anyone of you sees a dream which pleases him, he should not tell anybody about it except to the one whom he loves. And if he sees a dream which he dislikes, then he should seek Allah’s protection from its evil and from the evil of Shaytān. He should spit three times on his left and should not tell anybody about it, lest it might harm him.” (Bukhārī 6986)"
+                            },
+                            "status": true
+                        }
+                    ],
+                    "status": true
+                },
+                {
+                    "item_id": 3,
+                     "item_title": "Clothes",
+                     "item_icon": "",
+                     "item_details": [
+                         {
+                             "dua_id": 1,
+                             "dua_title": "Before Removing clothe",
+                             "dua_details": {
+                                 "dua_arb": "بِسْمِ اللّٰهِ",
+                                 "dua_transliteration": "Bismi-llāh.",
+                                 "dua_meaning": "In the Name of Allah.",
+                                 "dua_virtue": "Anas b. Mālik (raḍiy Allāhu ʿanhu) narrated that the Messenger of Allah ﷺ said: “The screen between the jinn and the nakedness of the children of Ādam when they take off their garments is that they say [the above].” (Ṭabarānī in al-Muʿjam al-Awsaṭ 7066)"
+                             },
+                             "status": true
+                         },
+                         {
+                            "dua_id": 2,
+                            "dua_title": "After Wearing clothes",
+                            "dua_details": {
+                                "dua_arb": "اَلْحَمْدُ لِلّٰهِ الَّذِيْ كَسَانِيْ هٰذَا الثَّوْبَ ، وَرَزَقَنِيْهِ مِنْ غَيْرِ حَوْلٍ مِّنِّيْ وَلَا قُوَّةٍ.",
+                                "dua_transliteration": "Alḥamdu li-llāhi-l-ladhī kasānī hādha-th-thawb, wa razaqanīhi min ghayri ḥawli-m-minnī wa lā quwwah.",
+                                "dua_meaning": "All praise is for Allah who has clothed me with this garment and provided it for me, without any power or might from me",
+                                "dua_virtue": "Muʿādh b. Anas (raḍiy Allāhu ʿanhu) narrated that the Prophet ﷺ said: “Whoever puts on a garment and says [the above], his past and future sins will be forgiven.” (Abū Dāwūd 4023)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "When Wearing New Clothes",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيْهِ ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ",
+                                "dua_transliteration": "Allāhumma laka-l-ḥamdu Anta kasawtanīhi, as’aluka min khayrihī wa khayri mā ṣuniʿa lahu, wa aʿūdhu bika min sharrihī wa sharri mā ṣuniʿa lahu.",
+                                "dua_meaning": "O Allah, all praise is for You Alone — You have clothed me with it. I ask You for its good and the good of that for which it was made; and I seek Your protection from its evil and the evil of that for which it was made.",
+                                "dua_virtue": "Abū Saʿīd al-Khudrī (raḍiy Allāhu ʿanhu) reported that when the Messenger of Allah ﷺ wore a new garment he would name it: either a turban, a shirt, or a cloak; and then he would say [the above].(Tirmidhī 1767)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "To be Said to Someone Wearing New Clothes",
+                            "dua_details": {
+                                "dua_arb": "تُبْلِيْ وَيُخْلِفُ اللّٰهُ تَعَالَىٰ.",
+                                "dua_transliteration": "Tublī wa yukhlifu-llāhu taʿālā.",
+                                "dua_meaning": "May you wear it out and may Allah replace it (with another)",
+                                "dua_virtue": "Abū Naḍrah said: When any of the Companions of the Prophet ﷺ put on a new garment, [the above] was said to him. (Abū Dāwūd 4020)"
+                            },
+                            "status": true
+                        }
+                     ],
+                     "status": true
+                 },
+                 {
+                    "item_id": 4,
+                     "item_title": "Lavatory & Wudu",
+                     "item_icon": "",
+                     "item_details": [
+                         {
+                             "dua_id": 1,
+                             "dua_title": "Before Entering the Lavatory",
+                             "dua_details": {
+                                 "dua_arb": "بِسْمِ اللّٰهِ ، اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ.",
+                                 "dua_transliteration": "Bismi-llāh, allāhumma innī aʿūdhu bika mina-l-khubuthi wa-l-khabā’ith",
+                                 "dua_meaning": "In the Name of Allah. O Allah, I seek Your protection from the male and female devils.",
+                                 "dua_virtue": "Alī b. Abī Tālib (raḍiy Allāhu ‘anhu) narrated that the Messenger of Allah ﷺ said: “The screen between the jinn and the nakedness of the children of Ādam when they enter the lavatory is to say: ‘In the Name of Allah.’” (Tirmidhī 606)./n/nAnas b. Mālik (raḍiy Allāhu ‘anhu) narrated that whenever the Prophet ﷺ went to answer the call of nature, he used to say: “O Allah, I seek Your protection from the male and female devils.” (Bukhārī 142, Muslim 375)./n/n Zayd b. Arqam (raḍiy Allāhu ‘anhu) narrated that the Messenger of Allah ﷺ said: “These waste areas are visited (by jinns), so when anyone of you enters, let him say: ‘O Allah, I seek Your protection from the male and female devils. (Abū Dāwūd 6, Ibn Ḥibbān 1408, Ibn Mājah 296)"
+                             },
+                             "status": true
+                         },
+                         {
+                            "dua_id": 2,
+                            "dua_title": "After Coming Out of the Lavatory",
+                            "dua_details": {
+                                "dua_arb": "غُفْرَانَكَ",
+                                "dua_transliteration": "Ghufrānak",
+                                "dua_meaning": "I seek Your forgiveness.",
+                                "dua_virtue": "ʿĀishah (raḍiy Allāhu ‘anhā) narrates that when the Prophet ﷺ came out of the lavatory, he used to say: [the above]” (Abū Dāwūd 30)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "When Wearing New Clothes",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيْهِ ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ",
+                                "dua_transliteration": "Allāhumma laka-l-ḥamdu Anta kasawtanīhi, as’aluka min khayrihī wa khayri mā ṣuniʿa lahu, wa aʿūdhu bika min sharrihī wa sharri mā ṣuniʿa lahu.",
+                                "dua_meaning": "O Allah, all praise is for You Alone — You have clothed me with it. I ask You for its good and the good of that for which it was made; and I seek Your protection from its evil and the evil of that for which it was made.",
+                                "dua_virtue": "Abū Saʿīd al-Khudrī (raḍiy Allāhu ʿanhu) reported that when the Messenger of Allah ﷺ wore a new garment he would name it: either a turban, a shirt, or a cloak; and then he would say [the above].(Tirmidhī 1767)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 4,
+                            "dua_title": "Before Wuḍu",
+                            "dua_details": {
+                                "dua_arb": "بِسْمِ اللّٰهِ.",
+                                "dua_transliteration": "Bismi-llāh.",
+                                "dua_meaning": "In the Name of Allah",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “There is no Ṣalāh for a person who does not perform wudhū, and there is no wudhū for a person who does not mention the name of Allah (in the beginning).” (Abū Dāwūd 101, Ibn Mājah 399)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 5,
+                            "dua_title": "When Passing Fingers Through the Beard",
+                            "dua_details": {
+                                "dua_arb": "هَـٰكَذَا أَمَرَنِيْ رَبِّيْ عَزَّ وَجَلَّ.",
+                                "dua_transliteration": "Hākadhā amaranī Rabbī ‘azza wa jal",
+                                "dua_meaning": "This is what I have been ordered to do by my Lord.",
+                                "dua_virtue": "Anas b. Mālik (raḍiy Allāhu ‘anhu) narrated: “Whenever the Messenger of Allah ﷺ performed ablution, he took a handful of water, and, putting it under his chin, made it go through his beard, saying: [the above].” (Abū Dāwūd 145, Bayhaqī 250)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 6,
+                            "dua_title": "After Completing Wuḍu #1",
+                            "dua_details": {
+                                "dua_arb": "أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَاشَرِيْكَ لَهُ ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ ورَسُوْلُهُ ، اَللّٰهُمَّ اجْعَلْنِيْ مِنَ التَّوَّابِيْنَ ، وَاجْعَلْنِيْ مِنَ المُتَطَهِّرِيْنَ.",
+                                "dua_transliteration": "Ash-hadu al-lā ilāha illā-llāhu waḥdahū lā sharīka lah, wa ash-hadu anna Muḥammadan ʿabduhu wa rasūluh. Allāhumma-j-ʿalnī mina-t-tawwābīn, wa-j-ʿalnī mina-l-mutaṭahhirīn.",
+                                "dua_meaning": "I bear witness that there is no god but Allah. He is Alone and He has no partner whatsoever. And I bear witness that Muhammad ﷺ is His slave and His Messenger. O Allah, make me amongst the repentant, and make me amongst those who purify themselves.",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “Whoever perfects his wudhū and then says [the above], the eight gates of Paradise will be opened for him. He may enter through whichever one he wishes.” (Tirmidhī 55)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "After Completing Wuḍu #2",
+                            "dua_details": {
+                                "dua_arb": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ ، أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا أَنْتَ ، أَسْتَغْفِرُكَ وأَتُوْبُ إِلَيْكَ.",
+                                "dua_transliteration": "Subḥanaka-llāhumma wa bi ḥamdik, ash-hadu al-lā ilāha illā Ant, astaghfiruka wa atūbu ilayk.",
+                                "dua_meaning": "You are free from imperfection, O Allah, and all praise is to You. I bear witness that there is no god but You. I seek Your forgiveness and turn to You in repentance.",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “Whosoever does wudhū and says [the above], it will be recorded in a parchment and then sealed with a seal which will not be broken till the Day of Judgement.” (Nasā’ī in ʿAmal al-Yawm wa-l-Laylah 81, al-Ṭabarānī in al-Duʿā’ 389)"
+                            },
+                            "status": true
+                        }
+                        
+                     ],
+                     "status": true
+                 },
+                 {
+                    "item_id": 5,
+                     "item_title": "Home",
+                     "item_icon": "",
+                     "item_details": [
+                         {
+                             "dua_id": 1,
+                             "dua_title": "When Leaving the Home #1",
+                             "dua_details": {
+                                 "dua_arb": "بِسْمِ اللّٰهِ تَوَكَّلْتُ عَلَى اللّٰهِ ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ.",
+                                 "dua_transliteration": "Bismi-llāhi tawakkaltu ʿalal-llāh, lā ḥawla wa lā quwwata illā bi-llāh.",
+                                 "dua_meaning": "In the Name of Allah, I have placed my trust in Allah. There is no power (in averting evil) or strength (in attaining good) except through Allah.",
+                                 "dua_virtue": "The Messenger of Allah ﷺ said: “Whoever says [the above] when leaving his house will be told: ‘You have been guided, you have been sufficed and you have been protected.’ Then one devil says to another devil: ‘How can you get to a man who has been guided, sufficed and protected?’” (Abū Dāwūd 5095, Tirmidhī 3426)"
+                             },
+                             "status": true
+                         },
+                         {
+                            "dua_id": 2,
+                            "dua_title": "When Leaving the Home #2",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَعُوْذُ بِكَ أَنْ أَضِلَّ أَوْ أُضَلَّ ، أَوْ أَزِلَّ أَوْ أُزَلَّ ، أَوْ أَظْلِمَ أَوْ أُظْلَمَ ، أَوْ أَجْهَلَ أَوْ يُجْهَلَ عَلَيَّ",
+                                "dua_transliteration": "Allāhumma innī aʿūdhu bika an aḍilla aw uḍalla, aw azilla aw uzalla, aw aẓlima aw uẓlama, aw ajhala aw yujhala ʿalayy.",
+                                "dua_meaning": "O Allah, I seek Your protection from misguiding others or being misguided; from erring or others causing me to err; from oppressing others or being oppressed; and from acting ignorantly or others acting ignorantly towards me.",
+                                "dua_virtue": "Umm Salamah (raḍiy Allāhu ‘anhā) said: “The Messenger of Allah ﷺ never left my house without raising his eyes to the sky and saying [the above]. (Abū Dāwūd 5094, Tirmidhī 3427)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "When Entering the Home",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ خَيْرَ الْمَوْلَجِ ، وَخَيْرَ الْمَخْرَجِ ، بِسْمِ اللّٰهِ وَلَجْنَا ، وَبِسْمِ اللّٰهِ خَرَجْنَا ، وَعَلَى اللّٰهِ رَبِّنَا تَوَكَّلْنَا.",
+                                "dua_transliteration": "Allāhumma innī as’aluka khayra-l-mawlaj, wa khayra-l-makhraj, bismi-llāhi walajnā, wa bismi-llāhi kharajnā, wa ʿalā-llāhi rabbinā tawakkalnā.",
+                                "dua_meaning":"O Allah, I ask You for the best entrance and the best exit. In the Name of Allah we enter, in the Name of Allah we leave, and in Allah our Lord do we trust.",
+                            "dua_virtue":"The Messenger of Allah ﷺ said: “When a person enters his home, he should say [the above]. Then he should greet his family.” (Abū Dāwūd 5096)./n/nThe Messenger of Allah ﷺ said: “When a man enters his house and remembers Allah upon entering and before eating, Shaytān says (to his fellow shaytān): ‘There is no place for you to spend the night and there is no supper for you.’ When he enters the house and does not remember Allah, Shaytān says: ‘You have found a place to spend the night.’ When he does not remember Allah before eating his food, Shaytān says: ‘You have found a place to stay and some supper.’” (Muslim 2018). /n/n Anas bin Mālik (raḍiyallāhu ʿanhu) narrates that the Messenger of Allah ﷺ said to me, “O my dear son, when you enter upon your family, greet them with salām as it will be a means of blessing for you and your family.” (Tirmidhī 2698).Allah says in the Qur’an: /n/n “When you enter homes, greet each other with peace – a greeting from the very providence of Allah, blessed and wholesome.”(24:61)"  
+                        },
+                            "status": true
+                        } 
+                     ],
+                     "status": true
+                 },
+                 {
+                    "item_id": 6,
+                     "item_title": "Adhan & Masjid",
+                     "item_icon": "",
+                     "item_details": [
+                        {
+                            "dua_id": 1,
+                            "dua_title": "After the Adhan is complete #1",
+                            "dua_details": {
+                                "dua_arb": "وَأَنَا أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ ، وَأَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ ، رَضِيْتُ بِاللهِ رَبًّا ، وَبِمُحَمَّدٍ رَسُوْلًا ، وَبِالْإِسْلَامِ دِيْنًا",
+                                "dua_transliteration": "Wa ana ash-hadu al-lā ilāha illa-llāhu waḥdahū lā sharīka lah, wa anna Muḥammadan ʿabduhū wa rasūluh, raḍītu bi-llāhi rabbā, wa bi Muḥammadi-r-rasūlā, wa bi-l-islāmi dīnā.",
+                                "dua_meaning": "I also bear witness that there is no god but Allah. He is Alone and He has no partner whatsoever, and that Muhammad ﷺ is His servant and His Messenger. I am satisfied with Allah as my Lord, with Muhammad as my Messenger, and with Islam as my religion.",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “If anyone says [the above] on hearing the mu’adhdhin, his sins will be forgiven.” (Muslim 386)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 2,
+                            "dua_title": "After the Adhan is complete #2",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ ، وَعَلَىٰ آلِ مُحَمَّدٍ",
+                                "dua_transliteration": "Allāhumma ṣalli ʿalā Muḥammad wa ʿalā āli Muḥammad…",
+                                "dua_meaning": "O Allah, honour and have mercy upon Muhammad and the family of Muhammad…",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “When you hear the mu’adhdhin calling for the prayer, repeat his words then send blessings upon me. The one who sends blessings upon me once, Allah will send 10 blessings upon him…” (Muslim 384)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 3,
+                            "dua_title": "After the Adhan is complete #3",
+                            "dua_details": {
+                                "dua_arb": "اَللّٰهُمَّ رَبَّ هٰذِهِ الدَّعْوَةِ التَّامَّةِ وَالصَّلَاةِ الْقَائِمَةِ ، آتِ مُحَمَّدًا الْوَسِيْلَةَ وَالْفَضِيْلَةَ ، وَابْعَثْهُ مَقَامًا مَّحْمُوْدًا الَّذِيْ وَعَدْتَّهُ",
+                                "dua_transliteration": "Allāhumma rabba hādhi-hi-d-dʿawati-t-tāmmati wa-ṣ-ṣalāti-l-qāimah, āti Muḥammadani-l-wasīlata wa-l-faḍīlah, wa-b-ʿath-hu maqāma-m-maḥmūdani-l-ladhī wa ʿadtah.",
+                                "dua_meaning": "O Allah, Lord of this perfect call and established prayer, grant Muhammad the status (a unique lofty status in Paradise) and pre-eminence, and resurrect him to the praiseworthy station that You have promised him.",
+                                "dua_virtue": "The Messenger of Allah ﷺ said: “Whoever says [the above] after the adhān shall receive my intercession on the Day of Judgement.” (Bukhārī 614)"
+                            },
+                            "status": true
+                        },
+                        {
+                            "dua_id": 7,
+                            "dua_title": "",
+                            "dua_details": {
+                                "dua_arb": "",
+                                "dua_transliteration": "",
+                                "dua_meaning": "",
+                                "dua_virtue": ""
+                            },
+                            "status": true
+                        } 
+                     ],
+                     "status": true
+                 }
+            ],
+            "status": true
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Noor – Islamic Daily Companion",
+  "description": "A calm, minimal, and emotion-driven Islamic spiritual companion featuring prayer times, Quran, daily quotes, and tools.",
+  "requestFramePermissions": ["geolocation"]
+}

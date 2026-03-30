@@ -1,0 +1,30 @@
+﻿{
+    "status": true,
+    "message": "Success",
+    "data": [
+        {
+            "ayat_id": 0,
+            "ayat_arb": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+            "ayat_transliteration": "Bismillah hir rahman nir raheem",
+            "ayat_meaning": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+        },
+        {
+            "ayat_id": 1,
+            "ayat_arb": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
+            "ayat_transliteration": "Innaaa a’tainaa kal kauthar",
+            "ayat_meaning": "Indeed, We have granted you, [O Muhammad], al-Kawthar."
+        },
+        {
+            "ayat_id": 2,
+            "ayat_arb": "فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ",
+            "ayat_transliteration": "Fasalli li rabbika wanhar",
+            "ayat_meaning": "So pray to your Lord and sacrifice [to Him alone]."
+        },
+        {
+            "ayat_id": 3,
+            "ayat_arb": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
+            "ayat_transliteration": "Inna shaani’aka huwal abtar",
+            "ayat_meaning": "Indeed, your enemy is the one cut off."
+        }
+    ]
+}

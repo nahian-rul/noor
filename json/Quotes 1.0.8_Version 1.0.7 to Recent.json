@@ -1,0 +1,180 @@
+[
+
+  {
+    "id": 131,
+    "quotes": "Seek knowledge from the cradle to the grave.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 132,
+    "quotes": "The ink of the scholar is more sacred than the blood of the martyr.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 133,
+    "quotes": "Read! In the name of your Lord.",
+    "is_favourite": null,
+    "reference": "Quran 96:1",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 134,
+    "quotes": "He who seeks knowledge, Allah will make his path to Paradise easy.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 135,
+    "quotes": "Indeed, with every difficulty, there is relief.",
+    "is_favourite": null,
+    "reference": "Quran 94:6",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 136,
+    "quotes": "Be patient. Indeed, the promise of Allah is truth.",
+    "is_favourite": null,
+    "reference": "Quran 30:60",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 137,
+    "quotes": "Verily, with hardship, there is ease.",
+    "is_favourite": null,
+    "reference": "Quran 94:5",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 138,
+    "quotes": "Allah does not burden a soul beyond that it can bear.",
+    "is_favourite": null,
+    "reference": "Quran 2:286",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 139,
+    "quotes": "If you are grateful, I will surely increase you [in favor].",
+    "is_favourite": null,
+    "reference": "Quran 14:7",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 140,
+    "quotes": "And remember, with gratitude, Allah will increase you.",
+    "is_favourite": null,
+    "reference": "Quran 7:144",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 141,
+    "quotes": "Contentment is the greatest wealth.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 142,
+    "quotes": "Whoever is not grateful to people is not grateful to Allah.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 143,
+    "quotes": "Do not despair of the mercy of Allah.",
+    "is_favourite": null,
+    "reference": "Quran 39:53",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 144,
+    "quotes": "Allah is with the patient.",
+    "is_favourite": null,
+    "reference": "Quran 8:46",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 145,
+    "quotes": "Verily, after every difficulty, there is relief.",
+    "is_favourite": null,
+    "reference": "Quran 94:5",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 146,
+    "quotes": "Optimism is a sunnah.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 2,
+    "active": true
+  },
+  {
+    "id": 147,
+    "quotes": "There is no one who goes out of his house in order to seek knowledge, but the angels lower their wings in approval of his actions.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 148,
+    "quotes": "When Allah wills good for a person, He causes him to understand the religion.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 149,
+    "quotes": "Whoever calls people to guidance, will have a similar reward to those who follow him, without any sort of decrease in his rewards.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 150,
+    "quotes": "By Allah, if Allah guides aright even one person through you, that is better for you than to possess the red (most valuable) camels.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 151,
+    "quotes": "The most excellent of you is the one who learns the Quran and teaches it.",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 6,
+    "active": true
+  },
+  {
+    "id": 152,
+    "quotes": "Allah will raise those who have believed among you and those who were given knowledge by degrees.",
+    "is_favourite": null,
+    "reference": "Quran (58:11)",
+    "category_id": 6,
+    "active": true
+  }
+
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 101,
+    "quotes": "And be patient, for indeed, Allah does not allow to be lost the reward of those who do good",
+    "is_favourite": null,
+    "reference": "Quran 11:115",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 102,
+    "quotes": "Seek help through patience and prayer; indeed, it is a difficult thing except for the humble",
+    "is_favourite": null,
+    "reference": "Quran 2:45",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 103,
+    "quotes": "And certainly, We shall test you with something of fear, hunger, loss of wealth, lives and fruits, but give glad tidings to the patient.",
+    "is_favourite": null,
+    "reference": "Quran 4:35",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 104,
+    "quotes": "Indeed, I have rewarded them this Day for their patient endurance; they are indeed the ones that are successful.",
+    "is_favourite": null,
+    "reference": "Quran 23:111",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 105,
+    "quotes": "Allah loves those who are patient.",
+    "is_favourite": null,
+    "reference": "Quran 2:153",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 106,
+    "quotes": "Be patient and steadfast, and fear Allah that you may be successful.",
+    "is_favourite": null,
+    "reference": "Quran 3:200",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 107,
+    "quotes": "And be patient for the decision of your Lord, for indeed, you are in Our eyes",
+    "is_favourite": null,
+    "reference": "Quran 52:48",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 108,
+    "quotes": "Those who are patient in adversity and forgive wrongs are the doers of excellence",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 109,
+    "quotes": "And whoever is patient and forgives – that is indeed the best of affairs.",
+    "is_favourite": null,
+    "reference": "Quran 42:43",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 110,
+    "quotes": "So I am left with nothing but˺ beautiful patience! I trust Allah will return them all to me. Surely He alone is the All-Knowing, All-Wise.",
+    "is_favourite": null,
+    "reference": "Quran 12: 83-86",
+    "category_id": 3,
+    "active": true
+  },
+  {
+    "id": 111,
+    "quotes": "Whoever reads surat Al-Kahf on the night of Friday, will have a light that will stretch between him and the Ancient House (i.e., the Ka`bah)",
+    "is_favourite": null,
+    "reference": "Abu Sa`id A-Khudri",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 112,
+    "quotes": "Among the best of your days is Friday. So, pray to Allah frequently on it to bless me, for such supplications of you will be presented to me.",
+    "is_favourite": null,
+    "reference": "Aws ibn Aws(Abu Dawud)",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 113,
+    "quotes": "When any one of you comes on Friday, while the Imam delivers the sermon, he should observe two rak`ahs and should make them short",
+    "is_favourite": null,
+    "reference": "Sahih Muslim",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 114,
+    "quotes": "Either some people stop neglecting the Friday prayers, or Allah will seal their hearts and they will be among the heedless.",
+    "is_favourite": null,
+    "reference": "Sahih Muslim",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 115,
+    "quotes": "Removing harmful things from the road is an act of charity (sadaqah)",
+    "is_favourite": null,
+    "reference": "Abu Dharr Al-Ghafari",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 116,
+    "quotes": "Whatever is in the heavens and whatever is on the earth ˹constantly˺ glorifies Allah—the King, the Most Holy, the Almighty, the All-Wise.",
+    "is_favourite": null,
+    "reference": "Quran 62:1",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 117,
+    "quotes": "This is the favour of Allah. He grants it to whoever He wills. And Allah is the Lord of infinite bounty.",
+    "is_favourite": null,
+    "reference": "Quran 62:4",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 118,
+    "quotes": "Once the prayer is over, disperse throughout the land and seek the bounty of Allah. And remember Allah often so you may be successful",
+    "is_favourite": null,
+    "reference": "Quran 62:10",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 119,
+    "quotes": "Whatever is in the heavens and whatever is on the earth is exalting Allah, the Sovereign, the Pure, the Exalted in Might, the Wise.",
+    "is_favourite": null,
+    "reference": "’Umar[ra](Sahih Bukhari)",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 120,
+    "quotes": "I know definitely on what day this ayah was revealed; it was revealed on the Day of ’Arafah, on a Friday",
+    "is_favourite": null,
+    "reference": "Quran 5:3",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 121,
+    "quotes": "Anyone of you coming for the Jumua prayer should take a bath.",
+    "is_favourite": null,
+    "reference": "Abdullah bin 'Umar",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 122,
+    "quotes": "Anyone whose feet are covered with dust in Allah's cause, shall be saved by Allah from the Hell-Fire",
+    "is_favourite": null,
+    "reference": "Abu Abs",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 123,
+    "quotes": "O you who have believed, when the call to prayer is made on Friday, then proceed to the remembrance of Allah and leave trade. That is better for you, if you only knew.",
+    "is_favourite": null,
+    "reference": "Quran 62:9",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 124,
+    "quotes": "Whoever reads Surah Al-Kahf on the day of Jumma will have a light that will shine from him from one Friday to the next",
+    "is_favourite": null,
+    "reference": "Al-Jaami",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 125,
+    "quotes": "Whoever sends one blessing upon Prophet Muhammad(SAW), Allah will send ten blessings upon him, erase ten of his sins, and raise him ten degrees",
+    "is_favourite": null,
+    "reference": "Sunan an-Nasa'i:1297",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 126,
+    "quotes": "Whoever recites Surah Yaseen in the morning, his needs for the day will be fulfilled.",
+    "is_favourite": null,
+    "reference": "Sunan Darimi",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 127,
+    "quotes": "On Friday, there is a time when, if a Muslim prays and asks Allah for something good, He will give it to him",
+    "is_favourite": null,
+    "reference": "Sahih al-Bukhari",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 128,
+    "quotes": "There is no Muslim who dies on the day of Friday or the night of Friday, but Allah will protect him from the trial of the grave",
+    "is_favourite": null,
+    "reference": "Sunan al-Tirmizi:994",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 129,
+    "quotes": "Friday is the balance of the week, Ramadan is the balance of the year, and Hajj is the balance of life",
+    "is_favourite": null,
+    "reference": "Imam Al-Ghazali",
+    "category_id": 5,
+    "active": true
+  },
+  {
+    "id": 130,
+    "quotes": "The best day on which the sun has risen is Friday; on it, Adam was created, and on it, he died",
+    "is_favourite": null,
+    "reference": "Prophet Muhammad(SAW)",
+    "category_id": 5,
+    "active": true
+  }
+]
