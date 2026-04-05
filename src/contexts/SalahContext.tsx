@@ -56,18 +56,22 @@ export const SALAH_MILESTONES: Omit<SalahBadge, 'unlocked' | 'popupShown'>[] = [
 const SalahContext = createContext<SalahContextType | undefined>(undefined);
 
 export const SalahProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [data, setData] = useState<any>({
-    salahData: {},
-    popupShownBadgeIds: []
-  });
-
-  useEffect(() => {
+  const [data, setData] = useState<any>(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
-      try { setData((prev: any) => ({ ...prev, ...JSON.parse(saved) })); } 
-      catch (e) { console.error("Failed to parse salah data", e); }
+      try {
+        return {
+           salahData: {},
+           popupShownBadgeIds: [],
+           ...JSON.parse(saved)
+        };
+      } catch (e) { console.error("Failed to parse salah data", e); }
     }
-  }, []);
+    return {
+      salahData: {},
+      popupShownBadgeIds: []
+    };
+  });
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));

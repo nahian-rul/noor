@@ -7,10 +7,11 @@ import {
   Wheat, Moon, Star
 } from "lucide-react";
 import { CURRENCIES, detectCurrency, formatCurrency, saveCurrency, type Currency } from "../lib/currency";
-import { Brain } from "lucide-react";
+import { Brain, BookOpen } from "lucide-react";
 import { Quiz } from "./Quiz";
+import { useNavigate } from "react-router-dom";
 
-const NISAB_WEIGHTS = { GOLD: 87.48, SILVER: 612.36 };
+const NISAB_WEIGHTS = { GOLD: 88.7, SILVER: 612.36 };
 
 const FOOD_TYPES = [
   { id: "rice",  label: "Rice",  icon: "🍚", defaultPrice: "60" },
@@ -82,7 +83,7 @@ const Field: React.FC<{ label: string; value: string; onChange: (v: string) => v
         {tooltip && (
           <div className="group/tip relative">
             <HelpCircle className="w-3 h-3 text-white/10 cursor-help" />
-            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-2 bg-black/90 text-[9px] text-white/60 rounded-xl leading-relaxed opacity-0 group-hover/tip:opacity-100 transition-all pointer-events-none z-50 border border-white/10 font-medium">
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black/95 text-[10px] text-white/70 rounded-2xl leading-relaxed opacity-0 group-hover/tip:opacity-100 transition-all pointer-events-none z-50 border border-white/10 font-medium shadow-2xl backdrop-blur-xl">
               {tooltip}
             </div>
           </div>
@@ -106,14 +107,27 @@ const Field: React.FC<{ label: string; value: string; onChange: (v: string) => v
 
 // ─── Zakat Module ─────────────────────────────────────────────────────
 
-const ZAKAT_STORAGE_KEY = "noor_zakat_data";
+const ZAKAT_STORAGE_KEY = "noor_zakat_data_v2";
 
 const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
+  const navigate = useNavigate();
   const [step, setStep] = useState<0 | 1>(0);
   const [nisabType, setNisabType] = useState<"GOLD" | "SILVER">("GOLD");
   const [metalPrices, setMetalPrices] = useState({ gold: "8500", silver: "120" });
-  const [assets, setAssets] = useState({ cash: "", savings: "", goldSilverValue: "", investments: "", businessAssets: "", rentalIncome: "", others: "" });
-  const [liabilities, setLiabilities] = useState({ loans: "", installments: "", bills: "", creditCard: "", taxes: "", others: "" });
+  const [assets, setAssets] = useState({ 
+    cashInHand: "", 
+    bankSavings: "", 
+    preciousMetals: "", 
+    businessAssets: "", 
+    otherAssets: "" 
+  });
+  const [liabilities, setLiabilities] = useState({ 
+    bills: "", 
+    borrowedMoney: "", 
+    businessLiabilities: "", 
+    insurance: "", 
+    socialObligations: "" 
+  });
 
   // Persistence (Load)
   useEffect(() => {
@@ -155,7 +169,13 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
                 <Coins className="w-8 h-8 text-amber-400" />
               </div>
               <h2 className="text-3xl font-serif italic text-white/90">Set Nisab Values</h2>
-              <p className="text-sm text-white/40 max-w-xs mx-auto">Enter current market price to determine your Zakat threshold.</p>
+              <div className="flex items-center justify-center gap-1.5 group/nisab relative">
+                <p className="text-sm text-white/40">Determine your Zakat threshold.</p>
+                <HelpCircle className="w-3.5 h-3.5 text-white/20 cursor-help" />
+                <div className="absolute top-full mt-4 w-72 p-4 bg-black/95 text-[10px] text-white/70 rounded-2xl leading-relaxed opacity-0 group-hover/nisab:opacity-100 transition-all pointer-events-none z-50 border border-white/10 shadow-2xl font-medium backdrop-blur-xl">
+                  Nisab is the minimum wealth required to pay Zakat, based on the value of either 88.7g of gold or 612.36g of silver. If your assets are primarily in gold, use the gold standard; otherwise, the silver standard is often used as it sets a lower threshold.
+                </div>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
@@ -166,10 +186,10 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
             <div className="space-y-4">
               <p className="text-[10px] uppercase font-bold tracking-widest text-white/30 text-center">Benchmark Method</p>
               <div className="flex p-1 bg-black/20 rounded-2xl border border-white/5">
-                <button onClick={() => setNisabType("GOLD")} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${nisabType === "GOLD" ? "bg-amber-400 text-black" : "text-white/40 hover:text-white"}`}>Gold Standard</button>
-                <button onClick={() => setNisabType("SILVER")} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${nisabType === "SILVER" ? "bg-white text-black" : "text-white/40 hover:text-white"}`}>Silver Standard</button>
+                <button onClick={() => setNisabType("GOLD")} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${nisabType === "GOLD" ? "bg-amber-400 text-black shadow-lg" : "text-white/40 hover:text-white"}`}>Gold Standard</button>
+                <button onClick={() => setNisabType("SILVER")} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${nisabType === "SILVER" ? "bg-white text-black shadow-lg" : "text-white/40 hover:text-white"}`}>Silver Standard</button>
               </div>
-              <p className="text-[9px] text-white/20 text-center italic">Nisab: {nisabType === "GOLD" ? "87.48g of Gold" : "612.36g of Silver"}</p>
+              <p className="text-[9px] text-white/20 text-center italic">Threshold: {nisabType === "GOLD" ? "88.7g of Gold" : "612.36g of Silver"}</p>
             </div>
 
             <button onClick={() => setStep(1)} className="w-full py-5 bg-white text-black rounded-2xl font-black uppercase tracking-[0.2em] hover:bg-amber-400 transition-all flex items-center justify-center gap-3 active:scale-95">
@@ -194,7 +214,7 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
             </div>
             <button onClick={() => setStep(0)} className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10 whitespace-nowrap hover:bg-white/10 transition-all">
               <ArrowLeft className="w-3 h-3 text-white/30" />
-              <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">Edit</span>
+              <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">Edit Prices</span>
             </button>
           </div>
 
@@ -203,12 +223,11 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
             <div className="lg:col-span-4">
               <CardWrapper title="Your Assets" icon={<PlusCircle className="w-5 h-5 text-emerald-400" />}>
                 <div className="space-y-4">
-                  <Field label="Cash & Bank Balance" value={assets.cash} onChange={(v) => setAssets(p => ({ ...p, cash: v }))} symbol={currency.symbol} tooltip="All physical cash and liquid savings." />
-                  <Field label="Gold & Silver Value" value={assets.goldSilverValue} onChange={(v) => setAssets(p => ({ ...p, goldSilverValue: v }))} symbol={currency.symbol} tooltip="Current market value of metals you own." />
-                  <Field label="Stock Investments" value={assets.investments} onChange={(v) => setAssets(p => ({ ...p, investments: v }))} symbol={currency.symbol} />
-                  <Field label="Business Assets" value={assets.businessAssets} onChange={(v) => setAssets(p => ({ ...p, businessAssets: v }))} symbol={currency.symbol} />
-                  <Field label="Rental Income" value={assets.rentalIncome} onChange={(v) => setAssets(p => ({ ...p, rentalIncome: v }))} symbol={currency.symbol} />
-                  <Field label="Other Assets" value={assets.others} onChange={(v) => setAssets(p => ({ ...p, others: v }))} symbol={currency.symbol} />
+                  <Field label="Cash in Hand" value={assets.cashInHand} onChange={(v) => setAssets(p => ({ ...p, cashInHand: v }))} symbol={currency.symbol} tooltip="Cash in hand refers to the physical money you possess, including currency notes and coins, which is subject to Zakat if it meets the Nisab threshold." />
+                  <Field label="Savings in Bank" value={assets.bankSavings} onChange={(v) => setAssets(p => ({ ...p, bankSavings: v }))} symbol={currency.symbol} tooltip="Savings in the bank are subject to Zakat if they meet the Nisab threshold. Note: Interest earnings from bank savings should not be included in the calculation" />
+                  <Field label="Precious Metals" value={assets.preciousMetals} onChange={(v) => setAssets(p => ({ ...p, preciousMetals: v }))} symbol={currency.symbol} tooltip="Precious metals like gold, silver, and other valuable metals or Jeweleries are subject to Zakat if their total value meets the Nisab threshold." />
+                  <Field label="Business Assets" value={assets.businessAssets} onChange={(v) => setAssets(p => ({ ...p, businessAssets: v }))} symbol={currency.symbol} tooltip="Business assets include stock, bonds, investments, shares, crypto, and other business-related items. Zakat is due if their total value meets the Nisab threshold." />
+                  <Field label="Other Assets" value={assets.otherAssets} onChange={(v) => setAssets(p => ({ ...p, otherAssets: v }))} symbol={currency.symbol} tooltip="Other assets include trade items, crops (10% Zakat for rain-fed, 5% for irrigated), and livestock (5+ camels, 30+ cows, or 40+ sheep/goats). Zakat is due if these assets meet the Nisab threshold." />
                 </div>
                 <div className="mt-6 pt-5 border-t border-white/5 flex justify-between items-center text-emerald-400">
                   <span className="text-[10px] font-black uppercase tracking-widest">Total Assets</span>
@@ -219,14 +238,13 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
 
             {/* Liabilities */}
             <div className="lg:col-span-4">
-              <CardWrapper title="Debts & Expenses" icon={<MinusCircle className="w-5 h-5 text-rose-400" />}>
+              <CardWrapper title="Liabilities" icon={<MinusCircle className="w-5 h-5 text-rose-400" />}>
                 <div className="space-y-4">
-                  <Field label="Personal Loans" value={liabilities.loans} onChange={(v) => setLiabilities(p => ({ ...p, loans: v }))} symbol={currency.symbol} tooltip="Money owed to individuals or banks." />
-                  <Field label="Business Installments" value={liabilities.installments} onChange={(v) => setLiabilities(p => ({ ...p, installments: v }))} symbol={currency.symbol} />
-                  <Field label="Bills Due (Rent/Utilities)" value={liabilities.bills} onChange={(v) => setLiabilities(p => ({ ...p, bills: v }))} symbol={currency.symbol} />
-                  <Field label="Credit Card Dues" value={liabilities.creditCard} onChange={(v) => setLiabilities(p => ({ ...p, creditCard: v }))} symbol={currency.symbol} />
-                  <Field label="Taxes Payable" value={liabilities.taxes} onChange={(v) => setLiabilities(p => ({ ...p, taxes: v }))} symbol={currency.symbol} />
-                  <Field label="Other Liabilities" value={liabilities.others} onChange={(v) => setLiabilities(p => ({ ...p, others: v }))} symbol={currency.symbol} />
+                  <Field label="Current Bills" value={liabilities.bills} onChange={(v) => setLiabilities(p => ({ ...p, bills: v }))} symbol={currency.symbol} tooltip="Household expenses (e.g., rent, utilities, phone bills), payable taxes (income, property), credit card bills (due balance), and medical bills are considered liabilities. These can be deducted but only if they are current liabilities. Future liabilities should not be included." />
+                  <Field label="Borrowed Money" value={liabilities.borrowedMoney} onChange={(v) => setLiabilities(p => ({ ...p, borrowedMoney: v }))} symbol={currency.symbol} tooltip="Borrowed money refers to any amount you owe to others, including loans or personal borrowings. Only current borrowed amounts should be included as liabilities, and interest on borrowed money should not be considered." />
+                  <Field label="Business Liabilities" value={liabilities.businessLiabilities} onChange={(v) => setLiabilities(p => ({ ...p, businessLiabilities: v }))} symbol={currency.symbol} tooltip="Business Property expenses (e.g., rent, utilities, taxi), payable taxes (income, property) and medical bills are considered current liabilities. These can be deducted from your total assets for Zakat calculation, but only if they are due. Future expenses should not be included" />
+                  <Field label="Insurance Dues" value={liabilities.insurance} onChange={(v) => setLiabilities(p => ({ ...p, insurance: v }))} symbol={currency.symbol} tooltip="Insurance liabilities refer to due payments for health, vehicle, or other types of insurance. These can be considered current liabilities for Zakat calculation, but only if the payment is due. Future insurance payments should not be included." />
+                  <Field label="Social Obligations" value={liabilities.socialObligations} onChange={(v) => setLiabilities(p => ({ ...p, socialObligations: v }))} symbol={currency.symbol} tooltip="Social obligations include Mahrana, obligatory donations, and other promises to support family or society as required by Islam. These are considered liabilities and can be deducted when calculating Zakat, but only if the obligation is due." />
                 </div>
                 <div className="mt-6 pt-5 border-t border-white/5 flex justify-between items-center text-rose-400">
                   <span className="text-[10px] font-black uppercase tracking-widest">Total Liabilities</span>
@@ -234,7 +252,7 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
                 </div>
                 <div className="mt-4 p-3 bg-rose-400/5 rounded-2xl border border-rose-400/10 flex items-start gap-3">
                   <AlertCircle className="w-4 h-4 text-rose-400/60 mt-0.5 shrink-0" />
-                  <p className="text-[9px] text-white/40 leading-relaxed font-bold uppercase tracking-widest">Interest payments should not be included.</p>
+                  <p className="text-[9px] text-white/40 leading-relaxed font-bold uppercase tracking-widest">Only current liabilities are deductible. Future liabilities and interest are excluded.</p>
                 </div>
               </CardWrapper>
             </div>
@@ -276,7 +294,13 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
                   </motion.div>
                   <p className="text-[8px] font-bold uppercase tracking-widest opacity-60">{calc.isEligible ? "Zakat is Obligatory (2.5%)" : "Zakat Not Applicable"}</p>
                 </div>
-                <button onClick={() => { setAssets({ cash: "", savings: "", goldSilverValue: "", investments: "", businessAssets: "", rentalIncome: "", others: "" }); setLiabilities({ loans: "", installments: "", bills: "", creditCard: "", taxes: "", others: "" }); }} className="w-full flex items-center justify-center gap-2 py-3 text-[9px] uppercase font-black tracking-widest text-white/20 hover:text-white transition-colors border border-white/5 rounded-2xl hover:bg-white/5">
+                <button 
+                  onClick={() => { 
+                    setAssets({ cashInHand: "", bankSavings: "", preciousMetals: "", businessAssets: "", otherAssets: "" }); 
+                    setLiabilities({ bills: "", borrowedMoney: "", businessLiabilities: "", insurance: "", socialObligations: "" }); 
+                  }} 
+                  className="w-full flex items-center justify-center gap-2 py-3 text-[9px] uppercase font-black tracking-widest text-white/20 hover:text-white transition-colors border border-white/5 rounded-2xl hover:bg-white/5"
+                >
                   <RefreshCcw className="w-3 h-3" /> Reset all values
                 </button>
               </motion.div>
@@ -293,6 +317,7 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
 const FITRA_STORAGE_KEY = "noor_fitra_data";
 
 const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
+  const navigate = useNavigate();
   const [step, setStep] = useState<0 | 1>(0);
   const [foodType, setFoodType] = useState<string>("rice");
   const [pricePerKg, setPricePerKg] = useState<string>("60");
@@ -337,32 +362,32 @@ const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
   return (
     <AnimatePresence mode="wait">
       {step === 0 ? (
-        <motion.div key="f0" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="flex justify-center py-8">
-          <div className="w-full max-w-xl p-10 bg-white/5 backdrop-blur-3xl rounded-[3rem] border border-white/10 shadow-2xl space-y-10">
-            <div className="text-center space-y-2">
-              <div className="w-16 h-16 bg-emerald-400/20 rounded-3xl flex items-center justify-center mx-auto mb-6 border border-emerald-400/20">
-                <Moon className="w-8 h-8 text-emerald-400" />
+        <motion.div key="f0" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="flex justify-center py-4">
+          <div className="w-full max-w-2xl p-8 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 shadow-2xl space-y-6">
+            <div className="text-center space-y-1">
+              <div className="w-12 h-12 bg-emerald-400/20 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-emerald-400/20">
+                <Moon className="w-6 h-6 text-emerald-400" />
               </div>
-              <h2 className="text-3xl font-serif italic text-white/90">Set Fitra Value</h2>
-              <p className="text-sm text-white/40 max-w-xs mx-auto">Zakat al-Fitr — 1 Sāʿ (~2.5–3kg) of staple food per person.</p>
+              <h2 className="text-2xl font-serif italic text-white/90">Set Fitra Value</h2>
+              <p className="text-[11px] text-white/40 max-w-xs mx-auto">1 Sāʿ (~2.5–3kg) of staple food per person.</p>
             </div>
 
             {/* Food Type */}
-            <div className="space-y-4">
-              <p className="text-[10px] uppercase font-bold tracking-widest text-white/30 text-center">Select Staple Food</p>
-              <div className="grid grid-cols-3 gap-4">
+            <div className="space-y-3">
+              <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 text-center">Select Staple Food</p>
+              <div className="grid grid-cols-3 gap-3">
                 {FOOD_TYPES.map((food) => (
                   <button
                     key={food.id}
                     onClick={() => handleFoodSelect(food.id)}
-                    className={`py-5 rounded-2xl flex flex-col items-center gap-2 border transition-all ${
+                    className={`py-4 rounded-xl flex flex-col items-center gap-2 border transition-all ${
                       foodType === food.id
                         ? "bg-emerald-400/10 border-emerald-400/30 text-emerald-400"
                         : "bg-white/5 border-white/10 text-white/40 hover:border-white/20"
                     }`}
                   >
-                    <span className="text-3xl">{food.icon}</span>
-                    <span className="text-[10px] font-black uppercase tracking-widest">{food.label}</span>
+                    <span className="text-2xl">{food.icon}</span>
+                    <span className="text-[9px] font-black uppercase tracking-widest">{food.label}</span>
                   </button>
                 ))}
               </div>
@@ -378,17 +403,16 @@ const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
             />
 
             {/* Quantity */}
-            <div className="space-y-3">
-              <p className="text-[10px] uppercase font-bold tracking-widest text-white/30 pl-1">Quantity (per person)</p>
-              <div className="flex p-1 bg-black/20 rounded-2xl border border-white/5">
-                <button onClick={() => setQuantity(2.5)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${quantity === 2.5 ? "bg-emerald-400 text-black" : "text-white/40 hover:text-white"}`}>2.5 kg</button>
-                <button onClick={() => setQuantity(3)} className={`flex-1 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all ${quantity === 3 ? "bg-white text-black" : "text-white/40 hover:text-white"}`}>3 kg</button>
+            <div className="space-y-2">
+              <p className="text-[9px] uppercase font-bold tracking-widest text-white/30 pl-1">Quantity (per person)</p>
+              <div className="flex p-0.5 bg-black/20 rounded-xl border border-white/5">
+                <button onClick={() => setQuantity(2.5)} className={`flex-1 py-2.5 rounded-lg text-[9px] font-bold uppercase tracking-widest transition-all ${quantity === 2.5 ? "bg-emerald-400 text-black" : "text-white/40 hover:text-white"}`}>2.5 kg</button>
+                <button onClick={() => setQuantity(3)} className={`flex-1 py-2.5 rounded-lg text-[9px] font-bold uppercase tracking-widest transition-all ${quantity === 3 ? "bg-white text-black" : "text-white/40 hover:text-white"}`}>3 kg</button>
               </div>
-              <p className="text-[9px] text-white/20 text-center italic">Higher is recommended if affordable</p>
             </div>
 
-            <button onClick={() => setStep(1)} className="w-full py-5 bg-white text-black rounded-2xl font-black uppercase tracking-[0.2em] hover:bg-emerald-400 transition-all flex items-center justify-center gap-3 active:scale-95">
-              Next Step <ArrowRight className="w-5 h-5" />
+            <button onClick={() => setStep(1)} className="w-full py-4 bg-white text-black rounded-xl font-black uppercase tracking-[0.2em] hover:bg-emerald-400 transition-all flex items-center justify-center gap-3 active:scale-95 text-xs">
+              Next Step <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </motion.div>
@@ -512,7 +536,8 @@ const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
 // ─── Main Tools Page ───────────────────────────────────────────────────
 
 export const Tools: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"zakat" | "fitra" | "quiz">("zakat");
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState<"zakat" | "fitra">("zakat");
   const [currency, setCurrency] = useState<Currency>(detectCurrency());
   const [showToast, setShowToast] = useState(false);
 
@@ -545,7 +570,7 @@ export const Tools: React.FC = () => {
           onClick={() => setActiveTab("zakat")}
           className={`flex-1 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${activeTab === "zakat" ? "bg-white text-black shadow-lg" : "text-white/40 hover:text-white"}`}
         >
-          <Coins className="w-3.5 h-3.5" /> Zakat
+          <Coins className="w-3.5 h-3.5" /> Calculation
         </button>
         <button
           onClick={() => setActiveTab("fitra")}
@@ -554,10 +579,10 @@ export const Tools: React.FC = () => {
           <Moon className="w-3.5 h-3.5" /> Fitra
         </button>
         <button
-          onClick={() => setActiveTab("quiz")}
-          className={`flex-1 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${activeTab === "quiz" ? "bg-rose-500 text-white shadow-lg" : "text-white/40 hover:text-white"}`}
+          onClick={() => navigate(activeTab === "fitra" ? "/learn-fitra" : "/learn-zakat")}
+          className="flex-1 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 text-white/40 hover:text-white"
         >
-          <Brain className="w-3.5 h-3.5" /> Quiz
+          <BookOpen className="w-3.5 h-3.5" /> {activeTab === "fitra" ? "Read Fitra" : "Read Zakat"}
         </button>
       </div>
 

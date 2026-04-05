@@ -11,12 +11,27 @@ import {
 type BadgeCategory = "gamification" | "tasbih" | "salah";
 
 export const Journey: React.FC = () => {
-  const { points, streak: studyStreak, completedSurahs, completedDuas, completedNames, getJourneyStage, quizHistory = [] } = useUser();
+  const { points, streak: studyStreak, completedSurahs, completedDuas, completedNames, getJourneyStage, quizHistory = [], exportJourney, importJourney } = useUser();
   const { tasbihBadges, totalTasbihCount } = useTasbih();
   const { salahBadges, streak: prayerStreak, fullDaysCount } = useSalah();
   
   const stage = getJourneyStage();
   const [badgeMode, setBadgeMode] = useState<BadgeCategory>("gamification");
+
+  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const res = event.target?.result as string;
+      if (importJourney(res)) {
+        // Success reload happens in context
+      } else {
+        alert("Failed to restore journey. Please check the file.");
+      }
+    };
+    reader.readAsText(file);
+  };
 
   // Switch milestones every 5 seconds (rotating through 3 categories)
   useEffect(() => {
@@ -223,14 +238,18 @@ export const Journey: React.FC = () => {
             </p>
          </div>
          <div className="flex flex-wrap gap-6 relative z-10">
-            <button className="flex items-center gap-4 px-10 py-5 glass-button rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all group scale-100 hover:scale-105 active:scale-95 shadow-xl">
+            <button 
+              onClick={exportJourney}
+              className="flex items-center gap-4 px-10 py-5 glass-button rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all group scale-100 hover:scale-105 active:scale-95 shadow-xl"
+            >
                <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
                Download Journey
             </button>
-            <button className="flex items-center gap-4 px-10 py-5 glass-button rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] border-emerald-500/20 text-emerald-400 hover:bg-emerald-400 hover:text-black transition-all group scale-100 hover:scale-105 active:scale-95 shadow-xl">
+            <label className="flex items-center gap-4 px-10 py-5 glass-button rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] border-emerald-500/20 text-emerald-400 hover:bg-emerald-400 hover:text-black transition-all group scale-100 hover:scale-105 active:scale-95 shadow-xl cursor-pointer">
                <Upload className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
                Restore Journey
-            </button>
+               <input type="file" accept=".json" className="hidden" onChange={handleImport} />
+            </label>
          </div>
       </section>
     </div>

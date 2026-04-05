@@ -179,29 +179,33 @@ const STORAGE_KEY = "noor_tasbih_data";
 const TasbihContext = createContext<TasbihContextType | undefined>(undefined);
 
 export const TasbihProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [data, setData] = useState<any>({
-    customSets: [],
-    predefinedProgress: {},
-    totalTasbihCount: 0,
-    dailyTasbihCount: 0,
-    lastUpdated: new Date().toISOString().split('T')[0],
-    popupShownBadgeIds: []
-  });
-
-  useEffect(() => {
+  const [data, setData] = useState<any>(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
+    const today = new Date().toISOString().split('T')[0];
+    const defaultState = {
+      customSets: [],
+      predefinedProgress: {},
+      totalTasbihCount: 0,
+      dailyTasbihCount: 0,
+      lastUpdated: today,
+      popupShownBadgeIds: []
+    };
+
     if (saved) {
       try {
         const d = JSON.parse(saved);
-        const today = new Date().toISOString().split('T')[0];
-        setData((prev: any) => ({
-           ...prev, ...d,
+        return {
+           ...defaultState,
+           ...d,
            dailyTasbihCount: d.lastUpdated !== today ? 0 : (d.dailyTasbihCount || 0),
            lastUpdated: today
-        }));
-      } catch (e) { console.error("Failed to load tasbih data", e); }
+        };
+      } catch (e) {
+        console.error("Failed to load tasbih data", e);
+      }
     }
-  }, []);
+    return defaultState;
+  });
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));

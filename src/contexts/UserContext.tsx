@@ -46,6 +46,8 @@ interface UserContextType extends UserState {
   setToast: (toast: { message: string; sub: string } | null) => void;
   clearToast: () => void;
   saveQuizResult: (attempt: Omit<QuizAttempt, 'id' | 'date'>) => void;
+  exportJourney: () => void;
+  importJourney: (json: string) => boolean;
   showGoalsModal: boolean;
   setShowGoalsModal: (val: boolean) => void;
 }
@@ -148,7 +150,6 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   };
 
   const clearToast = () => setToast(null);
-
   const saveQuizResult = (attempt: Omit<QuizAttempt, 'id' | 'date'>) => {
     const newAttempt: QuizAttempt = {
       ...attempt,
@@ -161,10 +162,51 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     }));
   };
 
+
+  const exportJourney = () => {
+    const backup = {
+      version: "1.0",
+      timestamp: new Date().toISOString(),
+      data: {
+        noor_user_data: JSON.parse(localStorage.getItem("noor_user_data") || "{}"),
+        noor_salah_data: JSON.parse(localStorage.getItem("noor_salah_data") || "{}"),
+        noor_tasbih_data: JSON.parse(localStorage.getItem("noor_tasbih_data") || "{}"),
+        noor_adhan_settings: JSON.parse(localStorage.getItem("noor_adhan_settings") || "{}"),
+        noor_location_data: JSON.parse(localStorage.getItem("noor_location_data") || "{}"),
+      }
+    };
+    const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `noor_journey_${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+  };
+
+  const importJourney = (json: string): boolean => {
+    try {
+      const backup = JSON.parse(json);
+      const data = backup.data || backup; // Handle both direct and wrapped formats
+      
+      if (data.noor_user_data) localStorage.setItem("noor_user_data", JSON.stringify(data.noor_user_data));
+      if (data.noor_salah_data) localStorage.setItem("noor_salah_data", JSON.stringify(data.noor_salah_data));
+      if (data.noor_tasbih_data) localStorage.setItem("noor_tasbih_data", JSON.stringify(data.noor_tasbih_data));
+      if (data.noor_adhan_settings) localStorage.setItem("noor_adhan_settings", JSON.stringify(data.noor_adhan_settings));
+      if (data.noor_location_data) localStorage.setItem("noor_location_data", JSON.stringify(data.noor_location_data));
+      
+      window.location.reload();
+      return true;
+    } catch (e) {
+      console.error("Failed to import journey", e);
+      return false;
+    }
+  };
+
   return (
     <UserContext.Provider value={{ 
       ...state, addPoints, markSurahCompleted, markDuaLearned, markNameLearned, markBadgePopupShown,
-      getJourneyStage, learningBadges, toast, setToast, clearToast, saveQuizResult, showGoalsModal, setShowGoalsModal
+      getJourneyStage, learningBadges, toast, setToast, clearToast, saveQuizResult, 
+      exportJourney, importJourney, showGoalsModal, setShowGoalsModal
     }}>
       {children}
     </UserContext.Provider>

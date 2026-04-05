@@ -30,24 +30,29 @@ const WaqtContext = createContext<WaqtContextType | undefined>(undefined);
 const STORAGE_KEY = "noor_location_data";
 
 export const WaqtProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [location, setLocationState] = useState<UserLocation | null>(null);
-  const [isAutoUpdate, setAutoUpdate] = useState(true);
+  const [location, setLocationState] = useState<UserLocation | null>(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try { return JSON.parse(saved); } catch (e) { console.error("Failed to load location", e); }
+    }
+    return null;
+  });
+
+  const [isAutoUpdate, setAutoUpdate] = useState(() => {
+    const savedAuto = localStorage.getItem("noor_location_auto_update");
+    return savedAuto !== null ? savedAuto === "true" : true;
+  });
+
   const [showLocationModal, setShowLocationModal] = useState(false);
   const [waqt, setWaqt] = useState<Waqt>("Night");
   const [nextPrayer, setNextPrayer] = useState<{ name: string; time: Date } | null>(null);
   const [prayerTimes, setPrayerTimes] = useState<PrayerTimes | null>(null);
 
-  // Persistence (Load)
+  // Trigger auto-detection ONLY if we don't have a saved location
   useEffect(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try { setLocationState(JSON.parse(saved)); } catch (e) { console.error("Failed to load location", e); }
-    } else {
+    if (!location) {
       triggerAutoDetection();
     }
-
-    const savedAuto = localStorage.getItem("noor_location_auto_update");
-    if (savedAuto !== null) setAutoUpdate(savedAuto === "true");
   }, []);
 
   // Persistence (Save)
@@ -100,37 +105,53 @@ export const WaqtProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const updateWaqt = (loc: UserLocation) => {
     const coords = new Coordinates(loc.latitude, loc.longitude);
     const params = CalculationMethod.MuslimWorldLeague();
-    params.madhab = Madhab.Shafi; // Default
+    params.madhab = Madhab.Shafi;
     
     const now = new Date();
     const pTimes = new PrayerTimes(coords, now, params);
-    setPrayerTimes(pTimes);
 
-    const names: Record<string, Waqt> = {
+    const prayerNames: Record<string, Waqt> = {
       fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr", 
       maghrib: "Maghrib", isha: "Isha", none: "Night"
     };
 
-    const currentWaqt = pTimes.currentPrayer();
-    setWaqt(names[currentWaqt] || "Night");
-
+    const currentWaqtName = prayerNames[pTimes.currentPrayer()] || "Night";
     const nextWaqt = pTimes.nextPrayer();
+    
+    let nextP: { name: string; time: Date } | null = null;
     if (nextWaqt !== "none") {
-      setNextPrayer({
+      nextP = {
         name: nextWaqt.charAt(0).toUpperCase() + nextWaqt.slice(1),
         time: pTimes.timeForPrayer(nextWaqt)!
-      });
+      };
     } else {
       const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1);
       const tTimes = new PrayerTimes(coords, tomorrow, params);
-      setNextPrayer({ name: "Fajr", time: tTimes.fajr });
+      nextP = { name: "Fajr", time: tTimes.fajr };
     }
+
+    // Only update if something actually changed to avoid blinking/re-renders
+    setPrayerTimes(prev => {
+      if (!prev) return pTimes;
+      // Adhan PrayerTimes object doesn't have a simple equals, so we compare core values
+      const changed = prev.fajr.getTime() !== pTimes.fajr.getTime() || 
+                      prev.maghrib.getTime() !== pTimes.maghrib.getTime();
+      return changed ? pTimes : prev;
+    });
+
+    setWaqt(prev => prev !== currentWaqtName ? currentWaqtName : prev);
+
+    setNextPrayer(prev => {
+      if (!prev || !nextP) return nextP;
+      if (prev.name !== nextP.name || prev.time.getTime() !== nextP.time.getTime()) return nextP;
+      return prev;
+    });
   };
 
   useEffect(() => {
     if (location) {
       updateWaqt(location);
-      const interval = setInterval(() => updateWaqt(location), 30000); // 30s checks
+      const interval = setInterval(() => updateWaqt(location), 30000); 
       return () => clearInterval(interval);
     }
   }, [location]);

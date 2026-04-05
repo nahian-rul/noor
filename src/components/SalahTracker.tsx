@@ -34,53 +34,64 @@ import { useWaqt } from "../WaqtContext";
 // ── Waqt Illustrative Animations ──────────────────────────────────────
 
 const WaqtIllustration: React.FC<{ id: PrayerId; active: boolean }> = ({ id, active }) => {
-  const { waqt } = useWaqt();
-  const isAsrNow = waqt === "Asr";
+  const { waqt: currentWaqt } = useWaqt();
+  const isAsrNow = currentWaqt === "Asr";
+
+  const variants = {
+    initial: { scale: 0.8, opacity: 0 },
+    animate: { scale: 1, opacity: 1 },
+    hover: { scale: 1.1, rotate: 5 }
+  };
 
   switch (id) {
     case "fajr":
       return (
-        <div className="absolute inset-0 overflow-hidden opacity-30 pointer-events-none">
-          <motion.div animate={{ x: [-20, 20] }} transition={{ repeat: Infinity, duration: 10, ease: "linear" }} className="absolute -left-4 top-4 text-white/40"><Cloud className="w-8 h-8" /></motion.div>
-          {!active && <div className="absolute right-4 top-4 text-white/20"><Moon className="w-5 h-5" /></div>}
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-sky-500/20 to-transparent" />
+        <div className="h-32 md:h-48 w-full flex items-center justify-center relative bg-gradient-to-t from-sky-500/10 to-transparent rounded-t-[2rem]">
+           <motion.div variants={variants} className="relative">
+              <Sunrise className={`w-12 h-12 md:w-20 md:h-20 ${active ? "text-sky-300" : "text-white/20"}`} />
+              <motion.div animate={{ opacity: [0.2, 0.5, 0.2] }} transition={{ repeat: Infinity, duration: 4 }} className="absolute -inset-4 bg-sky-400/20 blur-2xl rounded-full" />
+           </motion.div>
+           <div className="absolute bottom-4 left-6 md:left-10 opacity-20"><Cloud className="w-8 h-8 md:w-12 md:h-12 text-white" /></div>
         </div>
       );
     case "dhuhr":
       return (
-        <div className="absolute inset-0 overflow-hidden opacity-40 pointer-events-none">
-          <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 30, ease: "linear" }} className="absolute -right-6 -top-6 text-amber-300/30 scale-150"><Sun className="w-20 h-20" /></motion.div>
-          <motion.div animate={{ x: [40, -40] }} transition={{ repeat: Infinity, duration: 15, ease: "linear" }} className="absolute -right-8 top-12 text-sky-200/20"><Cloud className="w-12 h-12" /></motion.div>
-          <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 via-transparent to-transparent" />
+        <div className="h-32 md:h-48 w-full flex items-center justify-center relative bg-gradient-to-t from-amber-500/10 to-transparent rounded-t-[2rem]">
+           <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 20, ease: "linear" }} className="relative">
+              <Sun className={`w-14 h-14 md:w-24 md:h-24 ${active ? "text-amber-300" : "text-white/20"}`} />
+              <div className="absolute inset-0 bg-amber-400/20 blur-3xl rounded-full" />
+           </motion.div>
         </div>
       );
     case "asr":
       return (
-        <div className="absolute inset-0 overflow-hidden opacity-40 pointer-events-none">
-          <div className={`absolute right-4 top-4 ${isAsrNow ? "text-[#FFD700]/30" : "text-orange-400/20"}`}><CloudSun className={`w-12 h-12`} /></div>
-          <motion.div animate={{ x: [-10, 10] }} transition={{ repeat: Infinity, duration: 8 }} className={`absolute left-4 top-10 ${isAsrNow ? "text-[#FFD700]/10" : "text-orange-200/10"}`}><Cloud className="w-10 h-10" /></motion.div>
-          <div className={`absolute inset-0 bg-gradient-to-b ${isAsrNow ? "from-[#2FB68E]/30" : "from-orange-500/20"} to-transparent`} />
+        <div className={`h-32 md:h-48 w-full flex items-center justify-center relative bg-gradient-to-t ${isAsrNow ? "from-[#2FB68E]/20" : "from-orange-500/10"} to-transparent rounded-t-[2rem]`}>
+           <motion.div variants={variants} className="relative">
+              <CloudSun className={`w-14 h-14 md:w-24 md:h-24 ${active ? (isAsrNow ? "text-[#FFD700]" : "text-orange-300") : "text-white/20"}`} />
+              <div className={`absolute inset-0 ${isAsrNow ? "bg-[#FFD700]/10" : "bg-orange-400/10"} blur-3xl rounded-full`} />
+           </motion.div>
         </div>
       );
     case "maghrib":
       return (
-        <div className="absolute inset-0 overflow-hidden opacity-50 pointer-events-none">
-          <motion.div animate={{ y: [2, -2] }} transition={{ repeat: Infinity, duration: 4 }} className="absolute -bottom-6 left-1/2 -translateX-1/2 text-rose-500/30 scale-[2.5]"><Sunset className="w-24 h-24" /></motion.div>
-          <div className="absolute inset-0 bg-gradient-to-t from-rose-600/40 via-transparent to-transparent" />
+        <div className="h-32 md:h-48 w-full flex items-center justify-center relative bg-gradient-to-t from-rose-500/10 to-transparent rounded-t-[2rem]">
+           <motion.div initial={{ y: 20 }} animate={{ y: 0 }} className="relative">
+              <Sunset className={`w-14 h-14 md:w-24 md:h-24 ${active ? "text-rose-400" : "text-white/20"}`} />
+              <div className="absolute inset-0 bg-rose-500/20 blur-3xl rounded-full" />
+           </motion.div>
         </div>
       );
     case "isha":
       return (
-        <div className="absolute inset-0 overflow-hidden opacity-30 pointer-events-none">
-          {[...Array(6)].map((_, i) => (
-            <motion.div key={i} animate={{ opacity: [0.3, 1, 0.3] }} transition={{ repeat: Infinity, duration: 2 + Math.random() * 2, delay: Math.random() * 2 }}
-              className="absolute text-white/40" style={{ top: `${15 + Math.random() * 60}%`, left: `${10 + Math.random() * 80}%` }}>
-              <Star className="w-1 h-1 fill-current" />
-            </motion.div>
-          ))}
-          <motion.div initial={{ x: -100, y: -20, opacity: 0 }} animate={{ x: 200, y: 100, opacity: [0, 1, 0] }} transition={{ repeat: Infinity, duration: 3, repeatDelay: 7 }}
-            className="absolute top-0 left-0 h-[1px] w-12 bg-white/40 rotate-45" />
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-indigo-950/60 to-transparent" />
+        <div className="h-32 md:h-48 w-full flex items-center justify-center relative bg-gradient-to-t from-indigo-500/10 to-transparent rounded-t-[2rem]">
+           <motion.div variants={variants} className="relative">
+              <MoonStar className={`w-12 h-12 md:w-20 md:h-20 ${active ? "text-indigo-300" : "text-white/20"}`} />
+              <div className="absolute inset-0 bg-indigo-400/20 blur-3xl rounded-full" />
+           </motion.div>
+           {[...Array(5)].map((_, i) => (
+             <motion.div key={i} animate={{ opacity: [0.1, 0.4, 0.1] }} transition={{ repeat: Infinity, duration: 2 + i, delay: i }}
+               className="absolute w-0.5 h-0.5 bg-white rounded-full" style={{ top: `${20 + i * 15}%`, left: `${20 + i * 10}%` }} />
+           ))}
         </div>
       );
     default: return null;
@@ -140,7 +151,6 @@ export const SalahTracker: React.FC = () => {
     <div className="space-y-12 pb-40 max-w-7xl mx-auto px-4 md:px-0">
       {/* Header */}
       <header className="space-y-10">
-        {/* ... (lines 136-170 unchanged) ... */}
         <div className="flex items-center justify-between gap-4">
           <button onClick={() => setSelectedDate(subDays(selectedDate, 1))} className={`p-3.5 glass-button rounded-xl border-white/5 active:scale-90 transition-all ${waqt === "Asr" ? "hover:border-[#FFD700]/20" : ""}`}>
             <ChevronLeft className="w-5 h-5 text-white/40" />
@@ -182,8 +192,7 @@ export const SalahTracker: React.FC = () => {
       <section className="grid grid-cols-5 gap-2 md:gap-6 w-full">
         {PRAYERS.map((prayer) => {
           const isDone = currentDaySalah[prayer.id];
-          const Icon = prayer.icon;
-
+          
           const isFuture = () => {
             if (isAfter(selectedDate, startOfToday())) return true;
             if (!isSameDay(selectedDate, startOfToday())) return false;
@@ -202,8 +211,8 @@ export const SalahTracker: React.FC = () => {
               key={prayer.id} 
               disabled={upcoming}
               onClick={() => togglePrayer(selectedDate, prayer.id)}
-              className={`p-3 md:p-8 glass-card border-white/5 flex flex-col items-center gap-4 md:gap-8 group transition-all duration-500 relative overflow-hidden h-[190px] md:h-[380px] ${
-                upcoming ? "opacity-40 grayscale-[0.8] cursor-not-allowed" : ""
+              className={`glass-card border-white/5 flex flex-col items-center group transition-all duration-500 relative overflow-hidden h-[240px] md:h-[480px] pb-6 md:pb-12 ${
+                upcoming ? "opacity-30 grayscale-[0.8] cursor-not-allowed" : ""
               } ${
                 isDone 
                   ? `bg-gradient-to-b ${prayer.gradient} border-white/20 shadow-2xl` 
@@ -212,25 +221,19 @@ export const SalahTracker: React.FC = () => {
               
               <WaqtIllustration id={prayer.id} active={isDone} />
 
-              <div className={`p-2.5 md:p-6 rounded-[1rem] md:rounded-[2.5rem] transition-all duration-1000 transform relative z-10 ${
-                isDone 
-                  ? (waqt === "Asr" && prayer.id === "asr" ? "bg-[#FFD700] text-black" : "bg-white text-black") + " rotate-[360deg] shadow-2xl scale-110" 
-                  : `bg-white/5 ${prayer.color} group-hover:scale-105 group-hover:bg-white/10`
-              }`}>
-                <Icon className={`w-4 h-4 md:w-8 md:h-8 ${isDone ? 'text-current' : 'text-current opacity-80'}`} />
-              </div>
+              <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-8 space-y-4 md:space-y-8 relative z-10 w-full">
+                <div className="text-center space-y-2 md:space-y-4">
+                  <h3 className={`text-[12px] md:text-3xl font-serif italic transition-all duration-700 ${isDone ? "text-white scale-105 font-bold" : "text-white/80"}`}>{prayer.name}</h3>
+                  <p className={`hidden md:block text-[10px] font-black uppercase tracking-[0.4em] transition-opacity ${isDone ? "opacity-60" : "opacity-30"}`}>{prayer.nameAr}</p>
+                </div>
 
-              <div className="text-center space-y-1.5 md:space-y-4 relative z-10">
-                <h3 className={`text-[12px] md:text-2xl font-serif italic transition-all duration-700 ${isDone ? "text-white scale-105 font-bold" : "text-white/80"}`}>{prayer.name}</h3>
-                <p className={`hidden md:block text-[9px] font-black uppercase tracking-[0.3em] transition-opacity ${isDone ? "opacity-60" : "opacity-20"}`}>{prayer.nameAr}</p>
-              </div>
-
-              <div className={`w-6 h-6 md:w-14 md:h-14 rounded-full flex items-center justify-center border transition-all duration-1000 relative z-10 ${
-                isDone 
-                  ? (waqt === "Asr" && prayer.id === "asr" ? "bg-[#FFD700] border-[#FFD700] text-black" : "bg-white border-white text-black") + " shadow-inner" 
-                  : "border-white/10 text-white/5 group-hover:border-white/30"
-              }`}>
-                {isDone ? <CheckCircle2 className="w-3 h-3 md:w-7 md:h-7" /> : <Circle className="w-3 h-3 md:w-7 md:h-7" />}
+                <div className={`w-8 h-8 md:w-16 md:h-16 rounded-full flex items-center justify-center border transition-all duration-1000 ${
+                  isDone 
+                    ? (waqt === "Asr" && prayer.id === "asr" ? "bg-[#FFD700] border-[#FFD700] text-black" : "bg-white border-white text-black") + " shadow-inner scale-110" 
+                    : "border-white/10 text-white/5 group-hover:border-white/30"
+                }`}>
+                  {isDone ? <CheckCircle2 className="w-4 h-4 md:w-8 md:h-8" /> : <Circle className="w-4 h-4 md:w-8 md:h-8" />}
+                </div>
               </div>
             </button>
           );

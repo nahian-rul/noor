@@ -12,6 +12,14 @@ import { NamesOfAllah } from "./components/NamesOfAllah";
 import { PrayerTimes } from "./components/PrayerTimes";
 import { Journey } from "./components/Journey";
 import { Quiz } from "./components/Quiz";
+import { LearnZakat } from "./components/LearnZakat";
+import { LearnFitra } from "./components/LearnFitra";
+import { LearnWudu } from "./components/LearnWudu";
+import { LearnSalah } from "./components/LearnSalah";
+import { LearnRakah } from "./components/LearnRakah";
+import { ProphetListPage } from "./components/ProphetListPage";
+import { ProphetDetailPage } from "./components/ProphetDetailPage";
+import { KnowledgeAcademy } from "./components/KnowledgeAcademy";
 import { TasbihLanding } from "./components/tasbih/TasbihLanding";
 import { CustomTasbihList } from "./components/tasbih/CustomTasbihList";
 import { CustomTasbihForm } from "./components/tasbih/CustomTasbihForm";
@@ -41,6 +49,14 @@ export default function App() {
                   <Route path="prayer-times" element={<PrayerTimes />} />
                   <Route path="journey" element={<Journey />} />
                   <Route path="quiz" element={<Quiz />} />
+                  <Route path="learn-zakat" element={<LearnZakat />} />
+                  <Route path="learn-fitra" element={<LearnFitra />} />
+                  <Route path="learn-wudu" element={<LearnWudu />} />
+                  <Route path="learn-salah" element={<LearnSalah />} />
+                  <Route path="learn-rakah" element={<LearnRakah />} />
+                  <Route path="prophets" element={<ProphetListPage />} />
+                  <Route path="prophets/:slug" element={<ProphetDetailPage />} />
+                  <Route path="knowledge" element={<KnowledgeAcademy />} />
                 
                 {/* Tasbih Module Routes */}
                 <Route path="tasbih">

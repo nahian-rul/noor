@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "motion/react";
 import {
   ChevronRight, Heart, Book, Calculator,
   Star, X, ChevronLeft, ArrowRight, Hand, Quote,
-  CheckCircle2, Circle, Brain, Volume2, VolumeX, Play, Square, Music, Settings
+  CheckCircle2, Circle, Brain, Volume2, VolumeX, Play, Square, Music, Settings,
+  GraduationCap, History
 } from "lucide-react";
 import { format, startOfToday } from "date-fns";
 import { Link } from "react-router-dom";
@@ -184,9 +185,9 @@ const WaqtCard: React.FC<{
   const forbidden = forceForbidden ? { isForbidden: true, name: "Test Mode" } : checkForbidden();
 
   return (
-    <button 
+    <div 
       onClick={() => setShowSchedule(true)}
-      className={`relative overflow-hidden p-6 lg:p-8 bg-gradient-to-br transition-all duration-1000 ${forbidden.isForbidden ? "from-rose-950 to-rose-900" : cfg.gradient} rounded-[2rem] border border-white/10 shadow-2xl group text-left w-full active:scale-[0.98] flex flex-col justify-between min-h-[220px]`}
+      className={`relative overflow-hidden p-6 lg:p-8 bg-gradient-to-br cursor-pointer transition-all duration-1000 ${forbidden.isForbidden ? "from-rose-950 to-rose-900" : cfg.gradient} rounded-[2rem] border border-white/10 shadow-2xl group text-left w-full active:scale-[0.99] flex flex-col justify-between min-h-[220px]`}
     >
       <AnimatePresence mode="wait">
         <motion.div 
@@ -243,12 +244,11 @@ const WaqtCard: React.FC<{
                  )}
               </div>
               <div className="flex items-center gap-2">
-                <button 
-                  onClick={(e) => { e.stopPropagation(); setShowSchedule(true); }}
+                <div 
                   className="flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-[9px] font-black uppercase tracking-widest text-white transition-all w-fit group-hover:bg-[#FFD700] group-hover:text-black group-hover:border-transparent"
                 >
                   Full Schedule <ChevronRight className="w-3.5 h-3.5" />
-                </button>
+                </div>
                 
                 <button 
                   onClick={(e) => { e.stopPropagation(); isPlaying ? stopAdhan() : playManualAdhan(showNext ? nextPrayer.name : waqt); }}
@@ -272,7 +272,7 @@ const WaqtCard: React.FC<{
           </div>
         </motion.div>
       </AnimatePresence>
-    </button>
+    </div>
   );
 };
 
@@ -504,13 +504,15 @@ export const Home: React.FC = () => {
       {/* 🗂️ 5. Card list of features (Quick Access) */}
       <section className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-4">
         {[
+          { label: "Knowledge Academy", icon: GraduationCap, color: "bg-amber-400/10 border-amber-400/15", text: "text-amber-400", path: "/knowledge", featured: true },
           { label: "Holy Quran",    icon: Book,       color: "bg-emerald-400/10 border-emerald-400/15", text: "text-emerald-400", path: "/quran" },
           { label: "Dua Collection", icon: Heart,      color: "bg-rose-400/10 border-rose-400/15",      text: "text-rose-400",    path: "/duas"  },
           { label: "Tasbih Counter", icon: Hand,       color: "bg-indigo-400/10 border-indigo-400/15",  text: "text-indigo-400",  path: "/tasbih" },
           { label: "99 Names",      icon: Star,       color: "bg-amber-400/10 border-amber-400/15",    text: "text-amber-400",   path: "/names" },
           { label: "Daily Quotes",   icon: Quote,      color: "bg-sky-400/10 border-sky-400/15",        text: "text-sky-400",     path: "/quotes" },
-          { label: "Zakat Logic",    icon: Calculator, color: "bg-blue-400/10 border-blue-400/15",      text: "text-blue-400",    path: "/tools" },
+          { label: "Zakat/Fitra Calculation", icon: Calculator, color: "bg-blue-400/10 border-blue-400/15", text: "text-blue-400", path: "/tools" },
           { label: "Wisdom Quiz",    icon: Brain,      color: "bg-rose-500/10 border-rose-500/15",      text: "text-rose-500",    path: "/quiz"  },
+          { label: "Prophet Stories", icon: History,    color: "bg-rose-400/10 border-rose-400/15",      text: "text-rose-400",    path: "/prophets" },
         ].map((card) => (
           <Link key={card.label} to={card.path}
             className={`p-8 glass-button rounded-[2.5rem] group flex flex-col items-center text-center shadow-xl border-white/5 transition-all ${

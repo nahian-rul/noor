@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Navigation } from "./Navigation";
 import { DynamicBackground } from "./DynamicBackground";
@@ -437,17 +437,17 @@ const AchievementPopup: React.FC<{
     salah:    { title: "Steadfast in Prayer", label: "Salah Milestone", icon: MoonStar, color: "text-indigo-400", bg: "bg-indigo-400/10", border: "border-indigo-400/20" },
   }[badge.type];
 
-  useEffect(() => {
-    const timer = setTimeout(onDismiss, 3500);
-    return () => clearTimeout(timer);
-  }, [onDismiss]);
-
-  const handleDismiss = () => {
+  const handleDismiss = useCallback(() => {
     if (badge.type === "learning") markUserBadge(badge.id);
     else if (badge.type === "dhikr") markTasbihBadge(badge.id);
     else if (badge.type === "salah") markSalahBadge(badge.id);
     onDismiss();
-  };
+  }, [badge, markUserBadge, markTasbihBadge, markSalahBadge, onDismiss]);
+
+  useEffect(() => {
+    const timer = setTimeout(handleDismiss, 3500);
+    return () => clearTimeout(timer);
+  }, [handleDismiss]);
 
   return (
     <div className="fixed inset-0 z-[2000] flex items-center justify-center p-6 pointer-events-none">
