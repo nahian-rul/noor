@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from "react";
 import { useWaqt } from "../WaqtContext";
 import { useTheme } from "../contexts/ThemeContext";
 
-const WAQT_PALETTE: Record<string, { bg: string; accent: string; star: string }> = {
-  Fajr:    { bg: "#0a0f2e", accent: "#3b5bdb", star: "#a5b4fc" },
-  Sunrise: { bg: "#1a0a00", accent: "#f59e0b", star: "#fde68a" },
-  Dhuhr:   { bg: "#020b18", accent: "#0ea5e9", star: "#bae6fd" },
-  Asr:     { bg: "#150a00", accent: "#f97316", star: "#fed7aa" },
-  Maghrib: { bg: "#0f0318", accent: "#7c3aed", star: "#ddd6fe" },
-  Isha:    { bg: "#000308", accent: "#1e3a5f", star: "#93c5fd" },
-  Night:   { bg: "#000308", accent: "#1e3a5f", star: "#93c5fd" },
+const WAQT_PALETTE: Record<string, { bg: string; accent: string; star: string; centerBg?: string }> = {
+  Fajr:    { bg: "#1d1630", centerBg: "#b55b5c", accent: "#d0886a", star: "#fde047" },
+  Sunrise: { bg: "#A66D58", accent: "#c28872", star: "#fde68a" },
+  Dhuhr:   { bg: "#4A7C59", accent: "#6ca880", star: "#bae6fd" },
+  Asr:     { bg: "#022902", accent: "#2FB68E", star: "#FFD700" },
+  Maghrib: { bg: "#6E5A7A", accent: "#8f799d", star: "#ddd6fe" },
+  Isha:    { bg: "#2A3B4C", accent: "#425a72", star: "#93c5fd" },
+  Night:   { bg: "#2A3B4C", accent: "#425a72", star: "#93c5fd" },
 };
 
 export const DynamicBackground: React.FC = () => {
@@ -21,7 +21,7 @@ export const DynamicBackground: React.FC = () => {
   // Resolve palette: auto = waqt-based, else use theme
   const palette = themeId === "auto"
     ? (WAQT_PALETTE[waqt] ?? WAQT_PALETTE.Night)
-    : { bg: theme.bg, accent: theme.accent, star: theme.star };
+    : { bg: theme.bg, accent: theme.accent, star: theme.star, centerBg: undefined };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -46,6 +46,10 @@ export const DynamicBackground: React.FC = () => {
     const acc = hexToRgb(palette.accent);
     const st  = hexToRgb(palette.star);
 
+    const cBg = palette.centerBg 
+      ? hexToRgb(palette.centerBg) 
+      : { r: bg.r + 20, g: bg.g + 14, b: bg.b + 38 };
+
     const stars = Array.from({ length: 130 }, () => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
@@ -64,7 +68,7 @@ export const DynamicBackground: React.FC = () => {
         canvas.width * 0.5, canvas.height * 0.5,
         Math.max(canvas.width, canvas.height) * 0.85
       );
-      grad.addColorStop(0, `rgb(${bg.r + 20},${bg.g + 14},${bg.b + 38})`);
+      grad.addColorStop(0, `rgb(${cBg.r},${cBg.g},${cBg.b})`);
       grad.addColorStop(1, `rgb(${bg.r},${bg.g},${bg.b})`);
       ctx.fillStyle = grad;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -140,7 +144,7 @@ export const DynamicBackground: React.FC = () => {
         canvas.width / 2, canvas.height / 2, canvas.height
       );
       vig.addColorStop(0, "rgba(0,0,0,0)");
-      vig.addColorStop(1, "rgba(0,0,0,0.6)");
+      vig.addColorStop(1, "rgba(0,0,0,0.25)");
       ctx.fillStyle = vig;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -152,7 +156,7 @@ export const DynamicBackground: React.FC = () => {
       cancelAnimationFrame(animRef.current);
       window.removeEventListener("resize", resize);
     };
-  }, [palette.bg, palette.accent, palette.star]);
+  }, [palette.bg, palette.centerBg, palette.accent, palette.star]);
 
   return <canvas ref={canvasRef} className="fixed inset-0 -z-10 w-full h-full" style={{ display: "block" }} />;
 };

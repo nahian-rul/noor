@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import quotesData from "../data/quotes";
 import { motion, AnimatePresence } from "motion/react";
-import { Heart, Copy, Share2, Search, Quote as QuoteIcon } from "lucide-react";
+import { Heart, Copy, Share2, Search, Quote as QuoteIcon, Check } from "lucide-react";
+import { toPng } from "html-to-image";
 
 const CATEGORY_MAP: Record<number, string> = {
-  2: "Faith",
+  1: "Inspirational",
+  2: "Grateful",
   3: "Patience",
-  6: "Knowledge",
+  4: "Life",
+  5: "Jumma",
+  6: "Knowledge & Education",
+  7: "Ramadan"
 };
 
 export const Quotes: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<number | "all">("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [copiedId, setCopiedId] = useState<number | null>(null);
 
   const allQuotes = quotesData as any[];
   
@@ -29,6 +35,37 @@ export const Quotes: React.FC = () => {
        return allQuotes.filter(q => CATEGORY_MAP[q.category_id]).length;
     }
     return allQuotes.filter(q => q.category_id === id).length;
+  };
+
+  const handleCopy = (q: any) => {
+    const textToCopy = `"${q.quote}" — ${q.reference}`;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setCopiedId(q.id);
+      setTimeout(() => setCopiedId(null), 2000);
+    });
+  };
+
+  const handleDownload = async (id: number) => {
+    const node = document.getElementById(`quote-card-${id}`);
+    if (!node) return;
+    try {
+      const dataUrl = await toPng(node, { 
+        cacheBust: true, 
+        backgroundColor: "#0a0a0a",
+        filter: (el: HTMLElement) => {
+          if (el.dataset && el.dataset.hideInImage === 'true') {
+            return false;
+          }
+          return true;
+        }
+      });
+      const link = document.createElement("a");
+      link.download = `quote-${id}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error("Failed to download image", err);
+    }
   };
 
   return (
@@ -58,7 +95,7 @@ export const Quotes: React.FC = () => {
           className={`px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all flex items-center gap-2 ${
             activeCategory === "all"
               ? "bg-white text-black border-white shadow-lg shadow-white/10"
-              : "bg-white/5 text-white/40 border-white/10 hover:border-white/20"
+              : "glass-button text-white/40 border-white/5 hover:border-white/20"
           }`}
         >
           All Quotes <span className={`opacity-40 text-[9px] ${activeCategory === "all" ? "text-black/60" : ""}`}>{getCount("all")}</span>
@@ -73,7 +110,7 @@ export const Quotes: React.FC = () => {
               className={`px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all flex items-center gap-2 ${
                 activeCategory === id
                   ? "bg-white text-black border-white shadow-lg shadow-white/10"
-                  : "bg-white/5 text-white/40 border-white/10 hover:border-white/20"
+                  : "glass-button text-white/40 border-white/5 hover:border-white/20"
               }`}
             >
               {label} <span className={`opacity-40 text-[9px] ${activeCategory === id ? "text-black/60" : ""}`}>{count}</span>
@@ -86,20 +123,21 @@ export const Quotes: React.FC = () => {
         <AnimatePresence mode="popLayout">
           {filteredQuotes.map((q: any, idx: number) => (
             <motion.div
+              id={`quote-card-${q.id}`}
               key={q.id}
               layout
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ delay: idx * 0.02 }}
-              className="group relative p-10 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] border border-white/10 space-y-8 flex flex-col justify-between hover:bg-white/[0.08] transition-all overflow-hidden"
+              className="group relative p-10 glass-card space-y-8 flex flex-col justify-between hover:bg-white/[0.08] transition-all overflow-hidden"
             >
-              <div className="absolute top-0 right-0 p-10 opacity-[0.03] rotate-12 group-hover:rotate-6 transition-transform duration-700">
+              <div className="absolute top-0 right-0 p-10 opacity-[0.03] rotate-12 group-hover:rotate-6 transition-transform duration-700 pointer-events-none">
                  <QuoteIcon className="w-32 h-32" />
               </div>
 
               <div className="space-y-6 relative">
-                <span className="px-3 py-1.5 rounded-full bg-amber-400/10 text-amber-400 text-[10px] uppercase tracking-widest font-bold border border-amber-400/20">
+                <span className="inline-block px-3 py-1.5 rounded-full bg-amber-400/10 text-amber-400 text-[10px] uppercase tracking-widest font-bold border border-amber-400/20">
                   {CATEGORY_MAP[q.category_id as number] || "General"}
                 </span>
                 
@@ -112,11 +150,17 @@ export const Quotes: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex justify-between items-center pt-4 border-t border-white/5 relative">
+              {/* Action buttons wrapper with data-hide-in-image so buttons don't show in the downloaded image */}
+              <div data-hide-in-image="true" className="flex justify-between items-center pt-4 border-t border-white/5 relative">
                 <div className="flex gap-4">
-                   <button className="flex items-center gap-2 text-white/30 hover:text-white transition-colors">
-                      <Copy className="w-4 h-4" />
-                      <span className="text-[10px] uppercase font-bold tracking-widest">Copy</span>
+                   <button 
+                     onClick={() => handleCopy(q)}
+                     className="flex items-center gap-2 text-white/30 hover:text-white transition-colors"
+                   >
+                      {copiedId === q.id ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+                      <span className="text-[10px] uppercase font-bold tracking-widest">
+                        {copiedId === q.id ? "Copied" : "Copy"}
+                      </span>
                    </button>
                    <button className="flex items-center gap-2 text-white/30 hover:text-white transition-colors">
                       <Heart className="w-4 h-4" />
@@ -124,7 +168,11 @@ export const Quotes: React.FC = () => {
                    </button>
                 </div>
                 
-                <button className="p-3 rounded-full bg-white/5 hover:bg-white group/btn transition-all">
+                <button 
+                  onClick={() => handleDownload(q.id)}
+                  title="Download Image"
+                  className="p-3 rounded-full bg-white/5 hover:bg-white group/btn transition-all"
+                >
                    <Share2 className="w-4 h-4 text-white/40 group-hover/btn:text-black transition-colors" />
                 </button>
               </div>

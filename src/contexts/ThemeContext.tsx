@@ -15,14 +15,14 @@ export interface Theme {
 }
 
 export const THEMES: Record<ThemeId, Theme> = {
-  auto:     { id: "auto",     name: "Auto Waqt",    emoji: "🌙", bg: "#000308", accent: "#1e3a5f", star: "#93c5fd", gradientFrom: "#000308", gradientTo: "#0f172a", accentClass: "amber" },
-  midnight: { id: "midnight", name: "Midnight",     emoji: "🌑", bg: "#050508", accent: "#2d1b69", star: "#a78bfa", gradientFrom: "#05050e", gradientTo: "#1e003d", accentClass: "violet" },
-  forest:   { id: "forest",   name: "Forest",       emoji: "🌿", bg: "#020d05", accent: "#14532d", star: "#86efac", gradientFrom: "#020d05", gradientTo: "#052e16", accentClass: "emerald" },
-  ocean:    { id: "ocean",    name: "Ocean",        emoji: "🌊", bg: "#020b18", accent: "#0c4a6e", star: "#7dd3fc", gradientFrom: "#020b18", gradientTo: "#0c1a3a", accentClass: "sky" },
-  desert:   { id: "desert",   name: "Desert",       emoji: "🏜️", bg: "#120800", accent: "#78350f", star: "#fde68a", gradientFrom: "#120800", gradientTo: "#2d1500", accentClass: "amber" },
-  royal:    { id: "royal",    name: "Royal",        emoji: "👑", bg: "#08020f", accent: "#4a1d96", star: "#e879f9", gradientFrom: "#08020f", gradientTo: "#1a003d", accentClass: "purple" },
-  rose:     { id: "rose",     name: "Rose",         emoji: "🌹", bg: "#0f020a", accent: "#881337", star: "#fda4af", gradientFrom: "#0f020a", gradientTo: "#2a0014", accentClass: "rose" },
-  slate:    { id: "slate",    name: "Slate",        emoji: "🪨", bg: "#080c10", accent: "#1e293b", star: "#cbd5e1", gradientFrom: "#080c10", gradientTo: "#0f172a", accentClass: "slate" },
+  auto:     { id: "auto",     name: "Auto Waqt",    emoji: "🌙", bg: "#1f2937", accent: "#4b5563", star: "#93c5fd", gradientFrom: "#141e30", gradientTo: "#243b55", accentClass: "amber" },
+  midnight: { id: "midnight", name: "Twilight",     emoji: "🌌", bg: "#2F3B52", accent: "#4c5c7d", star: "#cbd5e1", gradientFrom: "#2F3B52", gradientTo: "#1a2538", accentClass: "sky" },
+  forest:   { id: "forest",   name: "Pine",         emoji: "🌿", bg: "#2D4238", accent: "#426b52", star: "#86efac", gradientFrom: "#2D4238", gradientTo: "#1F2E26", accentClass: "emerald" },
+  ocean:    { id: "ocean",    name: "Teal",         emoji: "🌊", bg: "#1B3B48", accent: "#296675", star: "#67e8f9", gradientFrom: "#1f4037", gradientTo: "#1B3B48", accentClass: "teal" },
+  desert:   { id: "desert",   name: "Terracotta",   emoji: "🐪", bg: "#5C443C", accent: "#8B6A5E", star: "#fde68a", gradientFrom: "#5C443C", gradientTo: "#45322C", accentClass: "orange" },
+  royal:    { id: "royal",    name: "Lavender",     emoji: "🪻", bg: "#3C324A", accent: "#635677", star: "#e879f9", gradientFrom: "#3C324A", gradientTo: "#2A2234", accentClass: "purple" },
+  rose:     { id: "rose",     name: "Muted Rose",   emoji: "🌸", bg: "#5E3842", accent: "#8A5A66", star: "#fda4af", gradientFrom: "#5E3842", gradientTo: "#42252D", accentClass: "rose" },
+  slate:    { id: "slate",    name: "Cloud",        emoji: "☁️", bg: "#475569", accent: "#64748b", star: "#e2e8f0", gradientFrom: "#475569", gradientTo: "#334155", accentClass: "slate" },
 };
 
 interface ThemeContextType {

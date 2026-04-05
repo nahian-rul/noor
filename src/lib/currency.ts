@@ -15,9 +15,13 @@ export const CURRENCIES: Record<string, Currency> = {
   PKR: { code: "PKR", symbol: "₨", name: "Pakistani Rupee" },
 };
 
+const STORAGE_KEY = "noor_user_currency";
 export const DEFAULT_CURRENCY = CURRENCIES.USD;
 
 export function detectCurrency(): Currency {
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved && CURRENCIES[saved]) return CURRENCIES[saved];
+
   try {
     const locale = Intl.NumberFormat().resolvedOptions().locale;
     const country = locale.split("-")[1]?.toUpperCase();
@@ -30,7 +34,6 @@ export function detectCurrency(): Currency {
       AE: "AED",
       IN: "INR",
       PK: "PKR",
-      // Add more common ones
     };
 
     const code = mapping[country] || "USD";
@@ -40,9 +43,13 @@ export function detectCurrency(): Currency {
   }
 }
 
+export function saveCurrency(code: string) {
+  localStorage.setItem(STORAGE_KEY, code);
+}
+
 export function formatCurrency(value: number, currency: Currency): string {
   return `${currency.symbol} ${value.toLocaleString(undefined, {
-    minimumFractionDigits: 2,
+    minimumFractionDigits: 0,
     maximumFractionDigits: 2,
   })}`;
 }

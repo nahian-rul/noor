@@ -1,0 +1,173 @@
+id	quotes	is_favourite	reference	category_id	active	Version		Category Name																	
+1	Islam is not about 'we’re better than you'. Rather it is about 'let me show you something that is better for you'		Noman Ali khan	1		1.0.6		Inspirational																	
+2	Do not lose hope, nor be sad.		Quran 3:139	1		1.0.6		Grateful																	
+3	Allah is with those who have patience		Quran 2:153	3		1.0.6		Patience																	
+4	I should be grateful for the tough times because Allah chose me, thought I was good enough to go through it.		Nouman Ali Khan	2		1.0.6		Life																	
+5	Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.		Rumi	4		1.0.6		Jumma																	
+6	A busy life makes prayer harder, but prayer makes a busy life easier.		Anonymous	4		1.0.6		Knowledge& Education																	
+7	The Prophet (SAW) said: "There are two blessings that many people are deceived into losing: health and free time.		Sahih al-Bukhari 6412	4		1.0.6																			
+8	Self-restraint in speech, food, entertainment and vanity are the most essential fundamental of spiritual growth.		Nouman Ali Khan	1		1.0.6																			
+9	Your sin is not greater than Allah’s mercy.		Nouman Ali Khan	4		1.0.6																			
+10	A sincere call to the Almighty can change what you may have thought was impossible to change. Never lose hope.		Mufti Ismail Menk	1		1.0.6																			
+11	The life of this world is merely enjoyment of delusion.		Quran 3:185	4		1.0.6																			
+12	Allah does not lay a responsibility on anyone beyond his capacity		Quran 2:286	3		1.0.6																			
+13	Do not lose heart or despair- if you are true believers you have the upper hand		Quran 3:139	1		1.0.6																			
+14	Indeed, there is ease with hardship.		Quran 94:5	3		1.0.6																			
+15	Whether you speak in secrecy or aloud, (it is all the same to Allah). He even knows the secrets that lie hidden in the heart of people.		Quran 67:13	4		1.0.6																			
+16	The bravest heart is the one that stays close to Allah, even, when it’s in pain.		Anonymous	3		1.0.6																			
+17	The Prophet (SAW) said: There are two blessings which many people lose: (They are) health and free time for doing good.		Sahih Bukhari	4		1.0.6																			
+18	Suffering is a gift. In it is hidden mercy.		Rumi	3		1.0.6																			
+19	Allah's Messenger (ﷺ) said The best among you are those who have the best manners and character.		Sahih al-Bukhari 6029	1		1.0.6																			
+20	No matter what your physical appearance, when you have kindness in your heart, You’re the most beautiful person in the world		Mufti Ismail Menk	1		1.0.6																			
+21	Taking pains to remove the pains of others is the true essence of generosity.		Abu Bakr (R.A)	3		1.0.6																			
+22	When was the last time you read the Quran? If you want to change, start with the book of Allah.		Anonymous	1		1.0.6																			
+23	Never underestimate the power of Dua (supplication).		Anonymous	3		1.0.6																			
+24	Patience is the healthiest ingredient of our life.		Anonymous	3		1.0.6																			
+25	The best attribute a believer can have is forgiveness.		Anonymous	4		1.0.6																			
+26	Knowledge exists potentially in the human soul like the seed in the soil; by learning the potential becomes actual.		Imam Al-Ghazali	4		1.0.6																			
+27	What has he found who has lost Allah? And what has he lost who has found Allah?		Anonymous	1		1.0.6																			
+28	Worldly life is short, so turn to Allah before you return to Allah.		Anonymous	4		1.0.6																			
+29	Indeed, Allah will not change the condition of a people until they change what is in themselves.		Anonymous	4		1.0.6																			
+30	And that each person will only have what they endeavoured towards		Quran 53:39	3		1.0.6																			
+31	Then which of your Lord’s favours will you ˹humans and jinn˺ both deny?		Surah ar Rahman	2		1.0.6																			
+32	Allah makes the impossible possible 		Anonymous	1		1.0.6																			
+33	It is difficult to be patient but to waste the rewards of patience is worse.		Anonymous	3		1.0.6																			
+34	Patience is a pillar of faith.		Anonymous	3		1.0.6																			
+35	Stick to the Truth, even if the Truth kills you		Anonymous	1		1.0.6																			
+36	A moment of patience in the moment of anger prevents thousands of moments of regret		Anonymous	3		1.0.6																			
+37	My sin had burdened me heavily. But when I measured it against Your Grace, O Lord! Your Forgiveness came out greater.		Anonymous	1		1.0.6																			
+38	Do not love the one who doesn’t love Allah. If they can leave Allah, they will leave you.		Anonymous	4		1.0.6																			
+39	How can you not make time for the one who created time		Anonymous	2		1.0.6																			
+40	Don’t depend too much on anyone in this world because even your own shadow leaves you when you are in the dark!		Anonymous	4		1.0.6																			
+41	Is the reward of goodness anything but goodness		Quran 55:60	1		1.0.6																			
+42	Sins take you away from Allah, Salah takes you back to Allah		Anonymous	1		1.0.6																			
+43	The prophet Muhammad Peace be upon Said: if people knew about the reward for the isha and fajar prayer, they would come (to the mosques) even if they had to crawl.		Sunan Ibn Majah 796	4		1.0.6																			
+44	We are all born with spiritual wings, Islam simply reminds us how to fly.		Anonymous	4		1.0.6																			
+45	Maybe you are searching among the branches for what only appears in the roots.		Rumi	4		1.0.6																			
+46	When setting out on a journey, do not seek advice from those who have never left home.		Rumi	4		1.0.6																			
+47	How is someone going to love you, when they don’t even love the one what created you?		Anonymous	4		1.0.6																			
+48	Peaceful is the one who is not concerned with having more or less.		Rumi	4		1.0.6																			
+49	Once you conquer your selfish self, all your darkness will change to light.		Rumi	4		1.0.6																			
+50	Prayer is an amazing exchange. you hand over your worries to Allah and Allah hands over his blessings to you		Anonymous	1		1.0.6																			
+51	Imagine sleeping without praying isha and waking up in your grave.		Anonymous	4		1.0.6																			
+52	Allah has time to listen: Do you have time to Pray?		Anonymous	1		1.0.6																			
+53	The dua made at Tahajjud is like an Arrow which does not miss its target		Imam Shafie	1		1.0.6																			
+54	Sometimes, All it takes is just one prayer to change everything.		Anonymous	1		1.0.6																			
+55	The beauty of Fajr, is knowing that Allah (S.W.T) chose you to be amongst those who worship him While the rest of the world sleeps.		Anonymous	1		1.0.6																			
+56	You don’t live on earth, you are passing through.		Anonymous	4		1.0.6																			
+57	So What if this life isn’t perfect? it’s not Jannah.		Nouman Ali Khan	4		1.0.6																			
+58	Born from different mothers skins of all colors come together as brothers. that’s the beauty of Islam.		Anonymous	1		1.0.6																			
+59	Be Patient — For what was written for you was written by the greatest of writers.		Anonymous	3		1.0.6																			
+60	The more i see of the world the more i silently whisper, “Alhamdulillah for Islam”		Anonymous	4		1.0.6																			
+61	Take every day as a chance to become a better Muslim.		Anonymous	4		1.0.6																			
+62	Trust Allah when things don’t work out the way you wanted. Allah has something better planned for you.		Anonymous	4		1.0.6																			
+63	O you who believe! seek help through patience and prayers indeed, Allah is with the patient		Quran 2:153	3		1.0.6																			
+64	Over 151,000 people die in this world every day, I thank Allah for still giving me some more time to fix my Akhirah		Anonymous	2		1.0.6																			
+65	There’s no need to be popular & win the approval of others. The Almighty did not create you for this purpose. Stay true to yourself.		Mufti ismail menk	4		1.0.6																			
+66	You can search the world for happiness but you won’t find it until you start being content with what the Almighty has already given you.		Mufti ismail menk	1		1.0.6																			
+67	If you want peace to prevail in your heart, remove anger, resentment, blame and worry		Mufti ismail menk	4		1.0.6																			
+68	When a matter has been resolved, we should not keep bringing up the past.		Mufti ismail menk	4		1.0.6																			
+69	A negative mind will interpret the most positive messages negatively but a positive mind extracts the best, even from a negative message.		Mufti ismail menk	4		1.0.6																			
+70	What you desire is what you want, what you have is what Allah wants.		Nouman Ali Khan	1		1.0.6																			
+71	We live in a society where we wake up our kids for schools but not for Fajr.		Nouman Ali Khan	4		1.0.6																			
+72	Forgiving someone isn't just about doing good to another. It's also about healing a scar in your own heart.		Nouman Ali Khan	3		1.0.6																			
+73	Be like a diamond, precious and rare, not like a stone, found everywhere.		Anonymous	4		1.0.6																			
+74	The heart that beats for Allah is always a stranger among the hearts that beat for the Dunya (world).		Anonymous	2		1.0.6																			
+75	And when I am sick it is Allah who cures me		Anonymous	3		1.0.6																			
+76	Allah is with you wherever you are		Anonymous	4		1.0.6																			
+77	Allah is never late he is just testing your faith and patience		Anonymous	3		1.0.6																			
+78	seek help through patience and prayer indeed Allah is with the patient		Anonymous	3		1.0.6																			
+79	when things are too hard to handle Retreat and count your blessings instead		Anonymous	3		1.0.6																			
+80	Allah can change the most hopeless situation into the best moment in your life		Anonymous	3		1.0.6																			
+81	Do not carry the anxiety for the future because it is in the hand of Allah.		Anonymous	4		1.0.6																			
+82	Allah knows what is best for you.		Anonymous	4		1.0.6																			
+83	Nobody knows your pain and suffering more than the Almighty. The truth is nobody really cares as much as HIM. HE is All Knowing and Most Wise		Mufti ismail menk	4		1.0.6																			
+84	The road of Allah (God) is long, and we proceed on it as slowly as a turtle. The purpose is not to get to the end of the road, but rather to die on it.		Al-Albani	1		1.0.6																			
+85	What more awful than committing sin is when God deprives you of the grace of feeling its bitterness.		Anonymous	4		1.0.6																			
+86	My sin burdened me heavily. But when I measured it against Your Grace, O Lord, Your forgiveness came out greater.		Imam Shafii	1		1.0.6																			
+87	Whatever issues from Allah is by definition Beautiful even if we cannot see that Beauty when Allah tests our faith with affliction		Ibnul-Qayyem	3		1.0.6																			
+88	Take every day as a chance to become a better Muslim.		Anonymous	1		1.0.6																			
+89	So What if this life isn’t perfect? it’s not Jannah.		Nouman Ali Khan	1		1.0.6																			
+90	Trust Allah when things don’t work out the way you wanted. Allah has something better planned for you.		Anonymous	3		1.0.6																			
+91	When Allah pushes you to the edge, trust him fully because only two things can happen. Either he will catch you or he will make you learn how to fly.		Anonymous	3		1.0.6																			
+92	The bigger desire you have for sin the bigger is your imaan if you leave it.		Anonymous	4		1.0.6																			
+93	Halal is a must. not just about what we eat but also what we wear and what we love.		Anonymous	4		1.0.6																			
+94	Allah says: If Allah knows [any] good in your hearts, He will give you [something] better than what was taken from you		Quran 8:70	3		1.0.6																			
+95	Fill your heart with Eemaan and it will become the most peaceful place on earth.		Anonymous	4		1.0.6																			
+96	When Someone is behaving unjustly to you, find peace in the truth of the situation, knowing that Allah is enough as a witness.		Anonymous	4		1.0.6																			
+97	You Prefer the life of this world. while the hearafter is better & more Lasting		Quran 87:16	4		1.0.6																			
+98	Dua Heals all negativity, hurt, anger, worries, and depression. pray to Allah Daily.		Anonymous	3		1.0.6																			
+99	The Dunya is not the resting place, it is the testing place.		Anonymous	4		1.0.6																			
+100	Sometimes the blessings are not in what he gives, but in what he takes away!.		Anonymous	3		1.0.6																			
+101	And be patient, for indeed, Allah does not allow to be lost the reward of those who do good		Quran 11:115	3		Next Version																			
+102	Seek help through patience and prayer; indeed, it is a difficult thing except for the humble		Quran 2:45.	3		Next Version																			
+103	And certainly, We shall test you with something of fear, hunger, loss of wealth, lives and fruits, but give glad tidings to the patient.		Quran 4:35	3		Next Version																			
+104	Indeed, I have rewarded them this Day for their patient endurance; they are indeed the ones that are successful.		Quran 23:111	3		Next Version																			
+105	Allah loves those who are patient.		Quran 2:153	3		Next Version																			
+106	Be patient and steadfast, and fear Allah that you may be successful.		Quran 3:200	3		Next Version																			
+107	And be patient for the decision of your Lord, for indeed, you are in Our eyes		Quran 52:48	3		Next Version																			
+108	Those who are patient in adversity and forgive wrongs are the doers of excellence		Prophet Muhammad(SAW)	3		Next Version																			
+109	And whoever is patient and forgives – that is indeed the best of affairs.		Quran 42:43	3		Next Version																			
+110	So I am left with nothing but˺ beautiful patience! I trust Allah will return them all to me. Surely He alone is the All-Knowing, All-Wise		Quran 12: 83-86	3		Next Version																			
+111	Whoever reads surat Al-Kahf on the night of Friday, will have a light that will stretch between him and the Ancient House (i.e., the Ka`bah)		Abu Sa`id A-Khudri	5		Next Version																			
+112	Among the best of your days is Friday. So, pray to Allah frequently on it to bless me, for such supplications of you will be presented to me.		Aws ibn Aws(Abu Dawud)	5		Next Version																			
+113	When any one of you comes on Friday, while the Imam delivers the sermon, he should observe two rak`ahs and should make them short		Sahih Muslim	5		Next Version																			
+114	Either some people stop neglecting the Friday prayers, or Allah will seal their hearts and they will be among the heedless.		Sahih Muslim	5		Next Version																			
+115	Removing harmful things from the road is an act of charity (sadaqah)		Abu Dharr Al-Ghafari 	5		Next Version																			
+116	Whatever is in the heavens and whatever is on the earth ˹constantly˺ glorifies Allah—the King, the Most Holy, the Almighty, the All-Wise.		Quran 62:1	5		Next Version																			
+117	This is the favour of Allah. He grants it to whoever He wills. And Allah is the Lord of infinite bounty.		Quran 62:4	5		Next Version																			
+118	Once the prayer is over, disperse throughout the land and seek the bounty of Allah. And remember Allah often so you may be successful		Quran 62:10	5		Next Version																			
+119	Whatever is in the heavens and whatever is on the earth is exalting Allah, the Sovereign, the Pure, the Exalted in Might, the Wise.		’Umar [ra](Sahih Bukhari)	5		Next Version																			
+120	I know definitely on what day this ayah was revealed; it was revealed on the Day of ’Arafah, on a Friday		Quran 5:3	5		Next Version																			
+121	"Anyone of you coming for the Jumua prayer should take a bath.		Abdullah bin 'Umar	5		Next Version																			
+122	Anyone whose feet are covered with dust in Allah's cause, shall be saved by Allah from the Hell-Fire		Abu Abs	5		Next Version																			
+123	O you who have believed, when the call to prayer is made on Friday, then proceed to the remembrance of Allah and leave trade. That is better for you, if you only knew.”		Quran 62:9	5		Next Version																			
+124	Whoever reads Surah Al-Kahf on the day of Jumma will have a light that will shine from him from one Friday to the next		(Al-Jaami	5		Next Version																			
+125	Whoever sends one blessing upon Prophet Muhammad(SAW), Allah will send ten blessings upon him, erase ten of his sins, and raise him ten degrees		Sunan an-Nasa'i 1297	5		Next Version																			
+126	Whoever recites Surah Yaseen in the morning, his needs for the day will be fulfilled.		(Sunan Darimi)	5		Next Version																			
+127	On Friday, there is a time when, if a Muslim prays and asks Allah for something good, He will give it to him		Sahih al-Bukhari	5		Next Version																			
+128	There is no Muslim who dies on the day of Friday or the night of Friday, but Allah will protect him from the trial of the grave		Sunan al-Tirmizi (994)	5		Next Version																			
+129	Friday is the balance of the week, Ramadan is the balance of the year, and Hajj is the balance of life		Imam Al-Ghazali	5																					
+130	The best day on which the sun has risen is Friday; on it, Adam was created, and on it, he died		Prophet Muhammad(SAW)	5																					
+131	Seek knowledge from the cradle to the grave.		Prophet Muhammad(SAW)	6																					
+132	The ink of the scholar is more sacred than the blood of the martyr		Prophet Muhammad(SAW)	6																					
+133	Read! In the name of your Lord		Quran 96:1	6																					
+134	He who seeks knowledge, Allah will make his path to Paradise easy		Prophet Muhammad(SAW)	6																					
+135	Indeed, with every difficulty, there is relief.		Quran 94:6	3																					
+136	Be patient. Indeed, the promise of Allah is truth		Quran 30:60	3																					
+137	Verily, with hardship, there is ease.		Quran 94:5	3																					
+138	Allah does not burden a soul beyond that it can bear.		Quran 2:286	3																					
+139	f you are grateful, I will surely increase you [in favor]		Quran 14:7	2																					
+140	And remember, with gratitude, Allah will increase you.		Quran 7:144	2																					
+141	Contentment is the greatest wealth.		Prophet Muhammad(SAW)	2																					
+142	Whoever is not grateful to people is not grateful to Allah		Prophet Muhammad(SAW)	2																					
+143	“Do not despair of the mercy of Allah		Quran 39:53	2																					
+144	Allah is with the patient.		Quran 8:46	2																					
+145	Verily, after every difficulty, there is relief.		Quran 94:5	2																					
+146	Optimism is a sunnah.		Prophet Muhammad(SAW)	2																					
+147	There is no one who goes out of his house in order to seek knowledge, but the angels lower their wings in approval of his actions		Prophet Muhammad(SAW)	6																					
+148	When Allah wills good for a person, He causes him to understand the religion		Prophet Muhammad(SAW)	6																					
+149	Whoever calls people to guidance, will have a similar reward to those who follow him, without any sort of decrease in his rewards		Prophet Muhammad(SAW)	6																					
+150	By Allah, if Allah guides aright even one person through you, that is better for you than to possess the red (most valuable) camels		Prophet Muhammad(SAW)	6																					
+151	The most excellent of you is the one who learns the Quran and teaches it.		Prophet Muhammad(SAW)	6																					
+152	Allah will raise those who have believed among you and those who were given knowledge by degrees.		Quran (58:11)	6																					
+153	Ramadan is the month, whose beginning is mercy, its middle, forgiveness, and its end, emancipation from the fire (of hell).		Prophet Muhammad (SAW)	7																					
+154	When the month of Ramadan begins, the gates of Paradise are opened and the gates of Hell are shut, and the devils are fettered.		Sunan an-Nasa'i 2097	7																					
+155	Whoever does not give up false speech and evil actions during the fast, Allah is not in need of his leaving his food and drink.		Sahih Bukhari	7																					
+156	Ramadan is the month of repentance.		Prophet Muhammad (SAW)	7																					
+157	"Fasting is a shield with which a servant protects himself from the fire."		Prophet Muhammad (SAW)	7																					
+158	The month of Ramadan is the one in which the Quran was revealed—a guidance for mankind and clear proof for the guidance and the criterion (between right and wrong).		Prophet Muhammad (SAW)	7																					
+159	Ramadan is a time for reflection, renewal, and spiritual growth.		Nouman Ali Khan	7																					
+160	Ramadan is not just about fasting. It’s about purifying the soul and seeking closeness to Allah.		Yasmin Mogahed	7																					
+161	Ramadan teaches us self-discipline, patience, and empathy for those less fortunate.		Tariq Ramadan	7																					
+162	Fasting in Ramadan is an exercise in self-control and a means to purify the body and mind.		Hamza Yusuf	7																					
+163	The bond between family and community strengthens during Ramadan.		Reza Aslan	7																					
+164	Ramadan reminds us to be grateful for the blessings we often take for granted.		Ahmed Deedat	7																					
+165	During Ramadan, we focus on nourishing our souls rather than our bodies.		Iman Abdulrazzak	7																					
+166	Ramadan is a time to seek forgiveness, mend broken relationships, and reconcile with others.		Suhaib Webb	7																					
+167	Ramadan is a time to seek knowledge and deepen our understanding of Islam.		Yassir Fazaga	7																					
+168	Ramadan reminds us of the importance of compassion and helping those in need.		Yasir Qadhi	7																					
+169	Ramadan is a time to reconnect with our inner selves and seek inner peace.		Waleed Basyouni	7																					
+170	Fasting is not just about abstaining from food and drink; it is also about restraining oneself from evil thoughts and actions.		Imam Ali	7																					
+171	Have you ever wondered why we’re happy in Ramadan? Because we do what we were created to do		Sh. Alaa Elsayed	7																					
+172	O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous		Quran 2:183	7

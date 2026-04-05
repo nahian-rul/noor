@@ -6,7 +6,9 @@ import {
   AlertCircle, ShieldCheck, HelpCircle, ArrowLeft, RefreshCcw,
   Wheat, Moon, Star
 } from "lucide-react";
-import { CURRENCIES, detectCurrency, formatCurrency, type Currency } from "../lib/currency";
+import { CURRENCIES, detectCurrency, formatCurrency, saveCurrency, type Currency } from "../lib/currency";
+import { Brain } from "lucide-react";
+import { Quiz } from "./Quiz";
 
 const NISAB_WEIGHTS = { GOLD: 87.48, SILVER: 612.36 };
 
@@ -104,12 +106,33 @@ const Field: React.FC<{ label: string; value: string; onChange: (v: string) => v
 
 // ─── Zakat Module ─────────────────────────────────────────────────────
 
+const ZAKAT_STORAGE_KEY = "noor_zakat_data";
+
 const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
   const [step, setStep] = useState<0 | 1>(0);
   const [nisabType, setNisabType] = useState<"GOLD" | "SILVER">("GOLD");
   const [metalPrices, setMetalPrices] = useState({ gold: "8500", silver: "120" });
   const [assets, setAssets] = useState({ cash: "", savings: "", goldSilverValue: "", investments: "", businessAssets: "", rentalIncome: "", others: "" });
   const [liabilities, setLiabilities] = useState({ loans: "", installments: "", bills: "", creditCard: "", taxes: "", others: "" });
+
+  // Persistence (Load)
+  useEffect(() => {
+    const saved = localStorage.getItem(ZAKAT_STORAGE_KEY);
+    if (saved) {
+      try {
+        const d = JSON.parse(saved);
+        if (d.nisabType) setNisabType(d.nisabType);
+        if (d.metalPrices) setMetalPrices(d.metalPrices);
+        if (d.assets) setAssets(d.assets);
+        if (d.liabilities) setLiabilities(d.liabilities);
+      } catch (e) { console.error("Failed to load zakat data", e); }
+    }
+  }, []);
+
+  // Persistence (Save)
+  useEffect(() => {
+    localStorage.setItem(ZAKAT_STORAGE_KEY, JSON.stringify({ nisabType, metalPrices, assets, liabilities }));
+  }, [nisabType, metalPrices, assets, liabilities]);
 
   const calc = useMemo(() => {
     const goldP = parseFloat(metalPrices.gold) || 0;
@@ -224,7 +247,15 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
                 </div>
                 <h3 className="text-xl font-serif italic text-white/90 relative">Zakat Summary</h3>
                 <div className="space-y-4 relative">
-                  <div className="flex justify-between items-end pb-4 border-b border-white/5">
+                  <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-widest">
+                    <span className="text-white/20">Total Assets</span>
+                    <span className="text-emerald-400 font-mono">{formatCurrency(calc.totalAssets, currency)}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-[9px] font-black uppercase tracking-widest">
+                    <span className="text-white/20">Total Liabilities</span>
+                    <span className="text-rose-400 font-mono">{formatCurrency(calc.totalLiabilities, currency)}</span>
+                  </div>
+                  <div className="flex justify-between items-end py-4 border-y border-white/5">
                     <div>
                       <span className="text-[9px] font-black uppercase tracking-[0.2em] text-white/30">Net Wealth</span>
                       <p className="text-[8px] text-white/20">(Assets − Debts)</p>
@@ -259,12 +290,33 @@ const ZakatModule: React.FC<{ currency: Currency }> = ({ currency }) => {
 
 // ─── Fitra Module ─────────────────────────────────────────────────────
 
+const FITRA_STORAGE_KEY = "noor_fitra_data";
+
 const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
   const [step, setStep] = useState<0 | 1>(0);
   const [foodType, setFoodType] = useState<string>("rice");
   const [pricePerKg, setPricePerKg] = useState<string>("60");
   const [quantity, setQuantity] = useState<2.5 | 3>(2.5);
   const [members, setMembers] = useState<string>("1");
+
+  // Persistence (Load)
+  useEffect(() => {
+    const saved = localStorage.getItem(FITRA_STORAGE_KEY);
+    if (saved) {
+      try {
+        const d = JSON.parse(saved);
+        if (d.foodType) setFoodType(d.foodType);
+        if (d.pricePerKg) setPricePerKg(d.pricePerKg);
+        if (d.quantity) setQuantity(d.quantity);
+        if (d.members) setMembers(d.members);
+      } catch (e) { console.error("Failed to load fitra data", e); }
+    }
+  }, []);
+
+  // Persistence (Save)
+  useEffect(() => {
+    localStorage.setItem(FITRA_STORAGE_KEY, JSON.stringify({ foodType, pricePerKg, quantity, members }));
+  }, [foodType, pricePerKg, quantity, members]);
 
   const selectedFood = FOOD_TYPES.find(f => f.id === foodType) || FOOD_TYPES[0];
 
@@ -460,7 +512,7 @@ const FitraModule: React.FC<{ currency: Currency }> = ({ currency }) => {
 // ─── Main Tools Page ───────────────────────────────────────────────────
 
 export const Tools: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"zakat" | "fitra">("zakat");
+  const [activeTab, setActiveTab] = useState<"zakat" | "fitra" | "quiz">("zakat");
   const [currency, setCurrency] = useState<Currency>(detectCurrency());
   const [showToast, setShowToast] = useState(false);
 
@@ -468,6 +520,7 @@ export const Tools: React.FC = () => {
     const selected = CURRENCIES[code];
     if (selected) {
       setCurrency(selected);
+      saveCurrency(code);
       setShowToast(true);
       setTimeout(() => setShowToast(false), 3000);
     }
@@ -500,6 +553,12 @@ export const Tools: React.FC = () => {
         >
           <Moon className="w-3.5 h-3.5" /> Fitra
         </button>
+        <button
+          onClick={() => setActiveTab("quiz")}
+          className={`flex-1 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${activeTab === "quiz" ? "bg-rose-500 text-white shadow-lg" : "text-white/40 hover:text-white"}`}
+        >
+          <Brain className="w-3.5 h-3.5" /> Quiz
+        </button>
       </div>
 
       {/* Module Render */}
@@ -508,9 +567,13 @@ export const Tools: React.FC = () => {
           <motion.div key="zakat" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }}>
             <ZakatModule currency={currency} />
           </motion.div>
-        ) : (
+        ) : activeTab === "fitra" ? (
           <motion.div key="fitra" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
             <FitraModule currency={currency} />
+          </motion.div>
+        ) : (
+          <motion.div key="quiz" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}>
+            <Quiz />
           </motion.div>
         )}
       </AnimatePresence>

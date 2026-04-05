@@ -1,13 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import namesData from "../data/names";
 import { motion, AnimatePresence } from "motion/react";
-import { Search, Heart, Share2, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Search, Heart, Share2, X, ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
+import { useUser } from "../contexts/UserContext";
 
 const names = namesData as any[];
+const STORAGE_KEY = "noor_names_session";
 
 export const NamesOfAllah: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+  const { markNameLearned, completedNames } = useUser();
+
+  // Persistence (Load)
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const d = JSON.parse(saved);
+        if (d.search) setSearchQuery(d.search);
+        if (typeof d.selected === "number") setSelectedIdx(d.selected);
+      } catch (e) { console.error("Failed to load names session", e); }
+    }
+  }, []);
+
+  // Persistence (Save)
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      search: searchQuery,
+      selected: selectedIdx
+    }));
+  }, [searchQuery, selectedIdx]);
 
   const filteredNames = names.filter((n: any) => {
     const search = searchQuery.toLowerCase();
@@ -52,8 +75,13 @@ export const NamesOfAllah: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: (idx % 20) * 0.025, duration: 0.28 }}
             onClick={() => openModal(idx)}
-            className="group p-6 bg-white/5 backdrop-blur-3xl rounded-3xl border border-white/10 cursor-pointer hover:bg-white/[0.09] hover:border-amber-400/20 hover:scale-[1.02] active:scale-[0.98] transition-all relative overflow-hidden"
+            className="group p-6 glass-card cursor-pointer hover:bg-white/[0.09] hover:border-amber-400/20 hover:scale-[1.02] active:scale-[0.98] transition-all relative overflow-hidden"
           >
+            {completedNames.includes((n.ID || n.id).toString()) && (
+              <div className="absolute top-4 right-4 text-emerald-400">
+                 <CheckCircle2 className="w-3.5 h-3.5" />
+              </div>
+            )}
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[9px] font-black text-white/30 group-hover:text-amber-400 group-hover:border-amber-400/20 transition-all">
                 {n.ID || n.id}
@@ -120,7 +148,7 @@ export const NamesOfAllah: React.FC = () => {
                   animate={{ scale: 1, opacity: 1, y: 0 }}
                   exit={{ scale: 0.96, opacity: 0, y: -8 }}
                   transition={{ duration: 0.22 }}
-                  className="relative w-[90vw] max-w-lg bg-[#14141B] border border-white/10 rounded-[3rem] p-12 overflow-hidden shadow-2xl"
+                  className="relative w-[90vw] max-w-lg glass-modal rounded-[3rem] p-12 overflow-hidden shadow-2xl"
                 >
                   <div className="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none select-none">
                     <div className="text-[10rem] font-serif italic leading-none">{selectedName.ID || selectedName.id}</div>
@@ -153,13 +181,27 @@ export const NamesOfAllah: React.FC = () => {
                     </div>
 
                     {/* Actions */}
-                    <div className="flex gap-4 pt-4">
-                      <button className="flex-1 py-4 bg-white text-black rounded-2xl font-bold uppercase tracking-widest hover:bg-amber-400 transition-all flex items-center justify-center gap-2">
-                        <Share2 className="w-4 h-4" /> Share
-                      </button>
-                      <button className="p-4 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all">
-                        <Heart className="w-5 h-5 text-white/40 hover:text-rose-400 transition-colors" />
-                      </button>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                      {!completedNames.includes((selectedName.ID || selectedName.id).toString()) ? (
+                         <button 
+                           onClick={() => markNameLearned((selectedName.ID || selectedName.id).toString())}
+                           className="flex-1 py-4 bg-emerald-500 text-black rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] hover:bg-emerald-400 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 shadow-xl shadow-emerald-500/20"
+                         >
+                           Mark as Learned <CheckCircle2 className="w-4 h-4" />
+                         </button>
+                      ) : (
+                         <div className="flex-1 py-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] flex items-center justify-center gap-2 italic">
+                            Learned <CheckCircle2 className="w-4 h-4" />
+                         </div>
+                      )}
+                      <div className="flex gap-4">
+                        <button className="flex-1 sm:flex-none px-6 py-4 glass-button rounded-2xl text-white/40 hover:text-white transition-all flex items-center justify-center gap-2">
+                          <Share2 className="w-4 h-4" />
+                        </button>
+                        <button className="p-4 glass-button rounded-2xl hover:bg-rose-400/10 transition-all group/heart">
+                          <Heart className="w-5 h-5 text-white/40 group-hover/heart:text-rose-400 transition-colors" />
+                        </button>
+                      </div>
                     </div>
 
                     {/* Mobile Prev/Next inside modal bottom for small screens */}
