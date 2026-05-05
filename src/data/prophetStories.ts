@@ -49,6 +49,49 @@ export const PROPHET_STORIES: Record<string, ProphetStory> = {
       }
     ]
   },
+  "hud": {
+    id: "4",
+    name: "Hud",
+    arabicName: "هود عليه السلام",
+    slug: "hud",
+    sections: [
+      {
+        emoji: "🌍",
+        title: "The People of ‘Ād",
+        story: "Prophet Hud (AS) was sent to the powerful tribe of ‘Ād, who lived in the region of Al-Ahqaf (between Yemen and Oman). They were known for their incredible strength, advanced construction, and towering buildings. Allah had blessed them with wealth, power, and fertile lands. However, instead of gratitude, they became arrogant and began worshipping idols, forgetting Allah."
+      },
+      {
+        emoji: "📖",
+        title: "Message of Tawheed",
+        story: "Allah sent Hud (AS) to guide his people back to Tawheed (Oneness of Allah). He reminded them to worship Allah alone, avoid arrogance, and be grateful for blessings. He warned them that their strength and wealth could not protect them from Allah’s punishment. But the people of ‘Ād responded with denial and pride, claiming no one was stronger than them."
+      },
+      {
+        emoji: "🛡️",
+        title: "Rejection & Arrogance",
+        story: "The people (قوم) of ‘Ād mocked Hud (AS), accusing him of foolishness and refusing to accept his message. Their arrogance grew so much that they openly challenged the warning of punishment, believing their power and buildings made them untouchable. Hud (AS) remained calm and firm, continuing to warn them with patience."
+      },
+      {
+        emoji: "🌤️",
+        title: "Warning Signs",
+        story: "Before the punishment, signs began to appear. A large cloud was seen approaching their land, and the people became hopeful, thinking it would bring rain. But Hud (AS) warned them — this was not mercy, but a punishment they had denied. Still, they ignored him."
+      },
+      {
+        emoji: "🌪️",
+        title: "The Punishment",
+        story: "Allah sent a furious, powerful wind that lasted for several days. This wind destroyed everything: homes collapsed, and people were lifted and thrown. The mighty civilization of ‘Ād was completely wiped out. Their strength could not save them from Allah’s command."
+      },
+      {
+        emoji: "🛟",
+        title: "Salvation of the Believers",
+        story: "Hud (AS) and the few believers who followed him were saved by Allah’s mercy. While destruction surrounded the disbelievers, the believers were protected. This shows that true safety comes only from faith and obedience to Allah."
+      },
+      {
+        emoji: "✨",
+        title: "Legacy",
+        story: "The story of Hud (AS) is preserved in the Qur'an as a warning. The قوم of ‘Ād were among the strongest nations, yet they were destroyed due to arrogance and disbelief. Their ruins remain a reminder that power without humility leads to destruction."
+      }
+    ]
+  },
   "idris": {
     id: "2",
     name: "Idris",

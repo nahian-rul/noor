@@ -1,0 +1,7 @@
+name = "noor"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "./dist"
+
+[vars]
+# Add any non-secret environment variables here
+# GEMINI_API_KEY = "your_key_here"  # Use Cloudflare dashboard for secrets instead
