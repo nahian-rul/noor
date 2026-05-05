@@ -2,6 +2,8 @@ name = "noor"
 compatibility_date = "2024-09-23"
 [assets]
 directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
 
 [vars]
 # Add any non-secret environment variables here
