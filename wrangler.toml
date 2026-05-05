@@ -8,3 +8,18 @@ not_found_handling = "single-page-application"
 [vars]
 # Add any non-secret environment variables here
 # GEMINI_API_KEY = "your_key_here"  # Use Cloudflare dashboard for secrets instead
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+persist = true
+head_sampling_rate = 1
